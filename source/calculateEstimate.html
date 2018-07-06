@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Stratton</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+<body class="estimate_background">
+	<!-- Page Header -->
+	<% include('templates/header') %>
+	<!-- Page Header -->
+
+	<!-- Page Navigation -->
+	<!-- <% include('templates/navigation') %> -->
+	<!-- Page Navigation -->
+
+	<div class="container slds-m-top_xx-large">
+		<div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+
+			<div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+				<div class="lhs_wrapper">
+					<h1 class="heading1 slds-m-bottom_medium">Start your  estimate</h1>
+				<p class="subheading slds-m-bottom_x-large">
+					Find out what your estimated repayments will be by filling out the details below.
+				</p>
+
+				<form action="">
+					<div class="slds-grid slds-wrap slds-gutters">
+						<div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+							<div class="formElem">
+								<label class="field_label">I'd like to borrow</label>
+								<div class="input_fields ">
+									<input type="text" value="60,000" />
+									<em class="errMsg">This is an Error!</em>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="slds-grid slds-wrap slds-gutters">
+						<div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+							<div class="slds-grid slds-wrap slds-gutters">
+								<div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+									<div class="formElem selectField">
+										<div class="cs_selectbox" tabindex="-1">
+											<label class="field_label">Over</label>
+											<span class="selection">select</span>
+											
+											<div class="optionsList">
+												<ul>
+													<li>
+														<label>
+															<input type="radio" value="5 years" name="duration" />
+															<span>5 years</span>
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" value="4 years" name="duration" />
+															<span>4 years</span>
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" value="3 years" name="duration" />
+															<span>3 years</span>
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" value="2 years" name="duration" />
+															<span>2 years</span>
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" value="1 year" name="duration" />
+															<span>1 year</span>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+									<div class="formElem">
+										<div class="cs_selectbox" tabindex="-1">
+											<label class="field_label">to buy a</label>
+											<span class="selection">select</span>
+											
+											<div class="optionsList">
+												<ul>
+													<li>
+														<label>
+															<input type="radio" value="new car" name="vehicle" />
+															<span>New Car</span>
+														</label>
+													</li>
+													<li>
+														<label>
+															<input type="radio" value="used car" name="vehicle" />
+															<span>Used Car</span>
+														</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+					
+
+					<div class="slds-grid slds-wrap slds-gutters">
+						<div class="slds-col slds-size_10-of-12 slds-large-size_11-of-12">
+							<div class="formElem">
+
+								<div class="cs_selectbox" tabindex="-1">
+									<label class="field_label">The majority of the time this car will be used for</label>
+									<span class="selection">select</span>
+									
+									<div class="optionsList">
+										<ul>
+											<li>
+												<label>
+													<input type="radio" value="Personal use" name="user" />
+													<span>Personal use</span>
+												</label>
+											</li>
+											<li>
+												<label>
+													<input type="radio" value="Office use" name="user" />
+													<span>Office use</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<em class="tooltip_info"></em>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="slds-grid slds-wrap slds-gutters">
+						<div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+							<div class="formElem">
+								<button class="slds-button slds-button_brand primaryBtn">
+									Get your estimate
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			</div>
+			<div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
+			</div>
+		</div>
+	</div>
+	<!-- Page Footer -->
+	<!--<% include('templates/footer') %>-->
+	<!-- Page Footer -->
+
+
+	<script src="./javascripts/stratton_scripts.js"></script>
+</body>
+</html>

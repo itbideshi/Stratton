@@ -1,0 +1,115 @@
+$white-clr:			#ffffff;
+$primary-clr: 		#330072;
+$secondary-clr:		#2c3e50;
+$heading-clr: 		#25282a;
+$secondary-txt-clr: #0a0724;
+$label-txt-clr: 	#141414;
+$field-txt-clr: 	#2b3e51;
+$primary-btn-bg: 	#f23457;
+$secondary-btn-bg: 	#00c1d5;
+$verify-clr: 		#00d78f;
+$error-clr:			#ff0000;
+$heading1:			50px;
+$heading2:			42px;
+$border-clr: 		#dfe4e4;
+$grey-clr: 			#f1f1f1;
+$nav_num-clr: 		#FF0049;
+
+$fnt14: 14px;
+$fnt16: 16px;
+$fnt18: 18px;
+$fnt20: 20px;
+$fnt24: 24px;
+$fnt28: 28px;
+
+
+.fnt20{
+	font-size: $fnt20;
+}
+
+@mixin buttonWrapper($backgroundClr,$textClr){
+	min-width: 200px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 4px;
+	background-color: $backgroundClr;
+	border-color: $backgroundClr;
+	color: $textClr;
+	text-align: center;
+	font-size: $fnt14;
+	font-weight: 500;
+	outline: none;
+	&:hover, &:focus{
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+.cstm_input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	background: transparent;
+	z-index: 0;
+	cursor: pointer;
+	
+	input[type="radio"] + em{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		width: 24px;
+		height: 24px;
+		border: 2px solid #dfe4e4;
+		border-radius: 50%;
+		box-sizing: border-box;
+		cursor: pointer;			
+		position: relative;
+	}
+	
+	input[type="radio"] + em:before{
+		content:"";
+		transition: background-color .2s ease-in-out
+	}
+	
+	input[type="radio"]:checked + em:before{
+		content:"";
+		width: 50%;
+		height: 50%;
+		display: block;
+		background: #00d78f;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(50%, 50%);
+	}
+
+	input[type="radio"]:disabled + em{
+		border-color: #ecf0f1;
+		background: #ecf0f1;
+	}
+	
+	input[type="radio"]:disabled + em:before{
+		content:"";
+		width: 50%;
+		height: 50%;
+		display: block;
+		background: #9baaab;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(50%, 50%);
+	}
+
+	input[type="radio"].blocked + em:before{
+		content:"";
+		background: transparent;
+	}
+	
+	input[type="checkbox"],
+	input[type="radio"]{
+		opacity: 0;
+		position: absolute;
+	}
+}

@@ -1,0 +1,11 @@
+<div class="messageWrapper slds-m-top_large">
+	<h2 class="msgHeading slds-m-bottom_medium">Want to chat to someone?</h2>
+	<p>
+		Speak to one of our dedicated finance consultants.
+	</p>
+	
+	<button class="slds-button slds-button_neutral defaultBtn slds-m-top_x-large">
+		Speak to a consultant
+	</button>
+
+</div>
