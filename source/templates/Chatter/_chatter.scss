@@ -1,0 +1,21 @@
+.messageWrapper{
+	background: $white-clr;
+	padding: 40px 30px;
+	border-radius: 10px;
+	line-height: 25px;
+	font-size: $fnt16;
+	.msgHeading{
+		font-size: $fnt24;
+	}
+	.slds-button{
+		&.defaultBtn{
+			@include buttonWrapper($white-clr, $secondary-btn-bg);
+			border-color: $secondary-btn-bg;
+			width: 100%;
+			font-weight: 500;
+			height: 50px;
+			line-height: 45px;
+			border-width: 2px;
+		}
+	}
+}

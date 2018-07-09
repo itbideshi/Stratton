@@ -1,0 +1,48 @@
+.pageNavigation{
+	background: $primary-clr;
+	color: $white-clr;
+	ul{
+		display: flex;
+		li{
+			flex-grow: 1;
+			a, a:hover{
+				color: $white-clr;
+				padding: 40px 0;
+				display: block;
+				em{
+					font-style: normal;
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+					line-height: 24px;
+					color: $nav_num-clr;
+					background: $white-clr;
+					text-align: center;
+					border-radius: 50%;
+					font-weight: 600;
+					margin-right: 15px;
+
+				}
+			}
+
+			&.active{
+				a, a:hover{
+					em{
+						background: $nav_num-clr;
+						color: $white-clr;
+					}
+				}
+			}
+			&.done{
+				a, a:hover{
+					em{
+						background:$nav_num-clr url('../images/icons/check_base.svg') no-repeat center;
+						background-size: 12px;
+					    color: transparent;
+					}
+				}
+			}
+		}
+	}
+	
+}
