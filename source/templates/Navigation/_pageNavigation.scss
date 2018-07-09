@@ -1,48 +1,70 @@
+
+
+
 .pageNavigation{
-	background: $primary-clr;
 	color: $white-clr;
 	ul{
 		display: flex;
 		li{
 			flex-grow: 1;
+			border-bottom:8px $nav-brd-clr solid;
 			a, a:hover{
-				color: $white-clr;
-				padding: 40px 0;
+				color: $disable-clr;
 				display: block;
-				em{
-					font-style: normal;
-					display: inline-block;
-					width: 24px;
-					height: 24px;
-					line-height: 24px;
-					color: $nav_num-clr;
-					background: $white-clr;
-					text-align: center;
-					border-radius: 50%;
-					font-weight: 600;
-					margin-right: 15px;
-
-				}
+				text-align:center;
+			    height: 90px;
+			    padding-top: 55px;
+			    position:relative;
+			    display:none;
 			}
 
-			&.active{
-				a, a:hover{
-					em{
-						background: $nav_num-clr;
-						color: $white-clr;
-					}
-				}
-			}
+		
 			&.done{
-				a, a:hover{
-					em{
-						background:$nav_num-clr url('../images/icons/check_base.svg') no-repeat center;
-						background-size: 12px;
-					    color: transparent;
-					}
+				
+				border-bottom:8px $primary-btn-bg solid;
+
+				a, a:hover 
+				{
+					color:$blk-clr;
+				}
+				.nav-icons
+				{
+					color:$primary-btn-bg;
 				}
 			}
+
+
+	
+
+
+
+
+
 		}
 	}
 	
 }
+
+
+@media (min-width: 1024px)
+{
+	
+	.pageNavigation  
+	{
+
+	  ul 
+	  {
+
+		   li
+		    {
+				
+				a, a:hover {
+					display:block;
+					}
+			}
+
+		}
+
+	}
+	
+ }

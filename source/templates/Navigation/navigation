@@ -1,15 +1,21 @@
-<nav class="pageNavigation slds-m-top_large slds-m-bottom_large">
-	<div class="container">
-		<div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
-			<div class="slds-col slds-size_10-of-12 slds-large-size_10-of-12">
+<nav class="pageNavigation  slds-m-bottom_large">
+	<div>
+		<div class="slds-grid slds-wrap slds-grid_align-center">
+			<div class="slds-col slds-size_6-of-6">
 				<ul>
-					<li class="done"><a href="#"><em>1</em> The car</a></li>
-					<li class="active"><a href="#"><em>2</em> Personal</a></li>
+					<li class="done">
+					<a href="#"><i class="material-icons nav-icons ">directions_car </i>  The car</a></li>
 
-					<li><a href="#"><em>3</em> Living situtation</a></li>
-					<li><a href="#"><em>4</em> Employment</a></li>
-					<li><a href="#"><em>5</em> Finances</a></li>
-					<li><a href="#"><em>6</em> Review</a></li>
+					<li><a href="#"><i class="material-icons nav-icons ">
+					person</i> Personal Details</a></li>
+					
+					<li><a href="#"><i class="material-icons nav-icons"> home</i> Living situation</a></li>
+
+					<li><a href="#"><i class="material-icons nav-icons">assignment_turned_in </i> Employment </a></li>
+
+					<li><a href="#"><i class="material-icons nav-icons">attach_money </i> Finances </a></li>
+
+					<li><a href="#"><i class="material-icons nav-icons">dvr </i> Review </a></li>
 				</ul>
 			</div>
 		</div>

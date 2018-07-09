@@ -1,5 +1,6 @@
 @import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 @import '_variables';
 
@@ -19,6 +20,22 @@ a, a:hover, a:focus{
 	text-decoration: none;
 	color: $secondary-btn-bg;
 }
+
+.material-icons 
+{
+	font-family: 'Material Icons';
+}
+
+.nav-icons 
+{
+	display: block;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:$fnt32;
+}
+
 .slds-gridBox{
 	background: #e4e4e4;
 
