@@ -6,26 +6,26 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['sass', 'includeTemplate'], function() {
     browserSync.init({
-        server: "./build"
+        server: "./devBuild"
     });
 
     gulp.watch("./source/*.scss", ['sass']);
     gulp.watch(["./source/templates/*", "./source/*.html"], ['includeTemplate']);
-    gulp.watch("./build/*.html").on('change', browserSync.reload);
+    gulp.watch("./devBuild/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
     return gulp.src("./source/*.scss")
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest("./build/stylesheets/"))
+        .pipe(gulp.dest("./devBuild/stylesheets/"))
         .pipe(browserSync.stream());
 });
 
 gulp.task("includeTemplate", function() {
     return gulp.src("./source/*.html")
         .pipe(include())
-        .pipe(gulp.dest("./build/"));
+        .pipe(gulp.dest("./devBuild/"));
 });
 
 gulp.task('default', ['serve']);
