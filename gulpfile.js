@@ -9,13 +9,13 @@ gulp.task('serve', ['sass', 'includeTemplate'], function() {
         server: "./devBuild"
     });
 
-    gulp.watch("./source/*.scss", ['sass']);
+    gulp.watch("./source/scss/*.scss", ['sass']);
     gulp.watch(["./source/templates/*", "./source/*.html"], ['includeTemplate']);
     gulp.watch("./devBuild/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function() {
-    return gulp.src("./source/*.scss")
+    return gulp.src("./source/scss/*.scss")
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest("./devBuild/stylesheets/"))
@@ -27,5 +27,6 @@ gulp.task("includeTemplate", function() {
         .pipe(include())
         .pipe(gulp.dest("./devBuild/"));
 });
+
 
 gulp.task('default', ['serve']);
