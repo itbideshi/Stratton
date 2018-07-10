@@ -46,6 +46,14 @@ header{
 		top: -4px;
 
 	}
+	.slds-button{
+		&.defaultBtn{
+			min-width: 100px;
+			width: auto;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
 }
 
 @media (min-width: 1024px){

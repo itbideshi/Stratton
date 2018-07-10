@@ -20,9 +20,10 @@
 					</a>
 				</div>
 				<div class="slds-col slds-size_6-of-12 slds-text-align_right call">
-					<a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
+					<!--<a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
 						<img src="images/icons/mobile_menu.svg" />
-					</a>
+					</a>-->
+					<button class="slds-button defaultBtn">Exit</button>
 					<span class="slds-hide">
 						<a href="tel:1300787288">1300 787 288</a>
 						<img src="images/icons/search.svg" alt="" class="search_icon" />

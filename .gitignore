@@ -63,3 +63,6 @@ typings/
 #buildFolder
 devBuild/
 source/.DS_Store
+.DS_Store
+source/templates/.DS_Store
+source/templates/.DS_Store

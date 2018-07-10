@@ -1,6 +1,3 @@
-
-
-
 .pageNavigation{
 	color: $white-clr;
 	ul{
@@ -17,12 +14,8 @@
 			    position:relative;
 			    display:none;
 			}
-
-		
 			&.done{
-				
 				border-bottom:8px $primary-btn-bg solid;
-
 				a, a:hover 
 				{
 					color:$blk-clr;
@@ -32,29 +25,17 @@
 					color:$primary-btn-bg;
 				}
 			}
-
-
-	
-
-
-
-
-
 		}
 	}
-	
 }
 
 
 @media (min-width: 1024px)
 {
-	
 	.pageNavigation  
 	{
-
 	  ul 
 	  {
-
 		   li
 		    {
 				
