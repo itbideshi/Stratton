@@ -9,8 +9,8 @@ gulp.task('serve', ['sass', 'includeTemplate'], function() {
         server: "./devBuild"
     });
 
-    gulp.watch("./source/scss/*.scss", ['sass']);
-    gulp.watch(["./source/templates/*", "./source/*.html"], ['includeTemplate']);
+    gulp.watch(["./source/scss/*.scss","./source/templates/*/*.scss"], ['sass']);
+    gulp.watch(["./source/templates/*/*.html", "./source/*.html"], ['includeTemplate']);
     gulp.watch("./devBuild/*.html").on('change', browserSync.reload);
 });
 
