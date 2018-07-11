@@ -25,6 +25,31 @@
 	&.applyBtn{
 		@include buttonWrapper($secondary-btn-bg, $white-clr);
 	}
+
+	 &.btnBack 
+		    {
+		    	min-width:80px!important;
+		    	@include buttonWrapper($secondary-btn-bg, $white-clr);
+		    }
+
+	 &.btnSave 
+		    {
+		    	min-width:190px!important;	
+		    	@include buttonWrapper($secondary-btn-bg, $white-clr);
+		    }
+	 &.btnhead 
+	 {
+	 		@include buttonWrapper($heading-clr, $white-clr);
+	 		border-radius:30px;
+	 }	 
+
+	 &.btnSecondary 
+	 {
+	 		@include buttonWrapper($white-clr, $blk-clr);
+	 		border-radius:30px;
+	 		border-color:$grey-clr;
+	 		min-width:110px;
+	 }	    
 }
 
 .button_small{

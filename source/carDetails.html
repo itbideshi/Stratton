@@ -8,6 +8,8 @@
 
 </head>
 <body>
+
+	<div class="headerFixCont">
 	<!-- Page Header -->
 	<% include('templates/Header/header.html') %>
 	<!-- Page Header -->
@@ -15,315 +17,390 @@
 	<!-- Page Navigation -->
 	<% include('templates/Navigation/navigation.html') %>
 	<!-- Page Navigation -->
+	</div>
 
+	<div class="headerSpace"></div>
+	<!-- midcontent start here-->
 	<div class="container slds-m-top_xx-large">
+
 		<div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
 
 			<div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
-					<h1 class="heading1 slds-m-bottom_xx-large">Tell us about the car your  looking for?</h1>
+			
+				<h1 class="heading3 slds-m-bottom_x-large slds-m-top_x-small">Tell us about the car your looking for?</h1>
 
-				<form action="">
-					<div class="slds-grid slds-wrap slds-gutters">
-						<div class="slds-col slds-size_6-of-6 slds-large-size_5-of-6">
-							<div class="formElem selectField">
-								<div class="cs_selectbox" tabindex="-1">
-									<label class="field_label">Do you know the car you want to buy?</label>
-									<span class="selection no_padding">select</span>
-									
-									<div class="optionsList">
-										<ul>
-											<li>
-												<label>
-													<input type="radio" value="yes" name="car_i_want" />
-													<span><em class="thumbs_up"></em> Yes - I know the car I want</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="4 years" name="car_i_want" />
-													<span><em class="thumbs_down"></em> No - I don't know the car I want</span>
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slds-grid slds-wrap slds-gutters">
-						<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
-							<div class="formElem">
-								<div class="cs_selectbox vehicle" tabindex="-1">
-									<label class="field_label">Whats the condition of the car?</label>
-									<span class="selection">select</span>
-									
-									<div class="optionsList">
-										<ul>
-											<li>
-												<label>
-													<input type="radio" value="new car" name="condition" />
-													<span>New car</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="used car" name="condition" />
-													<span>Used car</span>
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="slds-grid slds-wrap slds-gutters">
-						<div class="slds-col slds-size_6-of-6 slds-large-size_3-of-6">
-							<div class="formElem">
-								<div class=" autosuggest vehicle" tabindex="-1">
-									<label class="field_label">Whats the make of your car?</label>
-									<input type="text" tabindex="-1" class="autoSuggestInput" placeholder="Type or select from options" />
-									<div class="optionsList">
-										<ul>
-											<li>
-												<label>
-													<input type="radio" value="Audi" name="model" />
-													<span>Audi </span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="BMW" name="model" />
-													<span>BMW</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Ford" name="model" />
-													<span>Ford</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Hyundai" name="model" />
-													<span>Hyundai</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Kia" name="model" />
-													<span>Kia</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Mazda" name="model" />
-													<span>Mazda</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Mercedez-Benz" name="model" />
-													<span>Mercedez - Benz</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Mitsubishi" name="model" />
-													<span>Mitsubishi</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Nissan" name="model" />
-													<span>Nissan</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Toyota" name="model" />
-													<span>Toyota</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value=" Volkswagen" name="model" />
-													<span> Volkswagen</span>
-												</label>
-											</li>
-										</ul>
-									</div>
-									<!-- <a href="#" class="editLink">Edit</a> -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="slds-grid slds-wrap slds-gutters">
-						<div class="slds-col slds-size_5-of-6 slds-large-size_3-of-6">
-							<div class="formElem">
-								<div class="autosuggest vehicle" tabindex="">
-									<label class="field_label">Whats is the year of your Ford?</label>
-									<input type="text"  disabled  class="autoSuggestInput" placeholder="Type or select from options" />
-									<div class="optionsList">
-										<ul>
-											<li>
-												<label>
-													<input type="radio" value="2018" name="year" />
-													<span>2018</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2017" name="year" />
-													<span>2017</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2016" name="year" />
-													<span>2016</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2015" name="year" />
-													<span>2015</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2014" name="year" />
-													<span>2014</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2013" name="year" />
-													<span>2013</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2012" name="year" />
-													<span>2012</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2011" name="year" />
-													<span>2011</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2010" name="year" />
-													<span>2010</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2009" name="year" />
-													<span>2009</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="2008" name="year" />
-													<span>2008</span>
-												</label>
-											</li>
-										</ul>
-									</div>
-									<a href="#" class="editLink">Edit</a>
-
-								</div>
-							</div>
-						</div>
-					</div> 
-
-					<div class="slds-grid slds-wrap slds-gutters">
-						<div class="slds-col slds-size_5-of-6 slds-large-size_3-of-6">
-							<div class="formElem">
-								<div class=" autosuggest" tabindex="-1">
-									<label class="field_label">Whats is the model of your ford?</label>
-									<input type="text"  disabled  class="autoSuggestInput" placeholder="Type or select from options" />
-									<div class="optionsList">
-										<ul>
-											<li>
-												<label>
-													<input type="radio" value="Mustang" name="model" />
-													<span>Mustang</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Figo" name="model" />
-													<span>Figo</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Ecosport" name="model" />
-													<span>Ecosport</span>
-												</label>
-											</li>
-											<li>
-												<label>
-													<input type="radio" value="Freestyle" name="model" />
-													<span>Freestyle</span>
-												</label>
-											</li>
-										</ul>
-									</div>
-									<a href="#" class="editLink">Edit</a>
-
-								</div>
-							</div>
-						</div>
-					</div> 
-
-					
-
-					<div class="slds-grid slds-wrap slds-gutters button_small">
-						<div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
-							<div class="formElem">
-								<button class="slds-button slds-button_brand primaryBtn">
-									Update estimate
-								</button>
-							</div>
-						</div>
-					</div>
-
-				</form>
-				
-				<div class="pageContent slds-m-top_x-large">
-					<h2 class="fnt20 slds-m-bottom_large">Assumptions</h2>
-					<p class="slds-m-bottom_x-large">Your vehicle is used predominantly for personal or private use. We also offer great deals for Commercial Loans where a vehicle is predominantly used for business purposes, or you can salary package a vehicle.</p>
-
-					<h2 class="fnt20 slds-m-bottom_large">More information</h2>
-					<p class="slds-m-bottom_large">
-						* This repayment estimate is provided by Stratton Finance Pty Ltd (Australian Credit Licence: 364340) ("stratton"). stratton is a finance broker. The interest rate is indicative of the rates on offer through stratton’s lending panel. The repayment estimate applies to the vehicle price shown. The vehicle price shown may not include other additional costs such as stamp duty, government fees and other charges payable in relation to the vehicle.
-					</p>
-					<p>
-						This estimate should be used for information purposes only and is not an offer of finance on particular terms. Credit fees, service fees and charges may apply. Credit to approved applicants only. 
-					</p>
-				</div>	
-				
 			</div>
+
+			<div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+
+
+			</div>
+
+		</div>
+
+		<div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+
+			<div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+			
+				 <div class="lhs_wrapper">
+
+					<form action="">
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem selectField">
+									<div class="cs_selectbox" tabindex="-1">
+										<label class="field_label">Do you know the car you want to buy?</label>
+										<span class="selection no_padding">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="yes" name="car_i_want" />
+														<span> Yes - I know the car I want</span>
+													</label>
+												</li>
+												<li>
+													<label>
+														<input type="radio" value="4 years" name="car_i_want" />
+														<span> No - I don't know the car I want</span>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="outlineNone">
+										<label class="field_label">Whats the condition of the car?</label>
+										
+										<ul class="slds-m-top_small slds-clearfix radioCont">
+											<li>
+												<label class="cstm_input">
+													<input type="radio" name="repayment">
+													<em></em>
+													Week
+												</label>
+											</li>
+											<li>
+												<label class="cstm_input">
+													<input type="radio" name="repayment">
+													<em></em>
+													F/night
+												</label>
+											</li>
+											<li>
+												<label class="cstm_input">
+													<input type="radio" name="repayment">
+													<em></em>
+													Month
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Whats the make of your car?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>Ford</span>
+													</label>
+												</li>
+
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>2018</span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Whats the modal of the ford?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>Mustang</span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Whats the year of the car?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>2017</span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Whats the body type of your Ford?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>2 Door Convertible</span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Select the type of Ford Mustang Convertible</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>Mustang 2dr Convertible 2.3 turbo </span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+						
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem">
+									<div class="outlineNone">
+										<label class="field_label">Do you know the factory / dealer options that are <br/> fitted to the Ford Mustang?</label>
+
+										<div class="thickBoxSelValues">
+											<!-- it will contain selected values of thickbox -->
+										</div>	
+										
+										<div class="slds-m-top_x-large">
+											<button class="slds-button slds-button_brand btnhead">
+											Add Factory Options
+										</button>
+
+										<button class="slds-button slds-button_brand btnSecondary mrgnL20">
+											Skip
+										</button>
+
+										
+										</div>
+										
+									</div>
+									<em class="tooltip_info tooltip_info_heading1"></em>
+								</div>
+							</div>
+						</div>		
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">Whats the purchase price of the Ford Mustang?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>$80,000 </span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">How much would you like to borrow?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>$80,000 </span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+								<div class="formElem">
+									<div class="outlineNone">
+										<label class="field_label">How will you use the car most of the time?</label>
+										
+										<ul class="slds-m-top_small slds-clearfix radioCont">
+											<li>
+												<label class="cstm_input">
+													<input type="radio" name="repayment">
+													<em></em>
+													Personal
+												</label>
+											</li>
+											<li>
+												<label class="cstm_input">
+													<input type="radio" name="repayment">
+													<em></em>
+													Business
+												</label>
+											</li>
+										
+										</ul>
+									</div>
+									<em class="tooltip_info tooltip_info_heading"></em>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="slds-grid slds-wrap slds-gutters">
+							<div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+								<div class="formElem">
+									<div class="cs_selectbox vehicle" tabindex="-1">
+										<label class="field_label">How many kilometers has the car done?</label>
+										<span class="selection">select</span>
+										
+										<div class="optionsList">
+											<ul>
+												<li>
+													<label>
+														<input type="radio" value="new car" name="condition" />
+														<span>0km-5000 kms </span>
+													</label>
+												</li>
+											
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+					   <div class="buttonBotInfo">	
+							<div class="slds-grid slds-wrap slds-gutters">
+							 	
+								<div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+									<div class="formElem slds-clearfix">
+										
+										<button class="slds-button slds-button_brand btnBack slds-float_left">
+											Back
+										</button>
+
+										<button class="slds-button slds-button_brand btnSave slds-float_right">
+											Save and continue
+										</button>
+									</div>
+								</div>
+							  </div>	
+						</div>
+
+					</form>
+					
+					
+				 </div>	
+			</div>
+
+
 			<div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
-				<h1 class="heading1 slds-m-bottom_medium">&nbsp;</h1>
-				<div class="messageWrapper slds-m-top_large">
-					<h2 class="msgHeading slds-m-bottom_medium">Got a question?</h2>
+				<div class="messageWrapper">
+					<h2 class="msgHeading slds-m-bottom_medium">Help Tips?</h2>
 					<p>
-						Vestibulum quis quam sit amet nisi tempus pellentesque. Proin ut tortor id lectus tristique facilisis quis dignissim sem. Ut dictum, nibh at porttitor mollis, neque leo ornare lectus, in semper justo purus a mi. Proin accumsan at dolor vitae auctor. Mauris eros nulla, pretium ac magna vitae, interdum ornare orci. Donec tempus, eros id varius maximus, augue mauris faucibus quam, eget volutpat lacus velit eu purus.
+						Not sure of the car you want to buy yet? You can still get pre-approved finance. We'll just ask you to update the details of your car later.
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- midcontent start here-->
+
+
 	<!-- Page Footer -->
 	<!--<% include('templates/footer') %>-->
 	<!-- Page Footer -->

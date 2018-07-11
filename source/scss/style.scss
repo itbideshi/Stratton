@@ -15,6 +15,7 @@ body{
 	padding-bottom: 130px;
 	margin: 0;
 	font-size: $fnt14;
+	background:$grey-clr;
 }
 a, a:hover, a:focus{
 	text-decoration: none;
@@ -52,6 +53,24 @@ a, a:hover, a:focus{
 	line-height: 26px;
 }
 
+.midContBg 
+ {
+	background:$grey-clr;
+ }
+
+.headerFixCont
+{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0px; 
+  }  
+
+ .headerSpace 
+ {
+ 	height:115px;
+ } 
+
 @import '../templates/Navigation/_pageNavigation';
 
 .container{
@@ -63,14 +82,17 @@ a, a:hover, a:focus{
 
 	.lhs_wrapper{
 		background: $white-clr;
+		border:1px $brd-box solid;
 		padding: 15px;
 		border-radius: 8px;
 		margin-bottom: 20px;
 
 		.messageWrapper{
 			margin-top: 0;
-			border: 1px solid #dfe4e4;
+			border: 1px  $brd-box solid;
 		}
+
+
 	}
 	.slds-gutters{
 		margin-left: -15px;
@@ -87,6 +109,37 @@ a, a:hover, a:focus{
 	.padding_0{
 		padding: 0;
 	}
+
+	.mrgnL20 
+	{
+		margin-left:20px!important;
+	}
+
+	.radioCont
+	{
+
+		font-size: $fnt14;
+		font-weight: 600;
+
+		li{
+			float: left;
+			width:33%;
+		}
+	}
+
+	.buttonBotInfo 
+		{
+			border-top: 1px $grey-clr solid;
+		    margin-left: -40px;
+		    margin-right: -40px;
+		    padding-left: 35px;
+		    padding-right: 35px;
+		    margin-top:70px;
+		 
+		}
+
+
+
 	
 	@import '../templates/Chatter/_chatter.scss';
 }
@@ -109,6 +162,12 @@ a, a:hover, a:focus{
 		font-size: $heading1;
 		line-height: $heading1;
 	}
+
+	.heading3{
+		font-size: $heading3;
+		line-height: 38px;
+		font-weight:800;
+	}
 	.container{
 		width: 100%;
 		max-width: 1170px;
@@ -119,5 +178,16 @@ a, a:hover, a:focus{
 			padding: 40px;
 		}
 	}
+
+	 .headerSpace 
+	 {
+	 	height:205px;
+	 } 
+
+	 .outlineNone 
+	 {
+	 	outline:none;
+	 }
+
 }
 

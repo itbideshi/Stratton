@@ -379,6 +379,16 @@
 		top: 60%;
 		transform: translateY(-50%);
 	}
+
+	.tooltip_info_heading{
+		right:0px;
+		top: 22%;
+	}
+
+	.tooltip_info_heading1{
+		right:0px;
+		top: 10%;
+	}
 	.editLink{
 		position: absolute;
 		right: -40px;
@@ -387,12 +397,14 @@
 		font-size: $fnt16;
 
 	}
+
+	
 }
 
 
 @media (min-width: 1024px){
 	.formElem{
-		margin-bottom: 2.5em;
+		margin-bottom: 3.5em;
 		.tooltip_info{
 			display: block;
 		}
