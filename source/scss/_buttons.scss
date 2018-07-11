@@ -30,17 +30,22 @@
 		    {
 		    	min-width:80px!important;
 		    	@include buttonWrapper($secondary-btn-bg, $white-clr);
+		    	height:40px;
+		   		line-height:40px;
 		    }
 
 	 &.btnSave 
 		    {
-		    	min-width:190px!important;	
+		    	min-width:190px!important;
 		    	@include buttonWrapper($secondary-btn-bg, $white-clr);
+		    	height:40px;
+		   		line-height:40px;
 		    }
 	 &.btnhead 
 	 {
 	 		@include buttonWrapper($heading-clr, $white-clr);
 	 		border-radius:30px;
+	 		
 	 }	 
 
 	 &.btnSecondary 
