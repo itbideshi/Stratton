@@ -1,6 +1,5 @@
 @import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 
 @import '_variables';
 
@@ -10,7 +9,7 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-400', sans-serif;
     padding: 0;
     padding-bottom: 130px;
     margin: 0;
@@ -26,13 +25,14 @@ a:focus {
 }
 
 .material-icons {
-    font-family: 'Material Icons';
+    font-family: 'Material';
+    font-style: normal;
 }
 
 .nav-icons {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     font-size: $fnt32;
@@ -40,13 +40,13 @@ a:focus {
 
 .heading1 {
     font-size: $heading2;
-    font-weight: bold;
+    font-family: 'Poppins-700';
     color: $heading-clr;
     line-height: $heading2
 }
 
 .subheading {
-    font-weight: 300;
+    font-family: 'Poppins-300';
     font-size: $fnt16;
     line-height: 26px;
 }
@@ -110,7 +110,7 @@ a:focus {
     .radioCont {
 
         font-size: $fnt14;
-        font-weight: 600;
+        font-family: 'Poppins-600';
 
         li {
             float: left;
@@ -142,7 +142,7 @@ a:focus {
 .carDetailLightBox 
 {
 
-   font-weight:600;
+   font-family: 'Poppins-600';
    
 	h2 
 	{
@@ -166,7 +166,7 @@ a:focus {
     .heading3 {
         font-size: $heading3;
         line-height: 38px;
-        font-weight: 800;
+        font-family: 'Poppins-800';
     }
     .container {
         width: 100%;

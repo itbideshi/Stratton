@@ -19,7 +19,7 @@
             border-bottom: 2px solid $border-clr;
             padding: 15px 15px 15px 0px;
             font-size: 16px;
-            font-weight: 600;
+            font-family: 'Poppins-600';
             color: $field-txt-clr;
             outline: none;
             transition: border-bottom .3s ease-in-out;
@@ -98,7 +98,7 @@
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
-            font-weight: 600;
+            font-family: 'Poppins-600';
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";
@@ -150,7 +150,7 @@
                     cursor: pointer;
                     background: $white-clr;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-family: 'Poppins-600';
                     position: relative;
                     &:hover {
                         background: $options-gry-clr;
@@ -256,7 +256,7 @@
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
-            font-weight: 600;
+            font-family: 'Poppins-600';
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";
@@ -308,7 +308,7 @@
                     cursor: pointer;
                     background: $white-clr;
                     font-size: 16px;
-                    font-weight: 600;
+                    font-family: 'Poppins-600';
                     position: relative;
                     &:hover {
                         background: $options-gry-clr;
@@ -335,16 +335,15 @@
             border: 0;
             border-bottom: 2px solid $border-clr;
             background: transparent;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-family: 'Poppins-600';
+            
             transition: padding .3s ease-in-out;
         }
         input[type="text"]:focus {
             padding: 15px 15px 15px 15px;
         }
         input[type="text"]::placeholder {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-family: 'Poppins-600';
             font-size: 16px;
             color: $placeholder-clr;
         }

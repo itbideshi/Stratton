@@ -9,9 +9,6 @@ $primary-btn-bg: #f23457;
 $secondary-btn-bg: #00c1d5;
 $verify-clr: #00d78f;
 $error-clr: #ff0000;
-$heading1: 50px;
-$heading2: 42px;
-$heading3: 32px;
 $border-clr: #dfe4e4;
 $nav-brd-clr: #d8d8d8;
 $grey-clr: #f1f1f1;
@@ -25,6 +22,8 @@ $disable-chk-clr: #9baaab;
 $options-gry-clr: #EBF0F1;
 $errbg-clr: #fff2f2;
 $placeholder-clr: #ccc;
+$tooltip-border-clr: #f0f0f0;
+$tooltip-shadow-clr: #f1f1f1;
 
 
 $fnt14: 14px;
@@ -34,11 +33,70 @@ $fnt20: 20px;
 $fnt24: 24px;
 $fnt28: 28px;
 $fnt32: 32px;
+$heading1: 50px;
+$heading2: 42px;
+$heading3: 32px;
 
 
 .fnt20 {
     font-size: $fnt20;
 }
+
+
+
+//-------------- FONTS --------------
+
+//Light - 300
+@font-face {
+    font-family: 'Poppins-300';
+    src: url('./Fonts/Poppins/Poppins-Light.ttf');
+}
+
+//Regular - 400
+@font-face {
+    font-family: 'Poppins-400';
+    src: url('./Fonts/Poppins/Poppins-Regular.ttf');
+}
+
+//Medium - 500
+@font-face {
+    font-family: 'Poppins-500';
+    src: url('./Fonts/Poppins/Poppins-Medium.ttf');
+}
+
+
+//SemiBold - 600
+@font-face {
+    font-family: 'Poppins-600';
+    src: url('./Fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+//Bold - 700
+@font-face {
+    font-family: 'Poppins-700';
+    src: url('./Fonts/Poppins/Poppins-Bold.ttf');
+}
+
+//ExtraBold - 800
+@font-face {
+    font-family: 'Poppins-800';
+    src: url('./Fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+
+//Black - 900
+@font-face {
+    font-family: 'Poppins-900';
+    src: url('./Fonts/Poppins/Poppins-Black.ttf');
+}
+
+
+//font-icons
+@font-face {
+    font-family: 'Material';
+    src: url('./Fonts/Material_fonticons.woff2');
+}
+
+//-------------- MIXINS & GENERIC --------------
 
 @mixin buttonWrapper($backgroundClr, $textClr) {
     min-width: 200px;
@@ -50,7 +108,7 @@ $fnt32: 32px;
     color: $textClr;
     text-align: center;
     font-size: $fnt14;
-    font-weight: 500;
+    font-family: 'Poppins-500';
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
@@ -58,6 +116,30 @@ $fnt32: 32px;
     &:focus {
         outline: none;
         box-shadow: none;
+    }
+}
+@mixin tooltipMessageBox(){
+    min-width: 320px;
+    padding: 15px;
+    background: $white-clr;
+    border-radius: 10px;
+    border: 2px solid $tooltip-border-clr;
+    font-style: normal;
+    box-shadow: 0 0 10px 0px $tooltip-shadow-clr;
+    &:before{
+    	content:"";
+    	width: 15px;
+    	height: 15px;
+    	border: 2px solid $tooltip-border-clr;
+    	background: $white-clr;
+    	border-bottom-color: transparent;
+    	border-right-color: transparent;
+    	display: block;
+    	position: absolute;
+    	top: -8px;
+    	right: 20px;
+    	transform: rotate(45deg);
+
     }
 }
 
@@ -159,12 +241,22 @@ $fnt32: 32px;
 
 .tooltip_info {
     position: relative;
+    z-index: 99;
+    outline: none;
+	cursor: pointer;
     .tooltip_msg {
+    	@include tooltipMessageBox();
         position: absolute;
-        min-width: 320px;
-        right: 0;
-        padding: 15px;
-        background: $white-clr;
-        top: 15px;
+	    right: -15px;
+	    top: 52px;
+	    display: none;
+	    cursor: default;
+	    .close{
+	    	cursor: pointer;
+	    }
+
+    }
+    &.showTooltip .tooltip_msg{
+    	display: block;
     }
 }
