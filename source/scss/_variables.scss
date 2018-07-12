@@ -65,7 +65,8 @@ $fnt32: 32px;
     z-index: 0;
     cursor: pointer;
 
-    input[type="radio"]+em {
+    input[type="radio"]+em,
+    input[type="checkbox"]+em {
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px;
@@ -123,30 +124,24 @@ $fnt32: 32px;
         position: absolute;
     }
 
-    .input[type="checkbox"]+em {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: 2px solid #dfe4e4;
+    input[type="checkbox"]+em {
         border-radius: 5px;
-        box-sizing: border-box;
-        cursor: pointer;
         transition: background-color .2s ease-in-out;
     }
 
-    .input[type="checkbox"]:checked+em {
-        background: #00d78f url('./white_check.svg') no-repeat center center;
+    input[type="checkbox"]:checked+em {
+        background: #00d78f url('../images/icons/white_check.svg') no-repeat center center;
         border-color: #00d78f;
         background-size: 60%;
     }
 
-    .input[type="checkbox"]:disabled+em {
-        background: #ecf0f1 url('./disabled_check.svg') no-repeat center center;
+    input[type="checkbox"]:disabled+em {
+        background: #ecf0f1 url('../images/icons/disabled_check.svg') no-repeat center center;
         border-color: #ecf0f1;
         background-size: 60%;
     }
 
-    .input[type="checkbox"].blocked+em {
+    input[type="checkbox"].blocked+em {
         background: #ecf0f1;
         border-color: #ecf0f1;
         background-size: 60%;
