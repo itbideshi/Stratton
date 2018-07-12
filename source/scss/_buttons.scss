@@ -22,6 +22,10 @@
 .slds-button {
     &.primaryBtn {
         @include buttonWrapper($primary-btn-bg, $white-clr);
+        &:disabled{
+        	background-color: #ecf0f1;
+        	border-color: #ecf0f1;
+        }
     }
     &.applyBtn {
         @include buttonWrapper($secondary-btn-bg, $white-clr);
