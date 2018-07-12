@@ -10,7 +10,7 @@
     width: 100%;
     left: 0;
     text-align: center;
-    border-top: 1px solid #dfe4e4;
+    border-top: 1px solid $border-clr;
     background: $white-clr;
     z-index: 98;
 
@@ -23,8 +23,8 @@
     &.primaryBtn {
         @include buttonWrapper($primary-btn-bg, $white-clr);
         &:disabled{
-        	background-color: #ecf0f1;
-        	border-color: #ecf0f1;
+        	background-color: $disable-clr;
+        	border-color: $disable-clr;
         }
     }
     &.applyBtn {
