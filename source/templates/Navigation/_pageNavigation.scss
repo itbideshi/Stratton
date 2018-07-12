@@ -1,52 +1,46 @@
-.pageNavigation{
-	color: $white-clr;
-	background: $white-clr;
-	ul{
-		display: flex;
-		li{
-			flex-grow: 1;
-			border-bottom:5px $nav-brd-clr solid;
-			a, a:hover{
-				color: $disable-clr;
-				display: block;
-				text-align:center;
-			    height: 90px;
-			    padding-top: 55px;
-			    position:relative;
-			    display:none;
-			}
-			&.done{
-				border-bottom:5px $primary-btn-bg solid;
-				a, a:hover 
-				{
-					color:$blk-clr;
-				}
-				.nav-icons
-				{
-					color:$primary-btn-bg;
-				}
-			}
-		}
-	}
+.pageNavigation {
+    color: $white-clr;
+    background: $white-clr;
+    ul {
+        display: flex;
+        li {
+            flex-grow: 1;
+            border-bottom: 5px $nav-brd-clr solid;
+            a,
+            a:hover {
+                color: $disable-clr;
+                display: block;
+                text-align: center;
+                height: 90px;
+                padding-top: 55px;
+                position: relative;
+                display: none;
+            }
+            &.done {
+                border-bottom: 5px $primary-btn-bg solid;
+                a,
+                a:hover {
+                    color: $blk-clr;
+                }
+                .nav-icons {
+                    color: $primary-btn-bg;
+                }
+            }
+        }
+    }
 }
 
 
-@media (min-width: 1024px)
-{
-	.pageNavigation  
-	{
-	  ul 
-	  {
-		   li
-		    {
-				
-				a, a:hover {
-					display:block;
-					}
-			}
+@media (min-width: 1024px) {
+    .pageNavigation {
+        ul {
+            li {
 
-		}
-
-	}
-	
- }
+                a,
+                a:hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}

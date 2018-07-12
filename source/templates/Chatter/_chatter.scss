@@ -1,12 +1,12 @@
-.messageWrapper{
-	background: $white-clr;
-	border: 1px  $brd-box solid;
-	padding: 40px 30px;
-	border-radius: 10px;
-	line-height: 25px;
-	font-size: $fnt16;
-	.msgHeading{
-		font-size: $fnt24;
-		font-weight:500;
-	}
+.messageWrapper {
+    background: $white-clr;
+    border: 1px $brd-box solid;
+    padding: 40px 30px;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: $fnt16;
+    .msgHeading {
+        font-size: $fnt24;
+        font-weight: 500;
+    }
 }
