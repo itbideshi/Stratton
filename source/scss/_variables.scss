@@ -20,6 +20,12 @@ $active-clr: #00000e;
 $nav_num-clr: #FF0049;
 $blk-clr: #000;
 $brd-box: #e2e2e2;
+$disable-clr: #ecf0f1;
+$disable-chk-clr: #9baaab;
+$options-gry-clr: #EBF0F1;
+$errbg-clr: #fff2f2;
+$placeholder-clr: #ccc;
+
 
 $fnt14: 14px;
 $fnt16: 16px;
@@ -73,7 +79,7 @@ $fnt32: 32px;
         margin-right: 10px;
         width: 24px;
         height: 24px;
-        border: 2px solid #dfe4e4;
+        border: 2px solid $border-clr;
         border-radius: 50%;
         box-sizing: border-box;
         cursor: pointer;
@@ -91,7 +97,7 @@ $fnt32: 32px;
         width: 50%;
         height: 50%;
         display: block;
-        background: #00d78f;
+        background: $verify-clr;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -100,8 +106,8 @@ $fnt32: 32px;
 
 
     input[type="radio"]:disabled+em {
-        border-color: #ecf0f1;
-        background: #ecf0f1;
+        border-color: $disable-clr;
+        background: $disable-clr;
     }
 
     input[type="radio"]:disabled+em:before {
@@ -109,7 +115,7 @@ $fnt32: 32px;
         width: 50%;
         height: 50%;
         display: block;
-        background: #9baaab;
+        background: $disable-chk-clr;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -133,20 +139,20 @@ $fnt32: 32px;
     }
 
     input[type="checkbox"]:checked+em {
-        background: #00d78f url('../images/icons/white_check.svg') no-repeat center center;
-        border-color: #00d78f;
+        background: $verify-clr url('../images/icons/white_check.svg') no-repeat center center;
+        border-color: $verify-clr;
         background-size: 60%;
     }
 
     input[type="checkbox"]:disabled+em {
-        background: #ecf0f1 url('../images/icons/disabled_check.svg') no-repeat center center;
-        border-color: #ecf0f1;
+        background: $disable-clr url('../images/icons/disabled_check.svg') no-repeat center center;
+        border-color: $disable-clr;
         background-size: 60%;
     }
 
     input[type="checkbox"].blocked+em {
-        background: #ecf0f1;
-        border-color: #ecf0f1;
+        background: $disable-clr;
+        border-color: $disable-clr;
         background-size: 60%;
     }
 }

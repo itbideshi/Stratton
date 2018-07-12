@@ -59,7 +59,7 @@
             .errMsg {
                 display: block;
                 height: 60px;
-                background: #fff2f2 url('../images/icons/err_close.svg') no-repeat 95% center;
+                background: $errbg-clr url('../images/icons/err_close.svg') no-repeat 95% center;
                 background-size: 20px;
                 line-height: 60px;
                 font-style: normal;
@@ -88,7 +88,7 @@
         z-index: 10;
 
         .selection {
-            border-bottom: 2px solid #e4e4e4;
+            border-bottom: 2px solid $border-clr;
             display: block;
             padding: 15px 15px 15px 0px;
             border-radius: 0;
@@ -124,7 +124,7 @@
             position: absolute;
             top: -20px;
             padding-top: 96px;
-            background: #fff;
+            background: $white-clr;
             z-index: -1;
             overflow: hidden;
             -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.2);
@@ -148,12 +148,12 @@
                     padding: 10px 10px 10px 15px;
                     display: block;
                     cursor: pointer;
-                    background: #fff;
+                    background: $white-clr;
                     font-size: 16px;
                     font-weight: 600;
                     position: relative;
                     &:hover {
-                        background: #EBF0F1;
+                        background: $options-gry-clr;
                     }
                 }
                 li input[type="radio"] {
@@ -221,7 +221,7 @@
                 border: 0;
             }
             &:focus {
-                color: #000;
+                color: $blk-clr;
             }
             .optionsList {
                 padding-top: 50px;
@@ -246,7 +246,7 @@
         }
 
         .selection {
-            border-bottom: 2px solid #e4e4e4;
+            border-bottom: 2px solid $border-clr;
             display: block;
             padding: 15px 15px 15px 0px;
             border-radius: 0;
@@ -306,12 +306,12 @@
                     padding: 10px 10px 10px 15px;
                     display: block;
                     cursor: pointer;
-                    background: #fff;
+                    background: $white-clr;
                     font-size: 16px;
                     font-weight: 600;
                     position: relative;
                     &:hover {
-                        background: #EBF0F1;
+                        background: $options-gry-clr;
                     }
                 }
                 li input[type="radio"] {
@@ -333,7 +333,7 @@
             font-size: 16px;
             outline: none;
             border: 0;
-            border-bottom: 2px solid #e4e4e4;
+            border-bottom: 2px solid $border-clr;
             background: transparent;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -346,7 +346,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
             font-size: 16px;
-            color: #ccc;
+            color: $placeholder-clr;
         }
         input[type="text"]:not(:focus)+.optionsList {
             opacity: 0;
