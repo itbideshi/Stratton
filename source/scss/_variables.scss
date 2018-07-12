@@ -64,6 +64,7 @@ $fnt32: 32px;
     background: transparent;
     z-index: 0;
     cursor: pointer;
+    padding-left:35px;
 
     input[type="radio"]+em,
     input[type="checkbox"]+em {
@@ -76,7 +77,8 @@ $fnt32: 32px;
         border-radius: 50%;
         box-sizing: border-box;
         cursor: pointer;
-        position: relative;
+        position: absolute;
+        left:0px;
     }
 
     input[type="radio"]+em:before {
@@ -95,6 +97,7 @@ $fnt32: 32px;
         left: 50%;
         transform: translate(50%, 50%);
     }
+
 
     input[type="radio"]:disabled+em {
         border-color: #ecf0f1;

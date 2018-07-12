@@ -143,6 +143,17 @@ a:focus {
 @import '../templates/LoanCalculator/_loanCalculator';
 
 
+.carDetailLightBox 
+{
+
+   font-weight:600;
+   
+	h2 
+	{
+		font-size:$fnt24;
+	}
+}
+
 @media (min-width: 1024px) {
     body {
         padding-bottom: 0px;
