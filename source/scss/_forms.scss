@@ -86,7 +86,7 @@
         width: 100%;
         position: relative;
         z-index: 10;
-
+        transition: z-index .3s ease-in-out;
         .selection {
             border-bottom: 2px solid $border-clr;
             display: block;
@@ -132,7 +132,7 @@
             box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.2);
             max-height: 400px;
             opacity: 1;
-            transition: max-height .3s ease-in-out, opacity .3s ease-in-out;
+            transition: max-height .3s ease-in-out, opacity .5s ease-in-out;
 
             ul {
                 padding: 0;
