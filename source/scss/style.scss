@@ -68,6 +68,36 @@ a:focus {
 
 @import '../templates/Navigation/_pageNavigation';
 
+.privacyLightBox 
+{
+
+   font-family:'Poppins-600';
+   font-size:$fnt14;
+	h2 
+	{
+		font-size:$fnt32;
+
+		span 
+		{
+			display:block;
+			font-weight:500;
+		}
+	}
+
+	.privacyContent 
+	{
+		font-size:$fnt14;
+		font-weight:500;
+	}
+
+	p 
+	{
+		margin:10px 0px;
+	}
+}
+
+
+
 .container {
     width: 100%;
     margin-left: auto;

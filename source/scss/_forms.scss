@@ -28,7 +28,7 @@
         select:focus {
             border-bottom-color: $secondary-btn-bg;
         }
-        &.done input {
+        &.complete input {
             border-bottom-color: $verify-clr;
             background: url('../images/icons/check.svg') no-repeat right center;
             background-size: 12px;
