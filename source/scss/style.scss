@@ -102,12 +102,12 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    padding: 0 1.5em;
+    padding: 0 15px;
 
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px 15px 130px;
+        padding: 15px 15px 180px;
         border-radius: 8px;
         margin-bottom: 0px;
 
@@ -181,17 +181,17 @@ a:focus {
 
 .estimatePage{
 	margin: 0;
-	padding: 0;
-
+	background: $white-clr;
 	.lhs_wrapper{
-		//border: 0;
-		//border-radius: 0;
+		border: 0;
+		border-radius: 0;
 	}
 }
 @media (min-width: 1024px) {
 	.estimatePage{
 		margin-left: auto;
 		margin-right: auto;
+		background: transparent;
 
 		.lhs_wrapper{
 			margin-bottom: 20px;
