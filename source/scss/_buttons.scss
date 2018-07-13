@@ -6,16 +6,25 @@
     position: fixed;
     bottom: 0;
     margin-bottom: 0;
-    padding: 20px 30px;
-    width: 100%;
-    left: 0;
+    padding: 20px 0px;
+    width: calc(100% - 70px);
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     border-top: 1px solid $border-clr;
     background: $white-clr;
-    z-index: 98;
+    z-index: 99;
 
     .slds-button {
-        min-width: 100%;
+        min-width: auto;
+    }
+    &.expandedBtn{
+        .slds-button {
+            min-width: calc(100% - 70px);
+        }
+        position: fixed;
+        width: 100%;
     }
 }
 
@@ -79,15 +88,25 @@
     }
     .submitBtn {
         min-height: 0;
-    }
-    .submitBtn .formElem {
-        position: static;
-        text-align: left;
-        border: 0;
-        padding: 0;
-        margin-bottom: 3em;
-        .slds-button {
-            min-width: 200px;
+
+        .formElem {
+            position: static;
+            text-align: left;
+            border: 0;
+            padding: 0;
+            margin-bottom: 3em;
+            width: auto;
+            left: 0;
+            transform: translateX(0);
+            .slds-button {
+                min-width: 200px;
+            }
+            &.expandedBtn{
+                .slds-button {
+                    min-width: 200px;
+                }
+                position: static;
+            }
         }
-    }
+    }    
 }

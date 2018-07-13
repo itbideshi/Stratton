@@ -11,7 +11,6 @@ body {
 body {
     font-family: 'Poppins-400', sans-serif;
     padding: 0;
-    padding-bottom: 130px;
     margin: 0;
     font-size: $fnt14;
     background: $grey-clr;
@@ -108,9 +107,9 @@ a:focus {
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px;
+        padding: 15px 15px 130px;
         border-radius: 8px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
 
         .messageWrapper {
             margin-top: 0;
@@ -180,10 +179,31 @@ a:focus {
 	}
 }
 
+.estimatePage{
+	margin: 0;
+	padding: 0;
+
+	.lhs_wrapper{
+		//border: 0;
+		//border-radius: 0;
+	}
+}
 @media (min-width: 1024px) {
-    body {
-        padding-bottom: 0px;
-    }
+	.estimatePage{
+		margin-left: auto;
+		margin-right: auto;
+
+		.lhs_wrapper{
+			margin-bottom: 20px;
+			border: 1px #e2e2e2 solid;
+    		border-radius: 8px;
+		}
+	}
+
+	.lhs_wrapper{
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+	}
     .estimate_background {
         background: url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: cover;
