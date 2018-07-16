@@ -5,7 +5,7 @@
         display: flex;
         li {
             flex-grow: 1;
-            border-bottom: 5px $nav-brd-clr solid;
+            border-bottom: 8px $nav-brd-clr solid;
             a,
             a:hover {
                 color: $disable-clr;
@@ -16,16 +16,39 @@
                 position: relative;
                 display: none;
             }
-            &.complete {
-                border-bottom: 5px $primary-btn-bg solid;
+            &.complete 
+            {
+                border-bottom: 8px $primary-btn-bg solid;
                 a,
                 a:hover {
                     color: $blk-clr;
                 }
                 .nav-icons {
-                    color: $primary-btn-bg;
+                    color: $blk-clr;
                 }
             }
+
+              &.unComplete {
+                    border-bottom: 8px $nav-brd-clr solid;
+                    a,
+                    a:hover {
+                        color: $grey-clr;
+                    }
+                    .nav-icons {
+                        color: $nav-brd-clr;
+                    }
+                }
+
+            &.current {
+                    border-bottom: 8px $primary-btn-bg solid;
+                    a,
+                    a:hover {
+                        color: $blk-clr;
+                    }
+                    .nav-icons {
+                        color: $primary-btn-bg;
+                    }
+                } 
         }
     }
 }

@@ -95,7 +95,25 @@ a:focus {
 	}
 }
 
+.slds-modal__content 
+{
+    border-radius: 10px;
+    overflow-y:hidden!important;
 
+    .modalMidCont 
+    {
+        overflow-y: auto;
+        height: 300px;
+    }
+
+    .modalCrossIcon 
+    {
+        color: $grey-clr;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: $fnt20;
+    }
+}
 
 .container {
     width: 100%;
@@ -176,6 +194,7 @@ a:focus {
 	h2 
 	{
 		font-size:$fnt24;
+        padding:40px 0px 20px 0px;
 	}
 }
 
