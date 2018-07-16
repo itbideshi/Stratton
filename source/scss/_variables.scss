@@ -31,6 +31,7 @@ $fnt16: 16px;
 $fnt18: 18px;
 $fnt20: 20px;
 $fnt24: 24px;
+$fnt25: 25px;
 $fnt28: 28px;
 $fnt32: 32px;
 $heading1: 50px;
@@ -241,16 +242,24 @@ $heading3: 32px;
 }
 
 .tooltip_info {
-    position: relative;
-    display: block;
+    .material-icons{
+        font-size: $fnt25;
+    }
+    width: 30px !important;
+    height: 30px;
+    right: -50px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+
+    display: block !important;
     z-index: 99;
     outline: none;
 	cursor: pointer;
-    input[type="checkbox"]{
-        opacity: 0;
-        visibility: hidden;
-    }
     .tooltip_msg {
+        .material-icons{
+            font-size: $fnt14;
+        }
     	@include tooltipMessageBox();
         position: absolute;
 	    right: -15px;

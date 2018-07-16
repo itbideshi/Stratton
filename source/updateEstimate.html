@@ -22,7 +22,7 @@
         <% include('templates/LoanCalculator/calculator_template.html') %>
             <!-- calculator template -->
     </div>
-    <div class="container slds-m-top_xx-large">
+    <div class="container slds-m-top_xx-large estimatePage">
         <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
             <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
                 <div class="lhs_wrapper">
@@ -137,7 +137,19 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <em class="tooltip_info"></em>
+                                    <label tabindex="-1" class="tooltip_info">
+                                            <i class="material-icons">
+                                                info_outline
+                                            </i>
+                                            <span class="tooltip_msg">
+                                                <p class="slds-text-align_right">
+                                                    <a href="javascript:void(0)" class="material-icons close">
+                                                        close
+                                                    </a>
+                                                </p>
+                                                If you plan on using the car more than 50% of the time for business, select business use.
+                                            </span>
+                                        </label>
                                 </div>
                             </div>
                         </div>
