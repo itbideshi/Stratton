@@ -162,6 +162,10 @@ a:focus {
         li {
             float: left;
             width: 33%;
+            .cstm_input{
+            	min-height: 24px;
+            	padding-top: 2px;
+            }
         }
     }
 
@@ -189,12 +193,16 @@ a:focus {
 .carDetailLightBox 
 {
 
-   font-family: 'Poppins-600';
+   font-family: 'Poppins-300';
    
 	h2 
 	{
-		font-size:$fnt24;
+		font-size:$fnt32;
         padding:40px 0px 20px 0px;
+	}
+	.cstm_input{
+		font-size: $fnt16;
+		padding-left: 40px;
 	}
 }
 
@@ -205,6 +213,15 @@ a:focus {
 		border: 0;
 		border-radius: 0;
 	}
+}
+.slds-modal__content{
+	border-radius: 8px;
+	padding: 4em 0;
+}
+.extendBorder{
+	background: $border-clr;
+	height:0px;
+	margin: 0 -40px 30px;
 }
 @media (min-width: 1024px) {
 	.estimatePage{
