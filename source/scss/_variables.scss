@@ -36,7 +36,7 @@ $fnt28: 28px;
 $fnt32: 32px;
 $heading1: 50px;
 $heading2: 42px;
-$heading3: 32px;
+$heading3: 30px;
 
 
 .fnt20 {
@@ -44,6 +44,9 @@ $heading3: 32px;
     font-family: 'Poppins-400';
 }
 
+@media (min-width: 1024px){
+    $heading3: 32px;
+}
 
 
 //-------------- FONTS --------------

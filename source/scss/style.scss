@@ -221,7 +221,17 @@ a:focus {
 .extendBorder{
 	background: $border-clr;
 	height:0px;
-	margin: 0 -40px 30px;
+	margin: 0 -15px 30px;
+}
+.heading1 {
+    font-size: $heading1;
+    line-height: $heading1;
+}
+
+.heading3 {
+    font-size: $heading3;
+    line-height: 38px;
+    font-family: 'Poppins-800';
 }
 @media (min-width: 1024px) {
 	.estimatePage{
@@ -244,16 +254,7 @@ a:focus {
         background: url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: cover;
     }
-    .heading1 {
-        font-size: $heading1;
-        line-height: $heading1;
-    }
-
-    .heading3 {
-        font-size: $heading3;
-        line-height: 38px;
-        font-family: 'Poppins-800';
-    }
+    
     .container {
         width: 100%;
         max-width: 1170px;
@@ -272,4 +273,7 @@ a:focus {
     .outlineNone {
         outline: none;
     }
+    .extendBorder{
+		margin: 0 -40px 30px;
+	}
 }
