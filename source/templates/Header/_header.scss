@@ -74,6 +74,18 @@ header {
     }
 }
 
+.headerFixCont {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0px;
+    left: 0;
+}
+
+.headerSpace {
+    height: 115px;
+}
+
 @media (min-width: 1024px) {
     header {
         margin-top: 0;

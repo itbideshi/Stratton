@@ -7,6 +7,9 @@ html,
 body {
     background-color: $white-clr;
 }
+html{
+	height: 100%;
+}
 
 body {
     font-family: 'Poppins-400', sans-serif;
@@ -14,6 +17,7 @@ body {
     margin: 0;
     font-size: $fnt14;
     background: $grey-clr;
+    min-height: 100%;
 }
 
 a,
@@ -69,17 +73,6 @@ a:focus {
 
 .midContBg {
     background: $grey-clr;
-}
-
-.headerFixCont {
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    top: 0px;
-}
-
-.headerSpace {
-    height: 115px;
 }
 
 .mrgnL10 
@@ -141,8 +134,7 @@ a:focus {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    padding: 0 15px;
+    padding: 30px 15px 20px;
 
     .lhs_wrapper {
         background: $white-clr;
@@ -288,9 +280,13 @@ a:focus {
 		padding-bottom: 15px;
 		margin-bottom: 20px;
 	}
-    .estimate_background {
-        background: url('../images/getEstimate_background.jpg') no-repeat 0 0;
+    .comm-page-custom-getestimate {
+        background: transparent url('../images/getEstimate_background.jpg') no-repeat 0 center;
         background-size: cover;
+
+        .headerFixCont{
+        	position: static;
+        }
     }
  
 
@@ -313,8 +309,7 @@ a:focus {
     .container {
         width: 100%;
         max-width: 1170px;
-        margin-top: 3em;
-        padding: 0;
+        padding: 3em 0 1em;
 
         .lhs_wrapper {
             padding: 40px;
