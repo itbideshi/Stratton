@@ -381,7 +381,7 @@
 }
 
 
-.slideCheckbox, .slideRadio{
+label.slideCheckbox, label.slideRadio{
     width: 70px;
     background: #ecf0f1;
     border-radius: 10px;
@@ -397,13 +397,13 @@
     }
 }
 
-.slideRadio{
+label.slideRadio{
     border-radius: 100px;
     padding: 0;
 
     input[type="checkbox"]{
         & + em{
-            background: #ecf0f1 url('./err_close.svg') no-repeat 80% center;
+            background: $disable-clr url('../images/icons/err_close.svg') no-repeat 80% center;
             background-size: 20%;
             width: 100%;
             height: 40px;
@@ -427,7 +427,7 @@
             }
         }
         &:checked + em{
-            background: #00d78f url('./white_check.svg') no-repeat 20% center;
+            background: $verify-clr url('../images/icons/white_check.svg') no-repeat 20% center;
             background-size: 20%;
 
             &:before{
@@ -438,8 +438,8 @@
 }
 
 
-.slideCheckbox input[type="checkbox"] + em{
-    background: #fff url('./err_close.svg') no-repeat center center;
+label.slideCheckbox input[type="checkbox"] + em{
+    background: $errbg-clr url('../images/icons/err_close.svg') no-repeat center center;
     background-size: 40%;
     display: block;
     width: 30px;
@@ -449,7 +449,7 @@
     left: 5px;
     transition: left .2s ease-in-out, background-color .2s ease-in-out;
     &:checked + em{
-        background: #00d78f url('./white_check.svg') no-repeat center center;
+        background: $white-clr url('../images/icons/white_check.svg') no-repeat center center;
         background-size: 40%;
         position: absolute;
         left: calc(100% - 35px);
@@ -460,7 +460,7 @@
 
 @media (min-width: 1024px) {
     .formElem {
-        margin-bottom: 3.5em;
+        margin-bottom: 3.0em;
         .tooltip_info {
             display: block;
         }
