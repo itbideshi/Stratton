@@ -184,6 +184,10 @@ a:focus {
         li {
             float: left;
             width: 33%;
+            .cstm_input{
+            	min-height: 24px;
+            	padding-top: 2px;
+            }
         }
     }
 
@@ -215,12 +219,16 @@ a:focus {
 .carDetailLightBox 
 {
 
-   font-family: 'Poppins-600';
+   font-family: 'Poppins-300';
    
 	h2 
 	{
-		font-size:$fnt24;
+		font-size:$fnt32;
         padding:40px 0px 20px 0px;
+	}
+	.cstm_input{
+		font-size: $fnt16;
+		padding-left: 40px;
 	}
 }
 
@@ -231,6 +239,25 @@ a:focus {
 		border: 0;
 		border-radius: 0;
 	}
+}
+.slds-modal__content{
+	border-radius: 8px;
+	padding: 4em 0;
+}
+.extendBorder{
+	background: $border-clr;
+	height:0px;
+	margin: 0 -15px 30px;
+}
+.heading1 {
+    font-size: $heading1;
+    line-height: $heading1;
+}
+
+.heading3 {
+    font-size: $heading3;
+    line-height: 38px;
+    font-family: 'Poppins-800';
 }
 @media (min-width: 1024px) {
 
@@ -265,11 +292,6 @@ a:focus {
         background: url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: cover;
     }
-    .heading1 {
-        font-size: $heading1;
-        line-height: $heading1;
-    }
-
  
 
     .heading4 
@@ -286,6 +308,7 @@ a:focus {
     {
         position: relative;
     }
+
 
     .container {
         width: 100%;
@@ -305,4 +328,7 @@ a:focus {
     .outlineNone {
         outline: none;
     }
+    .extendBorder{
+		margin: 0 -40px 30px;
+	}
 }

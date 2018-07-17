@@ -411,7 +411,7 @@ label.slideRadio{
             position: relative;
             transition: background-color .2s ease-in-out;
             border-radius: 100px;
-            
+
             &:before{
                 content:"";
                 display: block;
@@ -460,7 +460,7 @@ label.slideCheckbox input[type="checkbox"] + em{
 
 @media (min-width: 1024px) {
     .formElem {
-        margin-bottom: 3.0em;
+        margin-bottom: 2.5em;
         .tooltip_info {
             display: block;
         }
