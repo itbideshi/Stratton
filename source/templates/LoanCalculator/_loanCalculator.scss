@@ -45,8 +45,8 @@
 
     .calc_select {
         /*background: url(../images/icons/calc_calendar.svg) no-repeat 0 3px;
-		background-size: 16px;
-		padding-right: 0;*/
+        background-size: 16px;
+        padding-right: 0;*/
     }
 
     select {
@@ -74,25 +74,22 @@
     }
 
 
-   label.cstm_input 
-    {
+    label.cstm_input {
 
-          input[type="radio"]
-        {
-            & ~ em, & ~ span 
-            {
+        input[type="radio"] {
+            &~em,
+            &~span {
                 color: $white-clr;
                 opacity: 0.5;
-            }  
+            }
         }
-         
-       
-        input[type="radio"]:checked
-        {
-            & ~ em, & ~ span 
-            {
+
+
+        input[type="radio"]:checked {
+            &~em,
+            &~span {
                 opacity: 1;
-            }  
+            }
         }
     }
 }

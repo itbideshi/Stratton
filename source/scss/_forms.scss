@@ -58,15 +58,13 @@
             }
             .errMsg {
                 display: block;
-                height: 60px;
-                background: $errbg-clr url('../images/icons/err_close.svg') no-repeat 95% center;
-                background-size: 20px;
-                line-height: 60px;
+                min-height: 60px;
+                background: $errbg-clr;
                 font-style: normal;
                 color: $error-clr;
                 font-size: $fnt16;
-                padding: 0 50px 0 20px;
-                margin-top: 7px;
+                padding: 15px;
+                margin-top: 5px;
             }
         }
 
