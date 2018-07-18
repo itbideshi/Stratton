@@ -103,13 +103,13 @@ a:focus {
 
         span {
             display: block;
-            font-weight: 500;
+            font-family: 'Poppins-500';
         }
     }
 
     .privacyContent {
         font-size: $fnt14;
-        font-weight: 500;
+        font-family: 'Poppins-500';
     }
 
     p {
@@ -252,13 +252,9 @@ a:focus {
             position: static;
             h2 {
                 font-size: $fnt60;
-                font-weight: 500;
+                font-family: 'Poppins-500';
                 line-height: 65px;
                 padding-top: 70px;
-
-                span {
-                    font-weight: 500;
-                }
             }
 
             .textCont {
@@ -287,7 +283,7 @@ a:focus {
             padding: 60px 20px 20px 20px;
             font-size: $fnt60;
             line-height: 68px;
-            font-weight: 100;
+            font-family: 'Poppins-300';
         }
     }
 
@@ -300,6 +296,11 @@ a:focus {
             font-size: $fnt24;
             margin-bottom: 20px;
             position: relative;
+        }
+        .material-icons{
+            position: relative;
+            top: 5px;
+            color: $verify-clr;
         }
     }
 
@@ -382,7 +383,7 @@ a:focus {
                 padding-top: 140px;
                 font-size: $fnt60;
                 line-height: 68px;
-                font-weight: 100;
+                font-family: 'Poppins-300';
             }
         }
 
