@@ -35,16 +35,16 @@
         }
 
 
-        &.amount:before {
-            content: "";
-            background: url('../images/icons/dollar.svg') no-repeat left center;
-            background-size: 17px;
-            width: 20px;
-            height: 20px;
-            display: block;
-            top: 2em;
-            position: absolute;
-            transform: translateY(-50%);
+        &.amount{
+            .material-icons{
+                position: absolute;
+                top: 14px;
+                font-weight: bold;
+                font-size: $fnt18;
+            }
+            input[type="text"]{
+                padding-left: 16px;
+            }
         }
 
         .errMsg {
@@ -58,15 +58,13 @@
             }
             .errMsg {
                 display: block;
-                height: 60px;
-                background: $errbg-clr url('../images/icons/err_close.svg') no-repeat 95% center;
-                background-size: 20px;
-                line-height: 60px;
+                min-height: 60px;
+                background: $errbg-clr;
                 font-style: normal;
                 color: $error-clr;
                 font-size: $fnt16;
-                padding: 0 50px 0 20px;
-                margin-top: 7px;
+                padding: 15px;
+                margin-top: 5px;
             }
         }
 
@@ -281,7 +279,7 @@
             width: 100%;
             position: absolute;
             top: -20px; //padding-top: 96px;
-            background: transparent;
+            background: $white-clr;
             z-index: -1;
             overflow: hidden;
             -webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.2);
@@ -349,7 +347,7 @@
         }
         input[type="text"]:not(:focus)+.optionsList {
             opacity: 0;
-            /*max-height:0;*/
+            /*max-height:0px;*/
         }
 
         .field_label {
