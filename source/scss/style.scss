@@ -20,11 +20,22 @@ body {
     min-height: 100%;
 }
 
+.bgNone 
+{
+    background: #fff!important;
+}
+
 a,
 a:hover,
 a:focus {
     text-decoration: none;
     color: $secondary-btn-bg;
+}
+
+
+.alignC 
+{
+    text-align: center;
 }
 
 .material-icons {
@@ -78,6 +89,11 @@ a:focus {
 .mrgnL10 
 {
     margin-left: 10px;
+}
+
+.paddAll 
+{
+    padding:20px;
 }
 
 @import '../templates/Navigation/_pageNavigation';
@@ -232,6 +248,133 @@ a:focus {
 		border-radius: 0;
 	}
 }
+
+
+.startPage 
+{
+
+    .headCont 
+    {
+
+        background: transparent url('../images/startHeadImg.png') no-repeat 0 center;
+        background-size: cover;
+        width:100%;
+        min-height: 700px;
+
+        .inHeadCont 
+        {
+            color:$white-clr;
+            font-size: $fnt18;
+            padding:0px 30px 0px 18px;
+            position: static;
+                h2 
+                {
+                        font-size:$fnt60;
+                        font-weight: 500;
+                        line-height: 65px;
+                        padding-top: 70px;
+
+                    span 
+                    {
+                        font-weight: 500;
+                    }
+                }
+
+            .textCont 
+            {
+                
+                margin-top: 50px;
+            } 
+
+            .btnSave 
+            {
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .learnMore 
+            {
+                background: none;
+                border:none;
+                color: $white-clr;
+                font-size: $fnt14;
+                min-width: 105px;
+            }  
+        }
+    }
+
+    .midCont 
+    {
+        color:$blk-clr;
+        h3 
+        {
+            padding:60px 20px 20px 20px;
+            font-size: $fnt60;
+            line-height: 68px;
+            font-weight: 100;
+        }
+    }
+
+     .rhsImg 
+         {
+            padding-top: 50px;
+         }
+
+     .listInfo 
+     {
+        h4 
+        {
+            font-size: $fnt24;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+
+     }
+
+     .defaultBtn 
+     {
+        max-width: 220px;
+     }     
+
+
+    .bottomInfo 
+    {
+        margin-top: 140px;
+        background: transparent url('../images/bottombg.png') no-repeat 0 center;
+        background-size: cover;
+        width:100%;
+        min-height: 700px;
+        padding:160px 0px 130px 0px;
+        font-size: $fnt16;
+
+         h2 
+         {
+            font-size: $fnt60;
+            padding-bottom: 20px;
+         }
+        
+        .subHead 
+        {
+            font-size: $fnt18;
+        }
+
+        .boxInfo 
+        {
+            padding-top: 100px;
+            text-align: center;
+
+        ul li 
+            {
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+
+
+}
+
 .slds-modal__content{
 	border-radius: 8px;
 	padding: 4em 0;
@@ -252,6 +395,51 @@ a:focus {
     font-family: 'Poppins-800';
 }
 @media (min-width: 1024px) {
+
+    .startPage 
+    {
+          .midCont 
+            {
+                color:$blk-clr;
+                float:right;
+                h3 
+                {
+                    padding-top:140px;
+                    font-size: $fnt60;
+                    line-height: 68px;
+                    font-weight: 100;
+                }
+            }
+
+        .headCont 
+        {
+            min-height: 1000px;
+
+             .inHeadCont 
+                {
+                    
+                       position: absolute;
+                       right: 40px;
+                      padding:0px 30px 30px 30px;
+
+                     h2 
+                     {
+                        padding-top: 260px!important;
+                     }
+
+                     .learnMore 
+                     {
+                        min-width: 105px;
+                     }
+
+                }
+         }
+
+         .rhsImg 
+         {
+            padding-top: 70px;
+         }      
+    }
 
 
     .sectionSep 
