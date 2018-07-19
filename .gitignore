@@ -61,7 +61,8 @@ typings/
 .next
 
 #buildFolder
-devBuild/
+devBuild/*.html
+devBuild/stylesheets
 source/.DS_Store
 .DS_Store
 source/templates/.DS_Store
