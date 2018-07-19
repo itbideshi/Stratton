@@ -11,7 +11,7 @@
 <body class="estimate_background">
     <div>
         <!-- Page Header -->
-        <% include('templates/Header/header.html') %>
+        @@include('./templates/Header/header.html')
             <!-- Page Header -->
     </div>
     <!-- Page Navigation -->
@@ -19,7 +19,7 @@
     <!-- Page Navigation -->
     <div class="slds-hide_large">
         <!-- calculator template -->
-        <% include('templates/LoanCalculator/calculator_template.html') %>
+        @@include('./templates/LoanCalculator/calculator_template.html')
             <!-- calculator template -->
     </div>
     <div class="container slds-m-top_xx-large estimatePage">
@@ -173,7 +173,7 @@
                     </form>
                     <div class="slds-hide_large">
                         <!-- calculator template -->
-                        <% include('templates/Chatter/chatter_template.html') %>
+                        @@include('./templates/Chatter/chatter_template.html')
                             <!-- calculator template -->
                     </div>
                     <div class="pageContent slds-m-top_x-large">
@@ -191,10 +191,10 @@
             </div>
             <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
                 <!-- calculator template -->
-                <% include('templates/LoanCalculator/calculator_template.html') %>
+                @@include('./templates/LoanCalculator/calculator_template.html')
                     <!-- calculator template -->
                     <!-- calculator template -->
-                    <% include('templates/Chatter/chatter_template.html') %>
+                    @@include('./templates/Chatter/chatter_template.html')
                         <!-- calculator template -->
             </div>
         </div>
