@@ -1,16 +1,17 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
-var include = require('gulp-include-template');
+//var include = require('gulp-include-template');
+var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 
-gulp.task('serve', ['sass', 'includeTemplate'], function() {
+gulp.task('serve', ['sass', 'fileinclude'], function() {
     browserSync.init({
         server: "./devBuild"
     });
 
     gulp.watch(["./source/scss/*.scss","./source/templates/*/*.scss"], ['sass']);
-    gulp.watch(["./source/templates/*/*.html", "./source/*.html"], ['includeTemplate']);
+    gulp.watch(["./source/templates/*/*.html", "./source/*.html"], ['fileinclude']);
     gulp.watch("./devBuild/*.html").on('change', browserSync.reload);
 });
 
@@ -22,10 +23,20 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task("includeTemplate", function() {
-    return gulp.src("./source/*.html")
-        .pipe(include())
-        .pipe(gulp.dest("./devBuild/"));
+// gulp.task("includeTemplate", function() {
+//     return gulp.src("./source/*.html")
+//         .pipe(include())
+//         .pipe(gulp.dest("./devBuild/"));
+// });
+
+
+gulp.task('fileinclude', function() {
+  gulp.src(['./source/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./devBuild/'));
 });
 
 
