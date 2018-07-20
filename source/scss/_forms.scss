@@ -5,6 +5,8 @@
         display: block;
         width: 100%;
     }
+
+
     .input_fields {
         position: relative;
         input,
@@ -77,6 +79,10 @@
             border-radius: 0;
             position: relative;
             z-index: 1;
+        }
+
+        .slds-form-element__label{
+            display: none;
         }
     }
 
@@ -378,6 +384,12 @@
     }
 }
 
+.slds-datepicker .slds-select,
+.slds-datepicker .slds-select:focus{
+    padding: 5px 15px 0px 0 !important;
+    box-shadow: none !important;
+}
+
 
 label.slideCheckbox, label.slideRadio{
     width: 70px;
@@ -399,8 +411,13 @@ label.slideRadio{
     border-radius: 100px;
     padding: 0;
 
+    .slds-checkbox_faux{
+        display: none;
+    }
+
     input[type="checkbox"]{
-        & + em{
+        & + em,
+        & + label{
             background: $disable-clr url('../images/icons/err_close.svg') no-repeat 80% center;
             background-size: 20%;
             width: 100%;
@@ -409,6 +426,7 @@ label.slideRadio{
             position: relative;
             transition: background-color .2s ease-in-out;
             border-radius: 100px;
+            cursor: pointer;
 
             &:before{
                 content:"";
@@ -424,7 +442,8 @@ label.slideRadio{
                 transition: left .2s ease-in-out;
             }
         }
-        &:checked + em{
+        &:checked + em,
+        &:checked + label{
             background: $verify-clr url('../images/icons/white_check.svg') no-repeat 20% center;
             background-size: 20%;
 

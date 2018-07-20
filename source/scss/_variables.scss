@@ -150,8 +150,10 @@ $heading3: 30px;
 
     }
 }
-
-.cstm_input {
+.slds-radio .slds-radio__label{
+    cursor: pointer;
+}
+.cstm_input, .slds-radio {
     display: block;
     width: 100%;
     height: 100%;
@@ -166,8 +168,16 @@ $heading3: 30px;
     font-family: 'Poppins-300';
     line-height: 18px;
 
+
+    input[type="radio"]+label:before,
+    input[type="radio"]+label:after{
+        content: "";
+    }
+
     input[type="radio"]+em,
-    input[type="checkbox"]+em {
+    input[type="radio"]+label:before,
+    input[type="checkbox"]+em,
+    input[type="checkbox"]+label {
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px;
@@ -182,12 +192,14 @@ $heading3: 30px;
         top: 0;
     }
 
-    input[type="radio"]+em:before {
+    input[type="radio"]+em:before,
+    input[type="radio"]+label:after {
         content: "";
         transition: background-color .2s ease-in-out
     }
 
-    input[type="radio"]:checked+em:before {
+    input[type="radio"]:checked+em:before,
+    input[type="radio"]:checked+label:after {
         content: "";
         width: 50%;
         height: 50%;
@@ -200,12 +212,14 @@ $heading3: 30px;
     }
 
 
-    input[type="radio"]:disabled+em {
+    input[type="radio"]:disabled+em,
+    input[type="radio"]:disabled+label:before {
         border-color: $disable-clr;
         background: $disable-clr;
     }
 
-    input[type="radio"]:disabled+em:before {
+    input[type="radio"]:disabled+em:before,
+    input[type="radio"]:disabled+label:after {
         content: "";
         width: 50%;
         height: 50%;
@@ -217,9 +231,23 @@ $heading3: 30px;
         transform: translate(50%, 50%);
     }
 
-    input[type="radio"].blocked+em:before {
+    input[type="radio"].blocked+em:before,
+    input[type="radio"].blocked+label:after {
         content: "";
         background: transparent;
+    }
+
+    input[type="radio"]+label:before,
+    input[type="radio"]:checked+label:before{
+        top: 2px;
+    }
+    input[type="radio"]:checked+label:after{
+        position: absolute;
+        left: 2px !important;
+        top: 4px !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 20px;
     }
 
     input[type="checkbox"],
@@ -228,30 +256,58 @@ $heading3: 30px;
         position: absolute;
     }
 
-    input[type="checkbox"]+em {
+    input[type="checkbox"]+em,
+    input[type="checkbox"]+label {
+        display: block;
         border-radius: 5px;
         transition: background-color .2s ease-in-out;
     }
 
-    input[type="checkbox"]:checked+em {
+    input[type="checkbox"]:checked+em,
+    input[type="checkbox"]:checked+label {
         background: $verify-clr url('../images/icons/white_check.svg') no-repeat center center;
         border-color: $verify-clr;
         background-size: 60%;
     }
 
-    input[type="checkbox"]:disabled+em {
+    input[type="checkbox"]:disabled+em,
+    input[type="checkbox"]:disabled+label {
         background: $disable-clr url('../images/icons/disabled_check.svg') no-repeat center center;
         border-color: $disable-clr;
         background-size: 60%;
     }
 
-    input[type="checkbox"].blocked+em {
+    input[type="checkbox"].blocked+em,
+    input[type="checkbox"].blocked+label {
         background: $disable-clr;
         border-color: $disable-clr;
         background-size: 60%;
     }
+    .slds-form-element,
+    .slds-form-element__control,
+    .slds-checkbox{
+        height: 100%;
+    }
+    .slds-checkbox_faux,
+    .slds-radio_faux{
+        display: none;
+    }
+    lightning-input{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
-
+.slds-input,
+.slds-input:focus,
+.slds-input:required,
+.slds-input:required:focus{
+    border-radius: 0;
+    box-shadow: none;
+    line-height: inherit;
+}
 .tooltip_info {
     .material-icons{
         font-size: $fnt25;
@@ -286,6 +342,7 @@ $heading3: 30px;
     }
     &:focus{
         pointer-events: none;
+        z-index: 100;
         .tooltip_msg{
             top: 52px;
             opacity: 1;
