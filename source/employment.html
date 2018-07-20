@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html')
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        @@include('./templates/Navigation/navigation.html')
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3 slds-m-bottom_x-large slds-m-top_x-small">Tell us about your work
+                </h1>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters  ">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_5-of-6">
+                                <div class="formElem">
+                                    <div class="cs_selectbox vehicle" tabindex="-1">
+                                        <label class="field_label">How would you describe your current employment?</label>
+                                        <span class="selection">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="new car" name="condition">
+                                                        <span>Full time
+
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label tabindex="-1" class="tooltip_info tooltip_info_snd">
+                                    <i class="material-icons">
+                                            info_outline
+                                        </i>
+                                    <span class="tooltip_msg">
+                                            <p class="slds-text-align_right">
+                                                <a href="javascript:void(0)" class="material-icons close">
+                                                    close
+                                                </a>
+                                            </p>
+                                            If you plan on using the car more than 50% of the time for business, select business use.
+                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Occupation</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="Branch Teller" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="extendBorder" />
+                        <div class="slds-grid slds-wrap slds-gutters  slds-m-bottom_large">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <label class="field_label fnt20">Where do you currently work?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_5-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Company name</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="Branch Teller" />
+                                    </div>
+                                </div>
+                            </div>
+                            <label tabindex="-1" class="tooltip_info tooltip_info_snd">
+                                <i class="material-icons">
+                                            info_outline
+                                        </i>
+                                <span class="tooltip_msg">
+                                            <p class="slds-text-align_right">
+                                                <a href="javascript:void(0)" class="material-icons close">
+                                                    close
+                                                </a>
+                                            </p>
+                                            If you plan on using the car more than 50% of the time for business, select business use.
+                                        </span>
+                            </label>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Company adddress
+                                    </label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="Branch Teller" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> I'm currently employed outside of Australia
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Employer ABN
+                                    </label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="Branch Teller" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters  slds-m-bottom_large">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <label class="field_label fnt20">How long have you been working here for?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+                                <div class="slds-grid slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem selectField">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Years</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList" style="padding-top: 97px;">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="5 years" name="duration">
+                                                                <span>8</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="4 years" name="duration">
+                                                                <span>9</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="3 years" name="duration">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="2 years" name="duration">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="1 year" name="duration">
+                                                                <span>12</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Months</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList" style="padding-top: 97px;">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="used car" name="vehicle">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="extendBorder" />
+                        <div class="slds-grid slds-wrap slds-gutters  slds-m-bottom_large posRel">
+                            <div class="slds-col slds-size_4-of-6 slds-large-size_4-of-6">
+                                <label class="field_label fnt20">Who can we contact to verify you work here?
+                                </label>
+                            </div>
+                            <label tabindex="-1" class="tooltip_info tooltip_info_snd">
+                                <i class="material-icons">
+                                            info_outline
+                                        </i>
+                                <span class="tooltip_msg">
+                                            <p class="slds-text-align_right">
+                                                <a href="javascript:void(0)" class="material-icons close">
+                                                    close
+                                                </a>
+                                            </p>
+                                            If you plan on using the car more than 50% of the time for business, select business use.
+                                        </span>
+                            </label>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                <div class="formElem">
+                                    <div class="outlineNone">
+                                        <label class="field_label">First Name</label>
+                                        <div class="input_fields ">
+                                            <input type="text" value="Amanda">
+                                            <em class="errMsg">test</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                <div class="formElem">
+                                    <div class="outlineNone">
+                                        <label class="field_label">Last Name</label>
+                                        <div class="input_fields ">
+                                            <input type="text" value="Huggs">
+                                            <em class="errMsg">test</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_3-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Contact number
+                                    </label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="0415656808" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="extendBorder" />
+                        <div class="slds-grid slds-wrap slds-gutters  slds-m-bottom_large posRel">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <label class="field_label fnt20">Where did you previously work?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                    <label class="field_label">Company Name
+                                    </label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="ANZ Branch Port Melbourne" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+                                <div class="slds-grid slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem selectField">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Years</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList" style="padding-top: 97px;">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="5 years" name="duration">
+                                                                <span>8</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="4 years" name="duration">
+                                                                <span>9</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="3 years" name="duration">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="2 years" name="duration">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="1 year" name="duration">
+                                                                <span>12</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Months</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList" style="padding-top: 97px;">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="used car" name="vehicle">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                                <div class="formElem slds-clearfix stepsAction">
+                                    <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                        Back
+                                    </button>
+                                    <button class="slds-button slds-button_brand btnSave slds-float_right">
+                                        Save and continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
+                <div class="messageWrapper">
+                    <h2 class="msgHeading slds-m-bottom_medium">Help Tip</h2>
+                    <p>
+                        You need to let us know where you have lived the last two years.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

@@ -26,6 +26,11 @@ body {
     background: #fff!important;
 }
 
+   .posRel {
+        position: relative;
+    }
+
+
 a,
 a:hover,
 a:focus {
@@ -296,10 +301,11 @@ a:focus {
             font-size: $fnt24;
             margin-bottom: 20px;
             position: relative;
+            padding-left: 35px;
         }
-        .material-icons{
-            position: relative;
-            top: 5px;
+        .material-icons {
+            position: absolute;
+            left: 0px;
             color: $verify-clr;
         }
     }
@@ -310,17 +316,18 @@ a:focus {
 
 
     .bottomInfo {
-        margin-top: 140px;
+        margin-top: 80px;
         background: transparent url('../images/bottombg.png') no-repeat 0 center;
         background-size: cover;
         width: 100%;
         min-height: 700px;
-        padding: 160px 0px 130px 0px;
+        padding: 120px 0px 130px 0px;
         font-size: $fnt16;
 
         h2 {
             font-size: $fnt60;
             padding-bottom: 20px;
+            text-align: center;
         }
 
         .subHead {
@@ -328,13 +335,13 @@ a:focus {
         }
 
         .boxInfo {
-            padding-top: 100px;
+            padding-top: 40px;
             text-align: center;
 
             ul {
                 padding: 0 20px;
                 li {
-                    margin-bottom: 40px;
+                    margin-bottom: 20px;
                     font-size: $fnt24;
                     font-family: 'Poppins-500';
                     .material-icons {
@@ -409,6 +416,37 @@ a:focus {
         .rhsImg {
             padding-top: 70px;
         }
+
+        .bottomInfo {
+            margin-top: 140px;
+
+            .boxInfo {
+                padding-top: 100px;
+
+                ul 
+                {
+                    li 
+                    {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        
+         .listInfo
+           {
+            .material-icons {
+                position: relative;
+                top: 5px;
+                color: $verify-clr;
+                }
+
+                h4 
+                {
+                     padding-left: 0px;
+                }
+
+             }   
+        }
     }
 
 
@@ -455,10 +493,7 @@ a:focus {
         width: 80%;
     }
 
-    .posRel {
-        position: relative;
-    }
-
+ 
 
     .container {
         width: 100%;
