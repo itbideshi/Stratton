@@ -11,7 +11,10 @@
 <body>
     <div class="headerFixCont">
         <!-- Page Header -->
-        @@include('./templates/Header/header.html')
+        @@include('./templates/Header/header.html', {
+            "exit": 1,
+            "stage": 1
+        })
             <!-- Page Header -->
             <!-- Page Navigation -->
             @@include('./templates/Navigation/navigation.html')
