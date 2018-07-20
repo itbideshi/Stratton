@@ -125,10 +125,11 @@ a:focus {
 .slds-modal__content {
     border-radius: 10px;
     overflow-y: hidden!important;
+    padding:0px 20px;
 
     .modalMidCont {
         overflow-y: auto;
-        height: 300px;
+        height: 220px;
     }
 
     .modalCrossIcon {
@@ -190,6 +191,12 @@ a:focus {
                 padding-top: 2px;
             }
         }
+
+        .slds-radio{
+    
+            width:33%;
+            float:left;
+            }
     }
 
     .buttonBotInfo {
@@ -218,12 +225,12 @@ a:focus {
 
 
 .carDetailLightBox {
-
+    clear: both;
     font-family: 'Poppins-300';
 
     h2 {
         font-size: $fnt32;
-        padding: 40px 0px 20px 0px;
+        padding: 20px 0px 20px 0px;
     }
     .cstm_input {
         font-size: $fnt16;
@@ -360,7 +367,7 @@ a:focus {
 
 .slds-modal__content {
     border-radius: 8px;
-    padding: 4em 0;
+    
 }
 
 .extendBorder {
@@ -381,6 +388,29 @@ a:focus {
 }
 
 @media (min-width: 1024px) {
+
+ .radioCont {
+      .slds-radio
+         {
+    
+            width:20%!important;
+            float:left;
+            }
+        }
+
+     .carDetailLightBox {
+
+        h2 {
+            font-size: $fnt32;
+            padding: 20px 0px 20px 0px;
+        }
+
+    }   
+
+     .slds-modal__content 
+     {
+        padding:0px 30px;
+     }   
 
     .startPage {
         .midCont {
