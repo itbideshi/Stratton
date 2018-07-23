@@ -33,6 +33,7 @@
                     a,
                     a:hover {
                         color: $grey-clr;
+                        pointer-events: none;
                     }
                     .nav-icons {
                         color: $nav-brd-clr;

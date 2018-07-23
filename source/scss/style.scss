@@ -371,8 +371,9 @@ a:focus {
 }
 
 .extendBorder {
-    background: $border-clr;
-    height: 0px;
+    background: $tooltip-shadow-clr;
+    height: 1px;
+    border: 0;
     margin: 0 -15px 30px;
 }
 

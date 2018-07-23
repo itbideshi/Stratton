@@ -44,7 +44,8 @@
                 font-weight: bold;
                 font-size: $fnt18;
             }
-            input[type="text"]{
+            input[type="text"],
+            input[type="number"]{
                 padding-left: 16px;
             }
         }
