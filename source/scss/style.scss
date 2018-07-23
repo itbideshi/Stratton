@@ -38,6 +38,12 @@ a:focus {
     color: $secondary-btn-bg;
 }
 
+textarea {
+
+    border-radius: 5px;
+    border:1px $border-clr solid;
+    width: 100%;    
+}
 
 .alignC {
     text-align: center;
@@ -385,6 +391,47 @@ a:focus {
     font-size: $heading3;
     line-height: 38px;
     font-family: 'Poppins-800';
+}
+
+.summarySection 
+{
+    font-size: $fnt16;
+    color: $white-clr;
+    background: $secondary-clr;
+    border-radius: 8px;
+    padding: 50px 30px;
+
+    h2 
+    {
+        font-size: $fnt24;
+    }
+
+    .inTxt 
+    {
+        padding-bottom: 20px;
+        border-bottom: 1px $border-sclr solid!important;
+    }
+}
+
+.midHeading 
+{
+     h2 
+    {
+        font-size: $fnt20;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .inTxt 
+    {
+        padding-bottom: 20px;
+        border-bottom: 1px $border-sclr solid!important;
+    }
+}
+
+.lhsInBlock 
+{
+
 }
 
 @media (min-width: 1024px) {

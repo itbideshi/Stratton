@@ -50,6 +50,12 @@
         @include buttonWrapper($secondary-btn-bg, $white-clr);
     }
 
+     &.verify {
+        
+        background-color: $verify-clr;
+        width:100%;
+     }  
+
     &.btnBack {
         min-width: 80px!important;
         @include buttonWrapper($secondary-btn-bg, $white-clr);

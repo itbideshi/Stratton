@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html', { "exit": 1, "stage": 1 })
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        @@include('./templates/Navigation/navigation.html')
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3 slds-m-bottom_x-large slds-m-top_x-small">Tell us about your financial situation</h1>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="slds-grid slds-wrap">
+                            <div class="midHeading">
+                                <h2>Your income</h2>
+                                <p>Retrieve your transaction bank histories from your account with Provisio via an automated process.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="slds-grid slds-wrap  slds-m-top_large ">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Primary income (After tax)
+                                </label>
+                            </div>
+
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_12-of-12 slds-m-top_large lhsInBlock">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                      <div class="formElem slds-m-left_xx-small">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Fequency</label>
+                                                <span class="selection">Full</span>
+                                                <div class="optionsList" >
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle">
+                                                                <span>Weekly</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                        <div class="formElem">
+                                            <div class="outlineNone">
+                                                <label class="field_label">Amount</label>
+                                                <div class="input_fields ">
+                                                    <input type="text" value="$60,000">
+                                                    <em class="errMsg">$5,000</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Rental income
+                                </label>
+                            </div>
+
+                            <!-- place lhsInBlock section here (refer primary income block ) -->
+                        </div>
+
+
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Commission  (After tax)
+                                </label>
+                            </div>
+
+                            <!-- place lhsInBlock section here (refer primary income block ) -->
+                        </div>
+
+
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Overtime (After tax)
+                                </label>
+                            </div>
+
+                            <!-- place lhsInBlock section here (refer primary income block ) -->
+                        </div>
+
+
+                        
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Rental income
+                                </label>
+                            </div>
+
+                            <!-- place lhsInBlock section here (refer primary income block ) -->
+                        </div>
+
+                        <div class="slds-grid slds-wrap slds-m-top_large">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Government benefits
+                                </label>
+                            </div>
+
+                            <!-- place lhsInBlock section here (refer primary income block ) -->
+                        </div>
+
+
+                         <div class="slds-grid slds-wrap  slds-m-top_large ">
+                            <div class="slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Other
+                                </label>
+                            </div>
+
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_12-of-12 slds-m-top_large lhsInBlock">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                      <div class="formElem slds-m-left_xx-small">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Fequency</label>
+                                                <span class="selection">Full</span>
+                                                <div class="optionsList" >
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle">
+                                                                <span>Weekly</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                        <div class="formElem">
+                                            <div class="outlineNone">
+                                                <label class="field_label">Amount</label>
+                                                <div class="input_fields ">
+                                                    <input type="text" value="$60,000">
+                                                    <em class="errMsg">$5,000</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slds-grid slds-wrap">
+
+                                      <div class="slds-col slds-size_6-of-6 slds-large-size_12-of-12">
+                                          <div class="formElem slds-m-left_xx-small">
+                                            <textarea name="" id="" cols="20" rows="5"></textarea>
+                                          </div>
+                                      </div>  
+                                </div>    
+                            </div>
+                        </div>
+
+
+                
+
+
+
+
+
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                                <div class="formElem slds-clearfix stepsAction">
+                                    <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                        Back
+                                    </button>
+                                    <button class="slds-button slds-button_brand btnSave slds-float_right">
+                                        Save and continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
+                <div class="summarySection">
+                    <h2 class="msgHeading slds-m-bottom_medium">Summary</h2>
+                    <p class="inTxt">
+                        The summary includes both primary and spouses finances
+                    </p>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Income</div>
+                        <div class="slds-col slds-size_6-of-12">$8,000 wkly</div>
+                    </div>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Expenses</div>
+                        <div class="slds-col slds-size_6-of-12">$1,270 wkly</div>
+                    </div>
+                </div>
+                <div class="messageWrapper slds-m-top_large">
+                    <h2 class="msgHeading slds-m-bottom_medium">Improve serviceability</h2>
+                    <p>
+                        Improve your serviceability by including your spouses income:
+                    </p>
+                    <div class="slds-text-align_center slds-show_large">
+                        <button class="slds-button slds-button_brand applyBtn verify slds-m-top_medium slds-m-bottom_medium">Add spouses income</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
