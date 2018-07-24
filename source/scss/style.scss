@@ -43,6 +43,7 @@ textarea {
     border-radius: 5px;
     border:1px $border-clr solid;
     width: 100%;    
+    padding:20px;
 }
 
 .paddT0 
@@ -53,6 +54,11 @@ textarea {
 .mrgnLsp 
 {
     margin-left: 35px!important;
+}
+
+.paddLarge 
+{
+    padding-left: 30px;
 }
 
 .alignC {
@@ -449,7 +455,7 @@ textarea {
     }
 }
 
-.midHeading2 
+.midHeading
 {
      h2 
     {
@@ -460,11 +466,13 @@ textarea {
 }
 
 
-.midHeading3 
+.midHeading4 
 {
         color: $label-txt-clr;
         opacity: 0.6;
-        border-bottom: 1px $label-txt-clr solid;
+        border-bottom: 1px #e3e3e3 solid;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
 }
 
 .gridColCont 
@@ -493,6 +501,11 @@ textarea {
         font-family: 'Poppins-300';
         font-size: $fnt12;
     }
+}
+
+.checkCont 
+{
+    font-size: $fnt16;
 }
 
 @media (min-width: 1024px) {
