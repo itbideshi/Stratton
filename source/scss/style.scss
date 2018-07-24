@@ -478,6 +478,14 @@ textarea {
         font-family: 'Poppins-600';
     }
 }
+.address_not_found{
+    a, a:hover{
+        color: $grey-clr;
+        color: $disable-chk-clr;
+        font-family: 'Poppins-300';
+        font-size: $fnt12;
+    }
+}
 
 @media (min-width: 1024px) {
 
