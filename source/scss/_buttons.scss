@@ -80,6 +80,11 @@
         border-color: $grey-clr;
         min-width: 110px;
     }
+
+    &.btnlarge {
+        
+        min-width: 275px!important;
+    }
 }
 
 .button_small {
