@@ -45,6 +45,16 @@ textarea {
     width: 100%;    
 }
 
+.paddT0 
+{
+    padding-top: 0px!important;
+}
+
+.mrgnLsp 
+{
+    margin-left: 35px!important;
+}
+
 .alignC {
     text-align: center;
 }
@@ -439,9 +449,34 @@ textarea {
     }
 }
 
-.lhsInBlock 
+.midHeading2 
 {
+     h2 
+    {
+        font-size: $fnt24;
+        font-family: 'Poppins-600';
+        margin-bottom: 10px;
+    }
+}
 
+.gridColCont 
+{
+    h3 
+    {
+        font-size: $fnt24;
+       font-family: 'Poppins-600';
+    }
+
+    .lbl 
+    {
+         font-family: 'Poppins-600';
+    }
+
+    .total 
+    {
+        font-size: $fnt24;
+        font-family: 'Poppins-600';
+    }
 }
 
 @media (min-width: 1024px) {
