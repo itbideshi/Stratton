@@ -23,12 +23,12 @@ body {
 }
 
 .bgNone {
-    background: #fff!important;
+    background: $white-clr!important;
 }
 
-   .posRel {
-        position: relative;
-    }
+.posRel {
+    position: relative;
+}
 
 
 a,
@@ -41,23 +41,20 @@ a:focus {
 textarea {
 
     border-radius: 5px;
-    border:1px $border-clr solid;
-    width: 100%;    
-    padding:20px;
+    border: 1px $border-clr solid;
+    width: 100%;
+    padding: 20px;
 }
 
-.paddT0 
-{
+.paddT0 {
     padding-top: 0px!important;
 }
 
-.mrgnLsp 
-{
+.mrgnLsp {
     margin-left: 35px!important;
 }
 
-.paddLarge 
-{
+.paddLarge {
     padding-left: 30px;
 }
 
@@ -147,7 +144,7 @@ textarea {
 .slds-modal__content {
     border-radius: 10px;
     overflow-y: hidden!important;
-    padding:0px 20px;
+    padding: 0px 20px;
 
     .modalMidCont {
         overflow-y: auto;
@@ -166,12 +163,12 @@ textarea {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 15px 20px;
+    padding: 30px 10px 20px;
 
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px 15px 180px;
+        padding: 15px 26px 180px;
         border-radius: 8px;
         margin-bottom: 0px;
 
@@ -181,12 +178,12 @@ textarea {
         }
     }
     .slds-gutters {
-        margin-left: -15px;
-        margin-right: -15px;
+        margin-left: -10px;
+        margin-right: -10px;
     }
     .slds-col {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .pageContent {
         line-height: 25px;
@@ -214,11 +211,11 @@ textarea {
             }
         }
 
-        .slds-radio{
-    
-            width:33%;
-            float:left;
-            }
+        .slds-radio {
+
+            width: 33%;
+            float: left;
+        }
     }
 
     .buttonBotInfo {
@@ -263,6 +260,7 @@ textarea {
 .estimatePage {
     margin: 0;
     background: $white-clr;
+    padding-top: 0px;
     .lhs_wrapper {
         border: 0;
         border-radius: 0;
@@ -274,10 +272,11 @@ textarea {
 
     .headCont {
 
-        background: transparent url('../images/startHeadImg.png') no-repeat 0 center;
+        background: $blk-clr url('../images/startHeadImg.png') no-repeat 0 center;
         background-size: cover;
         width: 100%;
         min-height: 700px;
+        position: relative;
 
         .inHeadCont {
             color: $white-clr;
@@ -289,10 +288,14 @@ textarea {
                 font-family: 'Poppins-500';
                 line-height: 65px;
                 padding-top: 70px;
+
+                span {
+                    font-family: 'Poppins-300';
+                }
             }
 
             .textCont {
-
+                font-family: 'Poppins-300';
                 margin-top: 50px;
             }
 
@@ -318,6 +321,9 @@ textarea {
             font-size: $fnt60;
             line-height: 68px;
             font-family: 'Poppins-300';
+        }
+        .slds-button {
+            cursor: default;
         }
     }
 
@@ -389,7 +395,6 @@ textarea {
 
 .slds-modal__content {
     border-radius: 8px;
-    
 }
 
 .extendBorder {
@@ -410,55 +415,46 @@ textarea {
     font-family: 'Poppins-800';
 }
 
-.summarySection 
-{
+.summarySection {
     font-size: $fnt16;
     color: $white-clr;
     background: $secondary-clr;
     border-radius: 8px;
     padding: 50px 30px;
 
-    h2 
-    {
+    h2 {
         font-size: $fnt24;
     }
 
-    .inTxt 
-    {
+    .inTxt {
         padding-bottom: 20px;
         border-bottom: 1px $border-sclr solid!important;
     }
 }
 
-.boxCont
-{
-   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-   background-color: $white-clr;
-   border: solid 1px $brd-box;
-   padding: 20px;
-   border-radius: 10px;
+.boxCont {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: $white-clr;
+    border: solid 1px $brd-box;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.midHeading 
-{
-     h2 
-    {
+.midHeading {
+    h2 {
         font-size: $fnt20;
         margin-bottom: 10px;
         font-weight: 500;
     }
 
-    .inTxt 
-    {
+    .inTxt {
         padding-bottom: 20px;
         border-bottom: 1px $border-sclr solid!important;
     }
 }
 
-.midHeading
-{
-     h2 
-    {
+.midHeading {
+    h2 {
         font-size: $fnt24;
         font-family: 'Poppins-600';
         margin-bottom: 10px;
@@ -466,36 +462,33 @@ textarea {
 }
 
 
-.midHeading4 
-{
-        color: $label-txt-clr;
-        opacity: 0.6;
-        border-bottom: 1px #e3e3e3 solid;
-        margin-bottom: 40px;
-        padding-bottom: 10px;
+.midHeading4 {
+    color: $label-txt-clr;
+    opacity: 0.6;
+    border-bottom: 1px $brd-box solid;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
 }
 
-.gridColCont 
-{
-    h3 
-    {
+.gridColCont {
+    h3 {
         font-size: $fnt24;
-       font-family: 'Poppins-600';
+        font-family: 'Poppins-600';
     }
 
-    .lbl 
-    {
-         font-family: 'Poppins-600';
+    .lbl {
+        font-family: 'Poppins-600';
     }
 
-    .total 
-    {
+    .total {
         font-size: $fnt24;
         font-family: 'Poppins-600';
     }
 }
-.address_not_found{
-    a, a:hover{
+
+.address_not_found {
+    a,
+    a:hover {
         color: $grey-clr;
         color: $disable-chk-clr;
         font-family: 'Poppins-300';
@@ -503,35 +496,31 @@ textarea {
     }
 }
 
-.checkCont 
-{
+.checkCont {
     font-size: $fnt16;
 }
 
 @media (min-width: 1024px) {
 
- .radioCont {
-      .slds-radio
-         {
-    
-            width:33%!important;
-            float:left;
-            }
-        }
+    .radioCont {
+        .slds-radio {
 
-     .carDetailLightBox {
+            width: 33%!important;
+            float: left;
+        }
+    }
+
+    .carDetailLightBox {
 
         h2 {
             font-size: $fnt32;
             padding: 20px 0px 20px 0px;
         }
+    }
 
-    }   
-
-     .slds-modal__content 
-     {
-        padding:0px 30px;
-     }   
+    .slds-modal__content {
+        padding: 0px 30px;
+    }
 
     .startPage {
         .midCont {
@@ -574,29 +563,24 @@ textarea {
             .boxInfo {
                 padding-top: 100px;
 
-                ul 
-                {
-                    li 
-                    {
+                ul {
+                    li {
                         margin-bottom: 20px;
                     }
                 }
             }
-        
-         .listInfo
-           {
-            .material-icons {
-                position: relative;
-                top: 5px;
-                color: $verify-clr;
+
+            .listInfo {
+                .material-icons {
+                    position: relative;
+                    top: 5px;
+                    color: $verify-clr;
                 }
 
-                h4 
-                {
-                     padding-left: 0px;
+                h4 {
+                    padding-left: 0px;
                 }
-
-             }   
+            }
         }
     }
 
@@ -614,10 +598,10 @@ textarea {
         margin-left: auto;
         margin-right: auto;
         background: transparent;
-
+        padding-top: 120px !important;
         .lhs_wrapper {
             margin-bottom: 20px;
-            border: 1px #e2e2e2 solid;
+            border: 1px $brd-box solid;
             border-radius: 8px;
         }
     }
@@ -627,8 +611,8 @@ textarea {
         margin-bottom: 20px;
     }
     .comm-page-custom-getestimate {
-        background: transparent url('../images/getEstimate_background.jpg') no-repeat 0 center;
-        background-size: cover;
+        background: $blk-clr url('../images/getEstimate_background.jpg') no-repeat 0 0;
+        background-size: 100%;
 
         .headerFixCont {
             position: static;
@@ -644,7 +628,7 @@ textarea {
         width: 80%;
     }
 
- 
+
 
     .container {
         width: 100%;
@@ -653,6 +637,14 @@ textarea {
 
         .lhs_wrapper {
             padding: 40px;
+        }
+        .slds-gutters {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        .slds-col {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 
