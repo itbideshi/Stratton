@@ -92,6 +92,19 @@
         
         min-width: 275px!important;
     }
+
+    &.arwButton  
+    {
+            min-width: 8px !important;
+            height: 28px;
+            padding: 0px;
+            line-height: 27px;
+            line-height: 27px;
+            color: #ccc;
+            border:2px #ccc solid;
+            i
+            { font-size: $fnt24;}
+        }
 }
 
 .button_small {
@@ -106,6 +119,16 @@
         font-family: 'Poppins-500';
         height: 50px;
         line-height: 45px;
+        border-width: 2px;
+    }
+
+      &.defaultBtnSnd {
+        @include buttonWrapper($white-clr, $secondary-btn-bg);
+        border-color: $secondary-btn-bg;
+        width: auto;
+        font-family: 'Poppins-500';
+        height: 40px;
+        line-height: 35px;
         border-width: 2px;
     }
 }

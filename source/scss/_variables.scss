@@ -25,6 +25,7 @@ $errbg-clr: #fff2f2;
 $placeholder-clr: #ccc;
 $tooltip-border-clr: #f0f0f0;
 $tooltip-shadow-clr: #f1f1f1;
+$brd-clr-snd:#e3e3e3;
 
 
 $fnt12: 12px;
@@ -173,6 +174,7 @@ $heading3: 30px;
     padding-top: 4px;
     font-family: 'Poppins-300';
     line-height: 18px;
+    font-weight: bold;
 
 
     input[type="radio"]+label:before,
@@ -196,6 +198,7 @@ $heading3: 30px;
         position: absolute;
         left: 0px;
         top: 0;
+
     }
 
     input[type="radio"]+em:before,

@@ -1,9 +1,12 @@
 .formElem {
     @extend .slds-m-bottom_x-large;
+
     position: relative;
     label {
         display: block;
         width: 100%;
+        color:$label-txt-clr;
+        opacity: 0.6;
     }
 
 
@@ -21,8 +24,8 @@
             border-bottom: 2px solid $border-clr;
             padding: 15px 15px 15px 0px;
             font-size: 16px;
-            font-family: 'Poppins-600';
-            color: $field-txt-clr;
+            font-family: 'Poppins-800';
+            color: $active-clr;
             outline: none;
             transition: border-bottom .3s ease-in-out;
         }
@@ -128,7 +131,7 @@
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
-            font-family: 'Poppins-600';
+            font-family: 'Poppins-800';
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";

@@ -50,6 +50,11 @@ textarea {
     padding-top: 0px!important;
 }
 
+.mrgnmT15 
+{
+    margin-top: -15px;
+}
+
 .mrgnLsp {
     margin-left: 35px!important;
 }
@@ -60,6 +65,11 @@ textarea {
 
 .alignC {
     text-align: center;
+}
+
+
+.alignR {
+    text-align: right;
 }
 
 .material-icons {
@@ -114,6 +124,39 @@ textarea {
 
 .paddAll {
     padding: 20px;
+}
+
+.midSep 
+{
+    width: 100%;
+    margin: 0px;
+    height: 1px;
+    color: $brd-clr-snd;
+    margin: 20px 15px;
+}
+
+.midSep2 
+{
+    width: 93%;
+    margin: 0px;
+    height: 1px;
+    margin: 20px 34px;
+}
+
+.headLbl 
+{
+    font-size: $fnt14;
+    color:$label-txt-clr;
+    opacity: 0.6;
+}
+.wAuto 
+{
+    width: auto!important;
+}
+
+.fLbl 
+{
+    font-size: $fnt16;
 }
 
 @import '../templates/Navigation/_pageNavigation';
@@ -261,7 +304,7 @@ textarea {
 @import '../templates/LoanCalculator/_loanCalculator';
 
 
-.carDetailLightBox {
+.carDetailLightBox, .passwordLightBox {
     clear: both;
     font-family: 'Poppins-300';
 
@@ -272,6 +315,23 @@ textarea {
     .cstm_input {
         font-size: $fnt16;
         padding-left: 40px;
+    }
+}
+
+
+.passwordLightBox 
+{
+    h2 {
+        font-size: $fnt32;
+        font-family: 'Poppins-700';
+        padding: 0px 0px 20px 0px;
+        line-height: 38px;
+    } 
+
+    .subheading 
+    {
+         font-size: $fnt32;
+         line-height: 38px;
     }
 }
 
@@ -364,8 +424,15 @@ textarea {
     }
 
     .defaultBtn {
-        max-width: 220px;
+        max-width: 220px!important;
     }
+
+    .defaultBntSnd 
+    {
+        background: none;
+    }
+
+
 
 
     .bottomInfo {
@@ -495,12 +562,13 @@ textarea {
     }
 
     .lbl {
-        font-family: 'Poppins-600';
+        font-family: 'Poppins-800';
+        font-size: $fnt16;
     }
 
     .total {
         font-size: $fnt24;
-        font-family: 'Poppins-600';
+        font-family: 'Poppins-800';
     }
 }
 
@@ -518,7 +586,24 @@ textarea {
     font-size: $fnt16;
 }
 
+
+.customCheckCont 
+{
+       input[type="checkbox"]:checked+em,
+       input[type="checkbox"]:checked+label {
+        background: $white-clr url('../images/icons/green_check.svg') no-repeat center center;
+        border-color: $verify-clr;
+        background-size: 60%;
+    }
+}
+
 @media (min-width: 1024px) {
+
+
+    .algnRd 
+    {
+        text-align: right;
+    }
 
     .radioCont {
         .slds-radio {
