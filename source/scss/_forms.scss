@@ -149,8 +149,11 @@
             &.no_padding {
                 padding-left: 0px;
             }
+            &:focus{
+                outline: none;
+            }
         }
-        .optionsList {
+        .selection + .optionsList {
             border: 0;
             border-radius: 4px;
             width: 100%;
@@ -219,30 +222,32 @@
             transition: padding-left .3s ease-in-out;
         }
 
-        &:focus {
+        &:focus-within {
             outline: none;
-            z-index: 11;
+            z-index: 999;
 
-            .field_label {
+            /*.field_label {
                 padding-left: 15px;
-            }
-            .selection {
-                background-position: 15px center;
-            }
-            .selection {
-                padding-left: 15px;
-            }
+            }*/
             .selection.no_padding {
                 padding-left: 15px;
             }
+
         }
 
-        &:focus>.selection:after {
+        .selection:focus{
+            background-position: 15px center;
+            padding-left: 15px;
+
+
+        }
+
+        .selection:focus:after {
             right: 15px;
             transform: rotate(180deg) translateY(50%);
         }
 
-        &:not(:focus)>.optionsList {
+        .selection:not(:focus) + .optionsList {
             max-height: 0;
             opacity: 0;
         }

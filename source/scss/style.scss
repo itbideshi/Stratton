@@ -274,7 +274,8 @@ textarea {
         font-size: $heading3!important;
         line-height: 38px;
         padding-left: 26px;
-        font-family: 'Poppins-800';
+        font-family: 'Poppins-700';
+        color: $label-txt-clr;
     }
 
 
@@ -347,7 +348,7 @@ textarea {
 
 
 .startPage {
-
+    background-color: $white-clr;
     .headCont {
 
         background: $blk-clr url('../images/startHeadImg.png') no-repeat 0 center;
