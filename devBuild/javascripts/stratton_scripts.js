@@ -9,11 +9,14 @@ var stratton = {
 		this.parentElement.parentElement.classList.toggle('open');
 	},
 	cstm_select: function(){
-		let cs_radio = document.querySelectorAll('.cs_selectbox input[type="radio"]');
+		let cs_radio = document.querySelectorAll('.cs_selectbox .optionsList label');
 		for(let i=0; i<cs_radio.length; i++){
-			cs_radio[i].addEventListener('change', function(elem){
-				elem = elem.target;
-				let selectedText = elem.nextElementSibling.innerHTML;
+			cs_radio[i].addEventListener('click', function(elem){
+				elem.preventDefault();
+				var elem = cs_radio[i];
+				console.log(elem);
+				let selectedText = elem.querySelectorAll('input[type="radio"]')[0].getAttribute('data-value');
+				console.log(document.activeElement);
 				while(!elem.classList.contains('optionsList')){
 					elem = elem.parentNode;
 				}
@@ -22,7 +25,11 @@ var stratton = {
 				}else{
 					elem.previousElementSibling.innerHTML = selectedText;
 				}
-			});
+				
+				if (document.activeElement) {
+				    document.activeElement.blur();
+				}
+			}, false);
 		}
 	},
 	cstm_autosuggest: function(){

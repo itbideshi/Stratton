@@ -2,7 +2,7 @@
     @extend .slds-m-bottom_x-large;
 
     position: relative;
- 
+
 
 
     .input_fields {
@@ -35,8 +35,8 @@
         }
 
 
-        &.amount{
-            .material-icons{
+        &.amount {
+            .material-icons {
                 position: absolute;
                 top: 14px;
                 z-index: 9;
@@ -44,15 +44,15 @@
                 font-size: $fnt18;
             }
             input[type="text"],
-            input[type="number"]{
+            input[type="number"] {
                 padding-left: 16px;
             }
         }
 
-        input[type=number]::-webkit-inner-spin-button, 
-        input[type=number]::-webkit-outer-spin-button { 
-          -webkit-appearance: none; 
-          margin: 0; 
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         .errMsg {
@@ -70,7 +70,7 @@
             z-index: 1;
         }
 
-        .slds-form-element__label{
+        .slds-form-element__label {
             display: none;
         }
     }
@@ -91,7 +91,7 @@
             padding: 15px;
             margin-top: 5px;
         }
-        .selection{
+        .selection {
             border-bottom-color: $error-clr !important;
         }
     }
@@ -106,7 +106,7 @@
         margin-top: 5px;
     }
 
-    legend.slds-form-element__label{
+    legend.slds-form-element__label {
         display: none;
     }
 
@@ -126,7 +126,7 @@
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
-            font-family: 'Poppins-800';
+            font-family: 'Poppins-700';
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";
@@ -144,11 +144,11 @@
             &.no_padding {
                 padding-left: 0px;
             }
-            &:focus{
+            &:focus {
                 outline: none;
             }
         }
-        .selection + .optionsList {
+        .optionsList {
             border: 0;
             border-radius: 4px;
             width: 100%;
@@ -217,36 +217,31 @@
             transition: padding-left .3s ease-in-out;
             display: block;
             width: 100%;
-            color:$label-txt-clr;
+            color: $label-txt-clr;
             opacity: 0.6;
         }
 
-        &:focus-within {
+        &:focus {
             outline: none;
             z-index: 999;
 
-            /*.field_label {
+            .field_label {
                 padding-left: 15px;
-            }*/
+            }
             .selection.no_padding {
                 padding-left: 15px;
             }
-
+            .selection {
+                background-position: 15px center;
+                padding-left: 15px;
+            }
+            .selection:after {
+                right: 15px;
+                transform: rotate(180deg) translateY(50%);
+            }
         }
 
-        .selection:focus{
-            background-position: 15px center;
-            padding-left: 15px;
-
-
-        }
-
-        .selection:focus:after {
-            right: 15px;
-            transform: rotate(180deg) translateY(50%);
-        }
-
-        .selection:not(:focus) + .optionsList {
+        &:not(:focus) .optionsList {
             max-height: 0;
             opacity: 0;
         }
@@ -293,7 +288,7 @@
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
-            font-family: 'Poppins-600';
+            font-family: 'Poppins-700';
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";
@@ -345,7 +340,7 @@
                     cursor: pointer;
                     background: $white-clr;
                     font-size: 16px;
-                    font-family: 'Poppins-600';
+                    font-family: 'Poppins-700';
                     position: relative;
                     &:hover {
                         background: $options-gry-clr;
@@ -372,15 +367,15 @@
             border: 0;
             border-bottom: 2px solid $border-clr;
             background: transparent;
-            font-family: 'Poppins-600';
-            
+            font-family: 'Poppins-700';
+
             transition: padding .3s ease-in-out;
         }
         input[type="text"]:focus {
             padding: 15px 15px 15px 15px;
         }
         input[type="text"]::placeholder {
-            font-family: 'Poppins-600';
+            font-family: 'Poppins-700';
             font-size: 16px;
             color: $placeholder-clr;
         }
@@ -398,7 +393,6 @@
         }
     }
     /*--------------------*/
-
     .tooltip_info_heading {
         right: 0px;
         top: 22%;
@@ -418,13 +412,14 @@
 }
 
 .slds-datepicker .slds-select,
-.slds-datepicker .slds-select:focus{
+.slds-datepicker .slds-select:focus {
     padding: 5px 15px 0px 0 !important;
     box-shadow: none !important;
 }
 
 
-label.slideCheckbox, label.slideRadio{
+label.slideCheckbox,
+label.slideRadio {
     width: 70px;
     background: #ecf0f1;
     border-radius: 10px;
@@ -434,23 +429,23 @@ label.slideCheckbox, label.slideRadio{
     position: relative;
     box-sizing: border-box;
     cursor: pointer;
-    input[type="checkbox"]{
+    input[type="checkbox"] {
         position: absolute;
         opacity: 0;
     }
 }
 
-label.slideRadio{
+label.slideRadio {
     border-radius: 100px;
     padding: 0;
 
-    .slds-checkbox_faux{
+    .slds-checkbox_faux {
         display: none;
     }
 
-    input[type="checkbox"]{
-        & + em,
-        & + label{
+    input[type="checkbox"] {
+        &+em,
+        &+label {
             background: $disable-clr url('../images/icons/err_close.svg') no-repeat 80% center;
             background-size: 20%;
             width: 100%;
@@ -461,8 +456,8 @@ label.slideRadio{
             border-radius: 100px;
             cursor: pointer;
 
-            &:before{
-                content:"";
+            &:before {
+                content: "";
                 display: block;
                 width: 30px;
                 height: 30px;
@@ -471,16 +466,16 @@ label.slideRadio{
                 left: 5px;
                 top: 50%;
                 transform: translateY(-50%);
-                background: #fff;
+                background: $white-clr;
                 transition: left .2s ease-in-out;
             }
         }
-        &:checked + em,
-        &:checked + label{
+        &:checked+em,
+        &:checked+label {
             background: $verify-clr url('../images/icons/white_check.svg') no-repeat 20% center;
             background-size: 20%;
 
-            &:before{
+            &:before {
                 left: calc(100% - 35px);
             }
         }
@@ -488,22 +483,21 @@ label.slideRadio{
 }
 
 
-label.slideCheckbox input[type="checkbox"] + em{
+label.slideCheckbox input[type="checkbox"]+em {
     background: $errbg-clr url('../images/icons/err_close.svg') no-repeat center center;
     background-size: 40%;
     display: block;
     width: 30px;
-    height:30px;
+    height: 30px;
     border-radius: 5px;
     position: absolute;
     left: 5px;
     transition: left .2s ease-in-out, background-color .2s ease-in-out;
-    &:checked + em{
+    &:checked+em {
         background: $white-clr url('../images/icons/white_check.svg') no-repeat center center;
         background-size: 40%;
         position: absolute;
         left: calc(100% - 35px);
-
     }
 }
 
