@@ -501,6 +501,19 @@ label.slideCheckbox input[type="checkbox"]+em {
     }
 }
 
+.custm_select_placeholder{
+    background: transparent;
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index:999;
+    top: 0;
+    display: none;
+}
+.cs_selectbox:focus + .custm_select_placeholder{
+    display: block;
+}
 
 @media (min-width: 1024px) {
     .formElem {
