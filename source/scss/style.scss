@@ -56,7 +56,7 @@ textarea {
 }
 
 .mrgnLsp {
-    margin-left: 35px!important;
+    margin-left: 28px!important;
 }
 
 .paddLarge {
@@ -104,6 +104,7 @@ textarea {
     font-size: $fnt14;
     line-height: 26px;
     color: $label-txt-clr;
+    padding-left: 30px;
 }
 
 .sectionSep {
@@ -156,7 +157,7 @@ textarea {
 
 .fLbl 
 {
-    font-size: $fnt16;
+    font-size: $fnt14;
 }
 
 @import '../templates/Navigation/_pageNavigation';
@@ -597,8 +598,33 @@ textarea {
     }
 }
 
+
+
+
 @media (min-width: 1024px) {
 
+    
+    .tooltip_info_heading2 {
+        right: 6px!important;
+        bottom: 14px!important;
+    }
+
+
+    .subheadingSmall 
+    {
+        padding-left: 0px;
+     }
+
+    .fLbl 
+    {
+        font-size: $fnt16;
+    }
+
+
+
+   .mrgnLsp {
+    margin-left: 20px!important;
+        } 
 
     .algnRd 
     {

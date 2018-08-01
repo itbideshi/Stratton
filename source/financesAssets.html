@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html', { "exit": 1, "stage": 1 })
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        @@include('./templates/Navigation/navigation.html')
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-small">Tell us about your financial situation
+                </h1>
+                <div class="subheadingSmall slds-m-bottom_x-large ">We'll use this information to provide you a personalised rate and repayment quote.</div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters columnWrapper">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="slds-grid slds-wrap  slds-m-top_x-large">
+                            <div class="midHeading">
+                                <h2>Assets</h2>
+                                <p>We’ve made it easy for you to find everything you need here.</p>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Own home property
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Property value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_4-of-6">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Investment property
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_2-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary plusButton">
+                                      <i class="material-icons">
+                                        add_circle_outline
+                                        </i>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Asset value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Cash / bank
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Asset value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Financial deposits (shares, funds...)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Financial deposits (shares, funds...)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Total Value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Motor vehicle
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                   <button class="slds-button slds-button_neutral btnSecondary plusButton">
+                                      <i class="material-icons">
+                                        add_circle_outline
+                                        </i>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Vehicle value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Second vehicule value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Superannuation
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Asset Value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$300,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+
+                          <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_4-of-6">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Recreation assets (boats, RV's...)
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_2-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary plusButton">
+                                      <i class="material-icons">
+                                        add_circle_outline
+                                        </i>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Asset value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                        <div class="slds-m-top_large">
+                                            <label class="cstm_input">
+                                                <input type="checkbox" name="repayment">
+                                                <em></em> Currently financed
+                                            </label>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>  
+
+
+
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Furniture (antiques, valuables...)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                    <div class="formElem">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Assets Value</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$1400,000">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                                <div class="formElem slds-clearfix stepsAction ">
+                                    <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                        Back
+                                </button>
+                                    <button class="slds-button slds-button_brand btnSave slds-float_right wAuto defaultBtn defaultBtnHeight">
+                                        Add your liabilities
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 ">
+                <div class="summarySection">
+                    <h2 class="msgHeading slds-m-bottom_medium">Summary</h2>
+                    <p class="inTxt">
+                        The summary includes both primary and spouses finances
+                    </p>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Assets</div>
+                        <div class="slds-col slds-size_6-of-12">$1,820,00 wkly</div>
+                    </div>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Liabilities</div>
+                        <div class="slds-col slds-size_6-of-12">$15,000 wkly</div>
+                    </div>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Income</div>
+                        <div class="slds-col slds-size_6-of-12">$8,000 wkly</div>
+                    </div>
+                </div>
+                <div class="messageWrapper slds-m-top_large">
+                    <h2 class="msgHeading slds-m-bottom_medium">Improve serviceability</h2>
+                    <p>
+                        Improve your serviceability by including your spouses income:
+                    </p>
+                    <div class="slds-text-align_center slds-show_large">
+                        <button class="slds-button slds-button_brand applyBtn verify slds-m-top_medium slds-m-bottom_medium">Add spouses income</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

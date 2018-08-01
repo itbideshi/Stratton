@@ -19,7 +19,7 @@
     </div>
     <div class="headerSpace"></div>
     <!-- midcontent start here-->
-    <div class="container">
+    <div class="container ">
         <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
             <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
                 <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-small">Tell us about your financial situation
@@ -29,7 +29,7 @@
             <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
             </div>
         </div>
-        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters columnWrapper">
             <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
                 <div class="lhs_wrapper">
                     <form action="">
@@ -166,15 +166,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sectionSep slds-m-top_x-large"></div>
-                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_large">
-                            <div class="slds-col">
-                                <div class="midHeading">
-                                    <h2>Expenses</h2>
-                                    <p>We’ve made it easy for you to find everything you need here.</p>
+
+                            <div class="sectionSep slds-m-top_x-large"></div>
+
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large midHeading slds-m-top_x-large">
+                                <div class="slds-col slds-size_3-of-6 ">
+                                    <h2>Expense</h2>
                                 </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary arwButton">
+                                            <i class="material-icons">
+                                            expand_less
+                                            </i>
+                                    </button>
+                                </div>
+
+                                 <p class="slds-m-left_medium">We’ve made it easy for you to find everything you need here. </p>
                             </div>
-                        </div>
+
+
                         <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
                             <div class="slds-col slds-size_1-of-1">
                                 <label class="cstm_input">
@@ -184,9 +194,9 @@
                             </div>
                         </div>
                         <div class="slds-m-top_large">
-                            <div class="slds-grid slds-wrap slds-gutters">
-                                <div class="slds-col slds-size_2-of-6 slds-large-size_8-of-12">
-                                    <div class="formElem mrgnLsp">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                    <div class="formElem ">
                                         <div class="outlineNone">
                                             <label class="field_label">Total liabilities repayment</label>
                                             <div class="input_fields ">
@@ -196,7 +206,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slds-col slds-size_4-of-6 slds-large-size_4-of-12">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                     <div class="formElem">
                                         <div class="cs_selectbox" tabindex="-1">
                                             <label class="field_label">Frequency</label>
@@ -209,12 +219,18 @@
                                                             <span>$5,000</span>
                                                         </label>
                                                     </li>
+
+                                                     <li>
+                                                        <label>
+                                                            <input type="radio" value="new car" name="vehicle">
+                                                            <span>$5,000</span>
+                                                        </label>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="midSep" />
                             </div>
                         </div>
                         <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
@@ -226,19 +242,19 @@
                             </div>
                         </div>
                         <div class="slds-m-top_large">
-                            <div class="slds-grid slds-wrap slds-gutters">
-                                <div class="slds-col slds-size_2-of-6 slds-large-size_8-of-12">
-                                    <div class="formElem mrgnLsp">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                    <div class="formElem ">
                                         <div class="outlineNone">
                                             <label class="field_label">Amount</label>
                                             <div class="input_fields ">
-                                                <input type="text" value="Weekly">
+                                                <input type="text" value="$5000">
                                                 <em class="errMsg"></em>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slds-col slds-size_4-of-6 slds-large-size_4-of-12">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                     <div class="formElem">
                                         <div class="cs_selectbox" tabindex="-1">
                                             <label class="field_label">Fequency</label>
@@ -256,19 +272,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="midSep" />
                             </div>
                         </div>
 
                         
                         <div class="slds-grid slds-wrap slds-gutters slds-m-top_large">
-                            <div class="slds-col slds-size_4-of-6 ">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12 ">
                                 <label class="cstm_input">
                                     <input type="checkbox" name="repayment">
                                     <em></em> General living expenses
                                 </label>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem slds-m-left_xx-small">
                                     <div class="cs_selectbox " tabindex="-1">
                                         <span class="selection mrgnmT15">Weekly</span>
@@ -286,15 +301,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12 ">
+                                <div class="">
                                     <div class="cs_selectbox" tabindex="-1">
                                         Item
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="">
                                     <div class="outlineNone">
                                         Amount
@@ -304,17 +319,16 @@
                         </div>
                                         
                         
-                        <hr class="midSep2" />
 
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Groceries
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -325,15 +339,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Food (takeaway, resturants)
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -344,15 +358,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Utilities
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -363,15 +377,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Phone & Internet, TV
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -382,15 +396,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Phone & Internet, TV subscriptions
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -401,15 +415,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Other Bills
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -420,15 +434,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Entertainment
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -439,15 +453,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Clothing & personal care
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -458,15 +472,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Transport
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -490,9 +504,9 @@
                             </div>
                         </div>
                         <div class="slds-m-top_large">
-                            <div class="slds-grid slds-wrap slds-gutters">
-                                <div class="slds-col slds-size_2-of-6 slds-large-size_8-of-12">
-                                    <div class="formElem mrgnLsp">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                    <div class="formElem ">
                                         <div class="outlineNone">
                                             <label class="field_label">Amount</label>
                                             <div class="input_fields ">
@@ -502,7 +516,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slds-col slds-size_4-of-6 slds-large-size_4-of-12">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                     <div class="formElem">
                                         <div class="cs_selectbox" tabindex="-1">
                                             <label class="field_label">Fequency</label>
@@ -520,7 +534,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="midSep" />
                             </div>
                         </div>
                         <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
@@ -532,9 +545,9 @@
                             </div>
                         </div>
                         <div class="slds-m-top_large">
-                            <div class="slds-grid slds-wrap slds-gutters">
-                                <div class="slds-col slds-size_2-of-6 slds-large-size_8-of-12">
-                                    <div class="formElem mrgnLsp">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                    <div class="formElem ">
                                         <div class="outlineNone">
                                             <label class="field_label">Amount</label>
                                             <div class="input_fields ">
@@ -544,7 +557,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slds-col slds-size_4-of-6 slds-large-size_4-of-12">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                     <div class="formElem">
                                         <div class="cs_selectbox" tabindex="-1">
                                             <label class="field_label">Fequency</label>
@@ -564,7 +577,6 @@
                                 </div>
 
 
-                                   <hr class="midSep" />
                              
                             </div>
                         </div>
@@ -600,9 +612,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small headLbl">
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_small headLbl mrgnLsp">
                             <div class="slds-col slds-size_4-of-6 ">
-                                <div class="mrgnLsp">
+                                <div class="">
                                     <div class="cs_selectbox" tabindex="-1">
                                         Item
                                     </div>
@@ -617,18 +629,17 @@
                             </div>
                         </div>
 
-                        <hr class="midSep2" />
 
 
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp ">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Fuel & tyre
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -640,15 +651,15 @@
                             </div>
                         </div>
 
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Comprehensive insurance
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
@@ -660,15 +671,15 @@
                             </div>
                         </div>
 
-                        <div class="slds-grid slds-wrap slds-gutters ">
-                            <div class="slds-col slds-size_4-of-6 ">
-                                <div class="formElem mrgnLsp">
+                        <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_8-of-12">
+                                <div class="formElem ">
                                     <div class="cs_selectbox fLbl" tabindex="-1">
                                         Servicing
                                     </div>
                                 </div>
                             </div>
-                            <div class="slds-col slds-size_2-of-6">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
                                 <div class="formElem">
                                     <div class="outlineNone">
                                         <div class="input_fields ">
