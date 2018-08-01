@@ -101,10 +101,23 @@
             line-height: 27px;
             line-height: 27px;
             color: #ccc;
-            border:2px #ccc solid;
+            border:2px $disable-clr solid;
             i
             { font-size: $fnt24;}
         }
+
+      &.plusButton  
+    {
+            min-width: 8px !important;
+            height: 28px;
+            padding: 0px;
+            line-height: 27px;
+            line-height: 27px;
+            color: #ccc;
+            border:none;
+            i
+            { font-size: $fnt32;}
+        }    
 }
 
 .button_small {
@@ -130,6 +143,12 @@
         height: 40px;
         line-height: 35px;
         border-width: 2px;
+    }
+
+    &.defaultBtnHeight 
+    {
+        height: 40px;
+        line-height: 40px;
     }
 }
 
