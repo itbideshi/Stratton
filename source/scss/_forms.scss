@@ -278,36 +278,20 @@
             z-index: 99;
         }
 
-        .selection {
-            border-bottom: 2px solid $border-clr;
-            display: block;
-            padding: 15px 15px 15px 0px;
-            border-radius: 0;
-            width: 100%;
-            position: relative;
-            background: transparent;
-            box-sizing: border-box;
-            cursor: pointer;
-            font-size: 16px;
-            font-family: 'Poppins-700';
-            transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
-            &:after {
-                content: "";
-                position: absolute;
-                background: url('../images/icons/down_arrow.svg') no-repeat center center;
-                width: 20px;
-                height: 20px;
-                background-size: 100%;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 12px;
-                transition: transform .3s ease-in-out;
-            }
-            &.no_padding {
-                padding-left: 0px;
-            }
+        .ddArrow:after {
+            content: "";
+            position: absolute;
+            background: url('../images/icons/down_arrow.svg') no-repeat center center;
+            width: 20px;
+            height: 20px;
+            background-size: 100%;
+            right: 0;
+            bottom: 10px;
+            transform: translateY(-50%);
+            font-size: 12px;
+            transition: transform .3s ease-in-out, right .3s ease-in-out ;
         }
+
         .optionsList {
             border: 0;
             border-radius: 4px;
@@ -356,6 +340,8 @@
                 }
             }
         }
+
+
         input[type="text"],
         input[type="text"]:focus {
             width: 100%;
@@ -369,24 +355,53 @@
             border-bottom: 2px solid $border-clr;
             background: transparent;
             font-family: 'Poppins-700';
-
             transition: padding .3s ease-in-out;
         }
-        input[type="text"]:focus {
-            padding: 15px 15px 15px 15px;
+        input[type="text"]:focus{
+            padding-left: 15px;
+
+             &~.ddArrow:after {
+                right: 15px;
+                transform: rotate(180deg) translateY(50%);
+            }
+        }
+        &:focus {
+            .optionsList {
+                max-height: 400px;
+                opacity: 1;
+            }
+            .field_label {
+                padding-left: 15px;
+            }
+            input[type="text"]{
+                padding-left: 15px;
+            }
+            .ddArrow:after {
+                right: 15px;
+                transform: rotate(180deg) translateY(50%);
+            }
         }
         input[type="text"]::placeholder {
             font-family: 'Poppins-700';
             font-size: 16px;
             color: $placeholder-clr;
         }
-        input[type="text"]:not(:focus)+.optionsList {
+        /*input[type="text"]:not(:focus)+.optionsList {
             opacity: 0;
-            /*max-height:0px;*/
+            max-height:0px;
+        }*/
+        input[type="text"]:focus+.optionsList {
+            opacity: 1;
+            max-height: 400px;
+        }
+
+        &:not(:focus) .optionsList {
+            opacity: 0;
+            max-height: 0px;
         }
 
         .field_label {
-            padding-left: 0;
+            /*padding-left: 0;*/
             transition: padding-left .3s ease-in-out;
             display: block;
             width: 100%;
@@ -508,17 +523,19 @@ label.slideCheckbox input[type="checkbox"]+em {
     }
 }
 
-.custm_select_placeholder{
+.custm_select_placeholder {
     background: transparent;
-    min-height: 100%;
     width: 100%;
     display: block;
     position: absolute;
-    z-index:999;
+    z-index: 999;
     top: 0;
     display: none;
+    cursor: pointer;
+    height: 80px;
 }
-.cs_selectbox:focus + .custm_select_placeholder{
+
+.cs_selectbox:focus+.custm_select_placeholder {
     display: block;
 }
 

@@ -211,7 +211,7 @@ textarea {
     }
 
     .modalCrossIcon {
-        color: $grey-clr;
+        color: rgba(0,0,0,0.3);
         margin-right: 20px;
         margin-top: 20px;
         font-size: $fnt20;
@@ -623,7 +623,10 @@ textarea {
         background-size: 60%;
     }
 }
-
+.factoryListStyle{
+    line-height: 28px;
+    font-family: 'Poppins-700';
+}
 
 .veriCont 
 {
