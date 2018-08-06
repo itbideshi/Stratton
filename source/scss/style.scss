@@ -63,6 +63,11 @@ textarea {
     padding-left: 30px;
 }
 
+.paddL0 
+{
+    padding-left: 0px!important;
+}
+
 .alignC {
     text-align: center;
 }
@@ -150,9 +155,20 @@ textarea {
     color:$label-txt-clr;
     opacity: 0.6;
 }
+
+.lblLight {
+
+    color: $label-txt-clr;
+    opacity: 0.5;
+}
 .wAuto 
 {
     width: auto!important;
+}
+
+.minWvs 
+{
+    min-width:80px!important; 
 }
 
 .fLbl 
@@ -512,6 +528,11 @@ textarea {
         font-size: $fnt24;
     }
 
+    .sepSec 
+    {
+      border-bottom: 1px $border-sclr solid!important;  
+    }
+
     .inTxt {
         padding-bottom: 20px;
         border-bottom: 1px $border-sclr solid!important;
@@ -562,6 +583,11 @@ textarea {
         font-family: 'Poppins-600';
     }
 
+     h2 {
+        font-size: $fnt20;
+        font-family: 'Poppins-600';
+    }
+
     .lbl {
         font-family: 'Poppins-800';
         font-size: $fnt16;
@@ -599,11 +625,22 @@ textarea {
 }
 
 
+.veriCont 
+{
 
+line-height: 25px; 
+    a   
+    {
+        color:$primary-btn-bg;
+    }
+}
 
 @media (min-width: 1024px) {
 
-
+    
+       .mrgnDeskMbsp {
+        margin-left: 28px!important;
+        }      
     
     .tooltip_info_heading2 {
         right: 6px!important;
@@ -625,7 +662,11 @@ textarea {
 
    .mrgnLsp {
     margin-left: 20px!important;
-        } 
+        }
+
+    .mrgnDeskMbsp {
+        margin-left: 0px!important;
+        }      
 
     .algnRd 
     {

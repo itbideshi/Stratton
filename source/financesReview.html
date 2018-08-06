@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html', { "exit": 1, "stage": 1 })
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        @@include('./templates/Navigation/navigation.html')
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-large">Review and submit your application
+                </h1>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters columnWrapper">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <h2>The car</h2>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary defaultBtnHeight minWvs">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large mrgnDeskMbsp">
+                                <div class="slds-col slds-size_1-of-1 ">
+                                    I'm buying a 2016 Ford Mustang GT Premium for personal use
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-m-top_large slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <h2>Personal details</h2>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary defaultBtnHeight minWvs">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large mrgnDeskMbsp">
+                                <div class="slds-col slds-size_1-of-1 ">
+                                    <p> My name is James Lewis </p>
+                                    <p> I'm married with 1 dependent </p>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 veriCont slds-m-top_large ">
+                                    <p>Your email is not verified</p>
+                                    <p>To submit the application you need to verify your email (james.lewis@gmail.com)</p>
+                                    <p><a href="#">Send verification email</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-top_large  slds-m-bottom_large ">
+                                <div class="slds-col slds-size_3-of-6 ">
+                                    <h2>Living situation</h2>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary defaultBtnHeight minWvs">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large mrgnDeskMbsp">
+                                <div class="slds-col slds-size_1-of-1  ">
+                                    <p>402/ 145 Victoria street
+                                        <br/> Richmond, 3065, VIC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-top_large slds-m-bottom_large ">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <h2>Employment</h2>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary defaultBtnHeight minWvs">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large mrgnDeskMbsp">
+                                <div class="slds-col slds-size_1-of-1  ">
+                                    <p>I'm full time as a Branch Teller
+                                        <br/> at Bendigo Bank</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-top_large slds-m-bottom_large ">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <h2>Finances</h2>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary defaultBtnHeight minWvs">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mrgnDeskMbsp">
+                                <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-small">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_5-of-12 lblLight">
+                                        Total assets
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12  alignR">
+                                        $1,820,000
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-small">
+                                    <div class="slds-col slds-size_3-of-6  slds-large-size_5-of-12  lblLight">
+                                        Total liabilities
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12  alignR">
+                                        $1,20,000
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-small">
+                                    <div class="slds-col slds-size_3-of-6  slds-large-size_5-of-12 lblLight">
+                                        Monthly income
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6  slds-large-size_4-of-12  alignR">
+                                        $15,000
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-small">
+                                    <div class="slds-col slds-size_3-of-6  slds-large-size_5-of-12 lblLight">
+                                        Monthly expense
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6  slds-large-size_4-of-12  alignR">
+                                        $15,000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="gridColCont">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-top_large  slds-m-bottom_large ">
+                                <div class="slds-col slds-size_6-of-6 ">
+                                    <h2>Do you foresee any significant changes to your income or expenses in the next 12 months?</h2>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large ">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="radio" name="repayment">
+                                        <em></em> Yes
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-m-top_large">
+                                    <label class="cstm_input">
+                                        <input type="radio" name="repayment">
+                                        <em></em> No
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-m-top_large">
+                                    <label class="cstm_input paddL0">
+                                        <input type="checkbox" name="repayment">
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em>I declare that all the assets, liabilities, income and expenses are correct and I acknowledge that this information has been provided to Stratton Finance Pty Ltd to conduct a preliminary assessment of my consumer finance application.
+                                </label>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-m-top_large">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em>I acknowledge I can be charged a maximum of $1,500 inc. GST for Stratton's services to take out this loan. The actual fees will be calculated disclosed with your quote.
+                                </label>
+                            </div>
+                        
+                        </div>
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                                    <div class="formElem slds-clearfix stepsAction">
+                                        <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                            Back
+                                        </button>
+                                        <button class="slds-button slds-button_brand btnSave slds-float_right">
+                                            Get your quote
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 ">
+               <div class="summarySection">
+                    <h2 class="msgHeading slds-m-bottom_medium">Summary</h2>
+                     <div class="sepSec"></div>
+                  
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Assets</div>
+                        <div class="slds-col slds-size_6-of-12 alignR">$1,820,00 wkly</div>
+                    </div>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Liabilities</div>
+                        <div class="slds-col slds-size_6-of-12 alignR">$15,000 wkly</div>
+                    </div>
+
+                     <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Income</div>
+                        <div class="slds-col slds-size_6-of-12 alignR">$8,000 wkly</div>
+                    </div>
+
+                     <div class="sepSec slds-m-top_large"></div>
+
+
+                    <h2 class="msgHeading slds-m-bottom_medium slds-m-top_large">Amanda</h2>
+                  
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Monthly Income</div>
+                        <div class="slds-col slds-size_6-of-12 alignR">$1,820,00 </div>
+                    </div>
+                    <div class="slds-grid slds-m-top_large slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">Total Liabilities</div>
+                        <div class="slds-col slds-size_6-of-12 alignR">$15,000</div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
