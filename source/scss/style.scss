@@ -171,6 +171,11 @@ textarea {
     min-width:80px!important; 
 }
 
+.minWm 
+{
+    min-width:120px!important; 
+}
+
 .fLbl 
 {
     font-size: $fnt14;
@@ -180,7 +185,8 @@ textarea {
 
 .privacyLightBox {
 
-    font-family: 'Poppins-600';
+    padding: 10px 0px 0px 0px;
+    font-family: 'Poppins-800';
     font-size: $fnt14;
     h2 {
         font-size: $fnt32;
@@ -191,10 +197,13 @@ textarea {
         }
     }
 
-    .privacyContent {
-        font-size: $fnt14;
-        font-family: 'Poppins-500';
-    }
+    .privacyContent 
+        {
+            font-size: $fnt14;
+            font-family: 'Poppins-500';
+            overflow: auto;
+            height: 150px;
+        }
 
     p {
         margin: 10px 0px;
@@ -638,7 +647,40 @@ line-height: 25px;
     }
 }
 
+
+ .modalMidBox 
+    {
+        padding: 0px 60px;
+    }
+
+
+ .reviewLightBox 
+     {
+        
+          h2 {
+            font-size: $fnt24;
+            padding: 0px 0px 25px 0px;
+            font-family: 'Poppins-600';
+        }
+
+         h3 {
+            font-size: $fnt20;
+            padding: 0px 0px 10px 0px;
+        }
+
+      }
+   
+
+
 @media (min-width: 1024px) {
+
+
+    .privacyLightBox 
+       {
+
+          padding: 10px 30px 0px 30px;
+
+        }
 
     
        .mrgnDeskMbsp {
@@ -690,6 +732,14 @@ line-height: 25px;
             font-size: $fnt32;
             padding: 20px 0px 20px 0px;
         }
+    }
+
+
+  
+   
+    .widthAuto 
+    {
+        width: auto!important;
     }
 
     .slds-modal__content {
