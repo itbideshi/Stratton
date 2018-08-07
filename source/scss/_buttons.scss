@@ -41,10 +41,10 @@
 .slds-button {
     &.primaryBtn {
         @include buttonWrapper($primary-btn-bg, $white-clr);
-        &:disabled{
-        	background-color: $disable-clr;
-        	border-color: $disable-clr;
-        }
+    }
+    &:disabled{
+        background-color: $disable-chk-clr !important;
+        border-color: $disable-chk-clr !important;
     }
     &.applyBtn {
         @include buttonWrapper($secondary-btn-bg, $white-clr);
