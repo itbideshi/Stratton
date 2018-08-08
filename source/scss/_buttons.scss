@@ -106,7 +106,7 @@
             height: 28px;
             padding: 0px;
             line-height: 27px;
-            color: #ccc;
+            color: $placeholder-clr;
             border:2px $disable-clr solid;
             i
             { font-size: $fnt24;}
@@ -134,7 +134,7 @@
             padding: 0px;
             line-height: 27px;
             line-height: 27px;
-            color: #ccc;
+            color: $placeholder-clr;
             border:none;
             i
             { font-size: $fnt32;}
