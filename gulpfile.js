@@ -4,6 +4,7 @@ var rename = require('gulp-rename');
 //var include = require('gulp-include-template');
 var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('serve', ['sass', 'fileinclude'], function() {
     browserSync.init({
@@ -17,8 +18,10 @@ gulp.task('serve', ['sass', 'fileinclude'], function() {
 
 gulp.task('sass', function() {
     return gulp.src("./source/scss/*.scss")
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest("./devBuild/stylesheets/"))
         .pipe(browserSync.stream());
 });
