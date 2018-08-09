@@ -107,7 +107,7 @@
             padding: 0px;
             line-height: 27px;
             color: #ccc;
-            border:2px $disable-clr solid;
+            border:2px $placeholder-clr solid;
             i
             { font-size: $fnt24;}
         }
@@ -134,7 +134,7 @@
             padding: 0px;
             line-height: 27px;
             line-height: 27px;
-            color: #ccc;
+            color: $placeholder-clr;
             border:none;
             i
             { font-size: $fnt32;}
@@ -175,6 +175,12 @@
     {
         height: 40px;
         line-height: 40px;
+    }
+
+     &.defaultBtnHeight2 
+    {
+        height: 50px;
+        line-height: 50px;
     }
 }
 
