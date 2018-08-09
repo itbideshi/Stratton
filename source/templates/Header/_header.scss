@@ -4,7 +4,6 @@ header {
     padding: 32px 15px 32px;
     margin: 0 auto;
     background: $white-clr;
-
     .logo {
         max-width: 135px;
     }
@@ -36,7 +35,6 @@ header {
             width: 100%;
         }
     }
-
     .call {
         line-height: 45px;
         a,
@@ -60,12 +58,10 @@ header {
             line-height: 40px;
         }
     }
-
     .headTxt {
         font-size: $fnt24;
         color: $primary-btn-bg;
         line-height: 64px;
-
         span {
             color: $blk-clr;
             font-family: 'Poppins-700';
@@ -95,7 +91,6 @@ header {
         .logo {
             max-width: 100%;
         }
-
         .call {
             line-height: 64px;
         }

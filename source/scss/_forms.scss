@@ -1,9 +1,6 @@
 .formElem {
     @extend .slds-m-bottom_x-large;
-
     position: relative;
-
-
     .field_label {
         padding-left: 0;
         transition: padding-left .3s ease-in-out;
@@ -12,7 +9,6 @@
         color: $label-txt-clr;
         opacity: 0.6;
     }
-
     .input_fields {
         position: relative;
         input,
@@ -41,8 +37,6 @@
             background: url('../images/icons/check.svg') no-repeat right center;
             background-size: 12px;
         }
-
-
         &.amount {
             .material-icons {
                 position: absolute;
@@ -56,17 +50,14 @@
                 padding-left: 16px;
             }
         }
-
         input[type=number]::-webkit-inner-spin-button,
         input[type=number]::-webkit-outer-spin-button {
             -webkit-appearance: none;
             margin: 0;
         }
-
         .errMsg {
             display: none;
         }
-
         select,
         select:focus,
         select:active {
@@ -77,12 +68,10 @@
             position: relative;
             z-index: 1;
         }
-
         .slds-form-element__label {
             display: none;
         }
     }
-
     .error {
         input {
             background: url('../images/icons/err_close.svg') no-repeat right center;
@@ -113,11 +102,9 @@
         padding: 15px;
         margin-top: 5px;
     }
-
     legend.slds-form-element__label {
         display: none;
     }
-
     .cs_selectbox {
         width: 100%;
         position: relative;
@@ -172,7 +159,6 @@
             max-height: 400px;
             opacity: 1;
             transition: max-height .3s ease-in-out, opacity .5s ease-in-out;
-
             ul {
                 padding: 0;
                 margin: 0;
@@ -182,7 +168,6 @@
                 height: 100%;
                 max-height: 260px;
                 position: relative;
-
                 li label {
                     padding: 10px 10px 10px 15px;
                     display: block;
@@ -204,7 +189,6 @@
                 }
             }
         }
-
         .thumbs_up,
         .thumbs_down {
             background: url('../../images/icons/thumbs-up.svg') no-repeat 0 center;
@@ -219,13 +203,9 @@
             position: relative;
             top: 5px;
         }
-
-
-
         &:focus {
             outline: none;
             z-index: 999;
-
             .field_label {
                 padding-left: 15px;
             }
@@ -241,12 +221,10 @@
                 transform: rotate(180deg) translateY(50%);
             }
         }
-
         &:not(:focus) .optionsList {
             max-height: 0;
             opacity: 0;
         }
-
         &.no_label {
             text-align: left;
             .selection {
@@ -266,18 +244,15 @@
             }
         }
     }
-
     /*---------------------*/
     .autosuggest {
         width: 100%;
         position: relative;
         z-index: 9;
         outline: none;
-
         &:focus {
             z-index: 99;
         }
-
         .ddArrow:after {
             content: "";
             position: absolute;
@@ -289,9 +264,8 @@
             bottom: 10px;
             transform: translateY(-50%);
             font-size: 12px;
-            transition: transform .3s ease-in-out, right .3s ease-in-out ;
+            transition: transform .3s ease-in-out, right .3s ease-in-out;
         }
-
         .optionsList {
             border: 0;
             border-radius: 4px;
@@ -307,7 +281,6 @@
             max-height: 400px;
             opacity: 1;
             transition: max-height .3s ease-in-out, opacity .3s ease-in-out;
-
             ul {
                 padding: 0;
                 margin: 0;
@@ -318,7 +291,6 @@
                 height: 100%;
                 max-height: 260px;
                 position: relative;
-
                 li label {
                     padding: 10px 10px 10px 15px;
                     display: block;
@@ -340,8 +312,6 @@
                 }
             }
         }
-
-
         input[type="text"],
         input[type="text"]:focus {
             width: 100%;
@@ -357,10 +327,9 @@
             font-family: 'Poppins-700';
             transition: padding .3s ease-in-out;
         }
-        input[type="text"]:focus{
+        input[type="text"]:focus {
             padding-left: 15px;
-
-             &~.ddArrow:after {
+            &~.ddArrow:after {
                 right: 15px;
                 transform: rotate(180deg) translateY(50%);
             }
@@ -373,7 +342,7 @@
             .field_label {
                 padding-left: 15px;
             }
-            input[type="text"]{
+            input[type="text"] {
                 padding-left: 15px;
             }
             .ddArrow:after {
@@ -387,19 +356,17 @@
             color: $placeholder-clr;
         }
         /*input[type="text"]:not(:focus)+.optionsList {
-            opacity: 0;
-            max-height:0px;
+        opacity: 0;
+        max-height:0px;
         }*/
         input[type="text"]:focus+.optionsList {
             opacity: 1;
             max-height: 400px;
         }
-
         &:not(:focus) .optionsList {
             opacity: 0;
             max-height: 0px;
         }
-
         .field_label {
             /*padding-left: 0;*/
             transition: padding-left .3s ease-in-out;
@@ -417,13 +384,10 @@
         right: 0px;
         top: 22%;
     }
-
     .tooltip_info_heading1 {
         right: 0px!important;
         top: 10%!important;
     }
-
-
     .editLink {
         position: absolute;
         right: -40px;
@@ -438,7 +402,6 @@
     padding: 5px 15px 0px 0 !important;
     box-shadow: none !important;
 }
-
 
 label.slideCheckbox,
 label.slideRadio {
@@ -460,11 +423,9 @@ label.slideRadio {
 label.slideRadio {
     border-radius: 100px;
     padding: 0;
-
     .slds-checkbox_faux {
         display: none;
     }
-
     input[type="checkbox"] {
         &+em,
         &+label {
@@ -477,7 +438,6 @@ label.slideRadio {
             transition: background-color .2s ease-in-out;
             border-radius: 100px;
             cursor: pointer;
-
             &:before {
                 content: "";
                 display: block;
@@ -496,14 +456,12 @@ label.slideRadio {
         &:checked+label {
             background: $verify-clr url('../images/icons/white_check.svg') no-repeat 20% center;
             background-size: 20%;
-
             &:before {
                 left: calc(100% - 35px);
             }
         }
     }
 }
-
 
 label.slideCheckbox input[type="checkbox"]+em {
     background: $errbg-clr url('../images/icons/err_close.svg') no-repeat center center;

@@ -15,7 +15,6 @@
     border-top: 1px solid $border-clr;
     background: $white-clr;
     z-index: 99;
-
     &.stepsAction {
         border-top: 1px solid $brd-box;
         padding-top: 15px;
@@ -25,7 +24,6 @@
         padding-right: 0px;
         width: calc(100% - 74px);
     }
-
     .slds-button {
         min-width: auto;
     }
@@ -49,20 +47,16 @@
     &.applyBtn {
         @include buttonWrapper($secondary-btn-bg, $white-clr);
     }
-
     &.verify {
-
         background-color: $verify-clr;
         width: 100%;
     }
-
     &.btnBack {
         min-width: 80px!important;
         @include buttonWrapper($secondary-btn-bg, $white-clr);
         height: 40px;
         line-height: 40px;
     }
-
     &.btnSave {
         min-width: 190px!important;
         @include buttonWrapper($secondary-btn-bg, $white-clr);
@@ -73,44 +67,36 @@
         @include buttonWrapper($heading-clr, $white-clr);
         border-radius: 30px;
     }
-
     &.btnheadSnd {
         min-width: 80px!important;
         height: 40px!important;
         line-height: 40px!important;
     }
-
     &.btnSecondary {
         @include buttonWrapper($white-clr, $blk-clr);
         border-radius: 30px;
         border-color: $grey-clr;
         min-width: 110px;
     }
-
     &.editBtn {
         min-width: 80px;
         height: 40px;
         line-height: 40px;
     }
-
     &.btnlarge {
-
         min-width: 275px!important;
     }
-
     &.arwButton {
         min-width: 8px !important;
         height: 28px;
         padding: 0px;
         line-height: 27px;
-
         color: $placeholder-clr;
         border: 2px $disable-clr solid;
         i {
             font-size: $fnt24;
         }
     }
-
     &.backButton {
         min-width: 35px!important;
         height: 35px;
@@ -120,12 +106,10 @@
         border: 2px $brd-clr-trd solid;
         background: none;
         margin-left: 30px;
-
         i {
             font-size: $fnt20!important;
         }
     }
-
     &.plusButton {
         min-width: 8px !important;
         height: 28px;
@@ -137,7 +121,6 @@
             font-size: $fnt32;
         }
     }
-
     &.doneBtn {
         min-width: 140px!important;
     }
@@ -157,7 +140,6 @@
         line-height: 45px;
         border-width: 2px;
     }
-
     &.defaultBtnSnd {
         @include buttonWrapper($white-clr, $secondary-btn-bg);
         border-color: $secondary-btn-bg;
@@ -167,12 +149,10 @@
         line-height: 35px;
         border-width: 2px;
     }
-
     &.defaultBtnHeight {
         height: 40px;
         line-height: 40px;
     }
-
     &.defaultBtnHeight2 {
         height: 50px;
         line-height: 50px;
@@ -180,20 +160,16 @@
 }
 
 @media (min-width: 1024px) {
-
     .slds-button {
-
         &.backButton {
             margin-left: 0px;
         }
     }
-
     .button_small {
         height: auto;
     }
     .submitBtn {
         min-height: 0;
-
         .formElem {
             position: static;
             text-align: left;
