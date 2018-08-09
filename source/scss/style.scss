@@ -50,8 +50,7 @@ textarea {
     padding-top: 0px!important;
 }
 
-.mrgnmT15 
-{
+.mrgnmT15 {
     margin-top: -15px;
 }
 
@@ -63,8 +62,7 @@ textarea {
     padding-left: 30px;
 }
 
-.paddL0 
-{
+.paddL0 {
     padding-left: 0px!important;
 }
 
@@ -132,8 +130,11 @@ textarea {
     padding: 20px;
 }
 
-.midSep 
-{
+.padd_l50 {
+    padding-left: 50px;
+}
+
+.midSep {
     width: 100%;
     margin: 0px;
     height: 1px;
@@ -141,18 +142,16 @@ textarea {
     margin: 20px 15px;
 }
 
-.midSep2 
-{
+.midSep2 {
     width: 93%;
     margin: 0px;
     height: 1px;
     margin: 20px 34px;
 }
 
-.headLbl 
-{
+.headLbl {
     font-size: $fnt14;
-    color:$label-txt-clr;
+    color: $label-txt-clr;
     opacity: 0.6;
 }
 
@@ -161,29 +160,24 @@ textarea {
     color: $label-txt-clr;
     opacity: 0.5;
 }
-.wAuto 
-{
+
+.wAuto {
     width: auto!important;
 }
 
-
-.wfAuto 
-{
+.wfAuto {
     width: 100%!important;
 }
 
-.minWvs 
-{
-    min-width:80px!important; 
+.minWvs {
+    min-width: 80px!important;
 }
 
-.minWm 
-{
-    min-width:120px!important; 
+.minWm {
+    min-width: 120px!important;
 }
 
-.fLbl 
-{
+.fLbl {
     font-size: $fnt14;
 }
 
@@ -192,7 +186,6 @@ textarea {
 @import '../templates/Navigation/_pageNavigation';
 
 .privacyLightBox {
-
     padding: 10px 0px 0px 0px;
     font-family: 'Poppins-800';
     font-size: $fnt14;
@@ -205,16 +198,16 @@ textarea {
         }
     }
 
-    .privacyContent 
-        {
-            font-size: $fnt14;
-            font-family: 'Poppins-500';
-            overflow: auto;
-            height: 150px;
-        }
+    .privacyContent {
+        font-size: $fnt14;
+        font-family: 'Poppins-500';
+        overflow: auto;
+        height: 150px;
+    }
 
     p {
         margin: 10px 0px;
+        word-break: break-word;
     }
 }
 
@@ -228,7 +221,7 @@ textarea {
     }
 
     .modalCrossIcon {
-        color: rgba(0,0,0,0.3);
+        color: rgba(0, 0, 0, 0.3);
         margin-right: 20px;
         margin-top: 20px;
         font-size: $fnt20;
@@ -315,7 +308,7 @@ textarea {
     @import '../templates/Chatter/_chatter.scss';
 
 
-    .columnWrapper{
+    .columnWrapper {
         border: 1px solid $brd-box;
         border-radius: 8px 8px 0 0;
         padding: 15px 16px 100px;
@@ -325,7 +318,7 @@ textarea {
         margin-bottom: 0;
         border-bottom: 0;
 
-        .lhs_wrapper{
+        .lhs_wrapper {
             border: 0;
             padding: 0;
         }
@@ -338,7 +331,8 @@ textarea {
 @import '../templates/LoanCalculator/_loanCalculator';
 
 
-.carDetailLightBox, .passwordLightBox {
+.carDetailLightBox,
+.passwordLightBox {
     clear: both;
     font-family: 'Poppins-300';
 
@@ -353,19 +347,17 @@ textarea {
 }
 
 
-.passwordLightBox 
-{
+.passwordLightBox {
     h2 {
         font-size: $fnt32;
         font-family: 'Poppins-700';
         padding: 0px 0px 20px 0px;
         line-height: 38px;
-    } 
+    }
 
-    .subheading 
-    {
-         font-size: $fnt32;
-         line-height: 38px;
+    .subheading {
+        font-size: $fnt32;
+        line-height: 38px;
     }
 }
 
@@ -387,19 +379,21 @@ textarea {
         background: $blk-clr url('../images/startHeadImg.png') no-repeat 0 center;
         background-size: cover;
         width: 100%;
-        min-height: 700px;
+        min-height: 566px;
         position: relative;
 
         .inHeadCont {
             color: $white-clr;
-            font-size: $fnt18;
+            font-size: $fnt16;
             padding: 0px 30px 0px 18px;
-            position: static;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             h2 {
-                font-size: $fnt60;
+                font-size: $fnt52;
                 font-family: 'Poppins-500';
-                line-height: 65px;
-                padding-top: 70px;
+                line-height: 52px;
+                padding-top: 0px;
 
                 span {
                     font-family: 'Poppins-300';
@@ -409,6 +403,7 @@ textarea {
             .textCont {
                 font-family: 'Poppins-300';
                 margin-top: 50px;
+                line-height: 27px;
             }
 
             .btnSave {
@@ -430,9 +425,10 @@ textarea {
         color: $blk-clr;
         h3 {
             padding: 60px 20px 20px 20px;
-            font-size: $fnt60;
+            /*font-size: $fnt60;
             line-height: 68px;
-            font-family: 'Poppins-300';
+            font-family: 'Poppins-300';*/
+            font: normal 42px/47px 'Poppins-300';
         }
         .slds-button {
             cursor: default;
@@ -448,12 +444,26 @@ textarea {
             font-size: $fnt24;
             margin-bottom: 20px;
             position: relative;
-            padding-left: 35px;
+            padding-left: 30px;
+            position: relative;
+            strong {
+                font-family: 'Poppins-700';
+                padding-right: 15px;
+                color: $error-clr;
+                position: absolute;
+                left: 0;
+            }
         }
         .material-icons {
             position: absolute;
             left: 0px;
             color: $verify-clr;
+        }
+        p {
+            padding-left: 30px;
+            font-size: $fnt16;
+            color: $secondary-clr;
+            font-family: 'Poppins-300';
         }
     }
 
@@ -461,8 +471,7 @@ textarea {
         max-width: 220px!important;
     }
 
-    .defaultBntSnd 
-    {
+    .defaultBntSnd {
         background: none;
     }
 
@@ -482,6 +491,8 @@ textarea {
             font-size: $fnt60;
             padding-bottom: 20px;
             text-align: center;
+            font-weight: normal;
+            font-family: 'Poppins-300';
         }
 
         .subHead {
@@ -545,9 +556,8 @@ textarea {
         font-size: $fnt24;
     }
 
-    .sepSec 
-    {
-      border-bottom: 1px $border-sclr solid!important;  
+    .sepSec {
+        border-bottom: 1px $border-sclr solid!important;
     }
 
     .inTxt {
@@ -603,23 +613,22 @@ textarea {
         font-family: 'Poppins-700';
     }
 
-     h2 {
+    h2 {
         font-size: $fnt20;
         font-family: 'Poppins-600';
     }
 
-      h4 {
+    h4 {
         font-size: $fnt18;
         font-family: 'Poppins-600';
     }
 
-       h5 {
+    h5 {
         font-size: $fnt16;
         font-family: 'Poppins-600';
     }
 
-    .txtSml 
-    {
+    .txtSml {
         font-size: $fnt14;
     }
 
@@ -649,72 +658,63 @@ textarea {
 }
 
 
-.customCheckCont 
-{
-       input[type="checkbox"]:checked+em,
-       input[type="checkbox"]:checked+label {
+.customCheckCont {
+    input[type="checkbox"]:checked+em,
+    input[type="checkbox"]:checked+label {
         background: $white-clr url('../images/icons/green_check.svg') no-repeat center center;
         border-color: $verify-clr;
         background-size: 60%;
     }
 }
-.factoryListStyle{
+
+.factoryListStyle {
     line-height: 28px;
     font-family: 'Poppins-700';
 }
 
-.veriCont 
-{
+.veriCont {
 
-line-height: 25px; 
-    a   
-    {
-        color:$primary-btn-bg;
+    line-height: 25px;
+    a {
+        color: $primary-btn-bg;
+    }
+}
+
+.modalMidBox {
+    padding: 0px 30px;
+}
+
+
+
+.reviewLightBox {
+
+    h2 {
+        font-size: $fnt24;
+        padding: 0px 0px 25px 0px;
+        font-family: 'Poppins-600';
+    }
+
+    h3 {
+        font-size: $fnt20;
+        padding: 0px 0px 10px 0px;
     }
 }
 
 
- .modalMidBox 
-    {
-        padding: 0px 30px;
-    }
 
-
- .reviewLightBox 
-     {
-        
-          h2 {
-            font-size: $fnt24;
-            padding: 0px 0px 25px 0px;
-            font-family: 'Poppins-600';
-        }
-
-         h3 {
-            font-size: $fnt20;
-            padding: 0px 0px 10px 0px;
-        }
-
-      }
-   
-
-
-.quoteInfo 
-{
-    h3
-    {
+.quoteInfo {
+    h3 {
         font-size: $fnt20;
         font-family: 'Poppins-400';
     }
 
- h1
-    {
+    h1 {
         font-size: $fnt62;
         font-family: 'Poppins-700';
 
-        em 
-        {
+        em {
             font-size: $fnt14;
-            color:$label-txt-clr;
+            color: $label-txt-clr;
             opacity: 0.3;
             font-style: normal;
             display: block;
@@ -722,15 +722,13 @@ line-height: 25px;
     }
 
 
- h2
-    {
+    h2 {
         font-size: $fnt42!important;
         font-family: 'Poppins-700';
 
-        em 
-        {
+        em {
             font-size: $fnt14;
-            color:$label-txt-clr;
+            color: $label-txt-clr;
             opacity: 0.3;
             font-style: normal;
             display: block;
@@ -738,110 +736,90 @@ line-height: 25px;
     }
 }
 
-.nextCont 
-{
+.nextCont {
     padding-left: 85px!important;
-    position:relative;
-    span 
-    {
+    position: relative;
+    span {
         position: absolute;
         left: 10px;
     }
 }
 
 
-    .liveChatBtn 
-        {
-            position: fixed;
-            bottom: 100px;
-            right: 0px;
-            z-index: 9999;
-            button 
-            {
-                    background:$primary-clr;
-                    border:none;
-                    border-radius: 50px;
-                    padding:10px;
-                    color:$white-clr;
-                    width: 60px;
-                    height: 60px;
-                    margin-right: 30px;
-            }
-
-        }
+.liveChatBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
+    z-index: 9999;
+    button {
+        background: $primary-clr;
+        border: none;
+        border-radius: 50px;
+        padding: 10px;
+        color: $white-clr;
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+}
 
 @media (min-width: 1024px) {
 
+    .liveChatBtn {
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
 
-    .liveChatBtn 
-        {
-            position: fixed;
-            bottom: 100px;
-            right: 0px;
-
-            button 
-            {
-                    background:$primary-clr;
-                    border:none;
-                    border-radius: 35px;
-                    padding:10px 20px 10px 20px;
-                    color:$white-clr;
-                    width: auto;
-                    height: 60px;
-                    margin-right: 0px;
-
-            }
-
-}
+        button {
+            background: $primary-clr;
+            border: none;
+            border-radius: 35px;
+            padding: 10px 20px 10px 20px;
+            color: $white-clr;
+            width: auto;
+            height: 60px;
+            margin-right: 0px;
+        }
+    }
 
 
 
-     .modalMidBox 
-    {
+    .modalMidBox {
         padding: 0px 60px;
     }
 
 
-    .privacyLightBox 
-       {
+    .privacyLightBox {
 
-          padding: 10px 30px 0px 30px;
+        padding: 10px 30px 0px 30px;
+    }
 
-        }
-
-    
-       .mrgnDeskMbsp {
+    .mrgnDeskMbsp {
         margin-left: 28px!important;
-        }      
-    
+    }
+
     .tooltip_info_heading2 {
         right: 6px!important;
         bottom: 14px!important;
     }
 
 
-    .subheadingSmall 
-    {
+    .subheadingSmall {
         padding-left: 0px;
-     }
-
-    .fLbl 
-    {
-        font-size: $fnt16;
     }
 
-
-
-   .mrgnLsp {
-    margin-left: 20px!important;
-        }
+    .fLbl {
+        font-size: $fnt16;
+    }
+    .mrgnLsp {
+        margin-left: 20px!important;
+    }
 
     .mrgnDeskMbsp {
         margin-left: 0px!important;
-        }      
+    }
 
-    .algnRd 
-    {
+    .algnRd {
         text-align: right;
     }
 
@@ -854,18 +832,13 @@ line-height: 25px;
     }
 
     .carDetailLightBox {
-
         h2 {
             font-size: $fnt32;
             padding: 20px 0px 20px 0px;
         }
     }
 
-
-  
-   
-    .widthAuto 
-    {
+    .widthAuto {
         width: auto!important;
     }
 
@@ -877,25 +850,27 @@ line-height: 25px;
         .midCont {
             color: $blk-clr;
             float: right;
+            min-height: 1024px;
             h3 {
-                padding-top: 140px;
+                padding-top: 120px;
                 font-size: $fnt60;
                 line-height: 68px;
                 font-family: 'Poppins-300';
+                padding-bottom: 80px;
             }
         }
 
         .headCont {
-            min-height: 1000px;
+            height: 924px;
 
             .inHeadCont {
-
-                position: absolute;
                 right: 40px;
-                padding: 0px 30px 30px 30px;
+                padding: 30px;
 
                 h2 {
-                    padding-top: 260px!important;
+                    padding-top: 0px;
+                    font-size: $fnt65;
+                    line-height: 68px;
                 }
 
                 .learnMore {
@@ -905,15 +880,17 @@ line-height: 25px;
         }
 
         .rhsImg {
-            padding-top: 70px;
+            padding-top: 0px;
         }
 
         .bottomInfo {
-            margin-top: 140px;
+            margin-top: 0px;
+            min-height: 1024px;
 
             .boxInfo {
                 padding-top: 100px;
-
+                max-width: 980px;
+                margin: 0 auto;
                 ul {
                     li {
                         margin-bottom: 20px;
@@ -931,6 +908,11 @@ line-height: 25px;
                 h4 {
                     padding-left: 0px;
                 }
+            }
+        }
+        .listInfo {
+            p {
+                padding-right: 30px;
             }
         }
     }
@@ -998,9 +980,9 @@ line-height: 25px;
             padding-right: 15px;
         }
 
-        .columnWrapper{
+        .columnWrapper {
             border: 0;
-            border-radius:0;
+            border-radius: 0;
             padding: 0;
             margin-left: -15px;
             margin-right: -15px;
@@ -1008,7 +990,7 @@ line-height: 25px;
             margin-bottom: 0;
             border-bottom: 0;
 
-            .lhs_wrapper{
+            .lhs_wrapper {
                 border: 1px $brd-box solid;
                 padding: 40px;
             }
