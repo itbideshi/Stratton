@@ -161,6 +161,10 @@ textarea {
     opacity: 0.5;
 }
 
+.lblLight2 {
+    color: $secondary-clr;
+}
+
 .wAuto {
     width: auto!important;
 }
@@ -286,6 +290,8 @@ textarea {
             float: left;
         }
     }
+
+
 
     .buttonBotInfo {
         border-top: 1px $grey-clr solid;
@@ -736,6 +742,19 @@ textarea {
     }
 }
 
+.lendInfo 
+{
+     h1 {
+
+        font-size: $heading1!important;
+
+    }
+
+     h2 {
+        font-size: $heading3!important;
+    }
+}
+
 .nextCont {
     padding-left: 85px!important;
     position: relative;
@@ -760,10 +779,93 @@ textarea {
         width: 60px;
         height: 60px;
         margin-right: 30px;
+
+        img {
+            margin-left: 5px;
+        }
     }
 }
 
+.tabHead {
+    background: $grey-light-clr;
+    color: $label-txt-clr;
+    border-top: 1px $brd-clr-light solid;
+    border-bottom: 1px $brd-clr-light solid;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 15px 10px 15px 25px;
+}
+
+.uploadInfo {
+
+    font-size: $fnt16;
+
+    .colF {
+        font-size: $fnt14;
+    }
+
+    .colS {
+        font-family: 'Poppins-700';
+    }
+
+    .cross {
+        font-size: $fnt16;
+    }
+}
+
+.greyBg {
+    background: $brd-box!important;
+}
+
+.greyBox {
+    font-size: $fnt14!important;
+    color: $grey-dark-clr!important;
+}
+
+.warning {
+    color: $primary-btn-bg!important;
+    font-weight: normal!important;
+}
+
+.cardInfo 
+{
+
+    padding:0px;
+
+    h2 
+    {
+       div { font-size: $fnt32;}
+    }
+
+    a 
+    {
+        div {color: $label-txt-clr; opacity: 0.6;}
+    }
+
+    img 
+    {
+        width: 50px;
+    }
+}
+
+
+    .tooltip_info_heading3 {
+            right: -8px!important;
+            top: 8%!important;
+        }
+
+
+      
+
+
 @media (min-width: 1024px) {
+
+    .cardInfo 
+    {
+
+        padding:20px;
+
+    }
 
     .liveChatBtn {
         position: fixed;
@@ -802,6 +904,9 @@ textarea {
         right: 6px!important;
         bottom: 14px!important;
     }
+
+
+
 
 
     .subheadingSmall {
@@ -1002,6 +1107,10 @@ textarea {
 
     .headerSpace {
         height: 205px;
+    }
+
+    .headerSpaceSnd {
+        height: 95px;
     }
 
     .outlineNone {
