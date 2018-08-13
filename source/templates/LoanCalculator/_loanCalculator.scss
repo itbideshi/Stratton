@@ -7,7 +7,6 @@
     border-radius: 0px;
     text-align: left;
     font-size: 16px;
-
     .boxheading {
         font-size: $fnt14;
         border-bottom: 0;
@@ -22,7 +21,6 @@
             margin: 15px 0;
         }
     }
-
     .amount,
     .rate {
         font-size: 62px;
@@ -36,19 +34,16 @@
             width: 100%;
         }
     }
-
     .applyBtn {
         height: 60px;
         line-height: 60px;
         min-width: 100%;
     }
-
     .calc_select {
         /*background: url(../images/icons/calc_calendar.svg) no-repeat 0 3px;
-        background-size: 16px;
-        padding-right: 0;*/
+background-size: 16px;
+padding-right: 0;*/
     }
-
     select {
         -webkit-appearance: none;
         appearance: none;
@@ -72,10 +67,7 @@
             width: 33.33%;
         }
     }
-
-
     label.cstm_input {
-
         input[type="radio"] {
             &~em,
             &~span {
@@ -83,8 +75,6 @@
                 opacity: 0.5;
             }
         }
-
-
         input[type="radio"]:checked {
             &~em,
             &~span {
@@ -98,7 +88,6 @@
     .calculator_wrapper {
         border-radius: 8px;
         padding: 50px 30px;
-
         .boxheading {
             border-bottom: 1px solid rgba(255, 255, 255, 0.15);
             font-size: $fnt32;
