@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html', {
+            "exit": 1,
+            "stage": 1
+        })
+            <!-- Page Header -->
+            <!-- Page Navigation -->
+            @@include('./templates/Navigation/navigation-inner.html')
+                <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3 slds-m-bottom_x-large slds-m-top_x-small">Tell us about the car your looking for?</h1>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters columnWrapper">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                    
+                    <div class="heading4 slds-m-bottom_x-large">
+                            <h3>Can you describe your car?</h3>
+                        </div>  
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_3-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Condition</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span> Yes - I know the car I want</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="4 years" name="car_i_want" />
+                                                        <span> No - I don't know the car I want</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_2-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Year</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span>2017</span>
+                                                    </label>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_2-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Make</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span>Ford</span>
+                                                    </label>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+
+
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_3-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Modal</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span>Mustang</span>
+                                                    </label>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_3-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Series</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span>Trendline</span>
+                                                    </label>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                            <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_4-of-6">
+                                <div class="formElem selectField">
+
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Type</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want" />
+                                                        <span>Mustang 2dr Convertible 2.3 turbo </span>
+                                                    </label>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                        <div class="sectionSep"></div>
+                     
+                      
+                      
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_x-large">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                    <div class="outlineNone">
+                                        <h3 class="heading4 slds-size_5-of-6">Do you know the factory options that are included in your Ford Mustang?</h3>
+                                        <div class="thickBoxSelValues">
+                                            <!-- it will contain selected values of thickbox -->
+                                        </div>
+                                        <div class="slds-m-top_x-large">
+                                            <button class="slds-button slds-button_brand btnSecondary ">
+                                                Add Factory Options
+                                            </button>
+                                          
+                                        </div>
+                                    </div>
+                                    <label tabindex="-1" class="tooltip_info tooltip_info_heading1">
+                                        <i class="material-icons">
+                                            info_outline
+                                        </i>
+                                        <span class="tooltip_msg">
+                                            <p class="slds-text-align_right">
+                                                <a href="javascript:void(0)" class="material-icons close">
+                                                    close
+                                                </a>
+                                            </p>
+                                            If you plan on using the car more than 50% of the time for business, select business use.
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="sectionSep"></div>
+
+
+                         <div class="slds-grid slds-wrap slds-gutters slds-m-top_x-large">
+
+
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                  <h3 class="heading4 slds-m-bottom_x-large">Do you want us to assist with your insurance for your new car?</h3>
+                               <div class="formElem">
+                                   
+                                   <ul class="slds-m-top_small slds-clearfix">
+                                            <li class="slds-m-bottom_large">
+                                                <label class="cstm_input">
+                                                    <input type="radio" name="repayment">
+                                                    <em></em> Yes
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="cstm_input">
+                                                    <input type="radio" name="repayment">
+                                                    <em></em> No
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                 
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                        <div class="formElem slds-clearfix stepsAction">
+                            <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                Back
+                            </button>
+                            <button class="slds-button slds-button_brand btnSave slds-float_right">
+                                Save and continue
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+                   <div class="calculator_wrapper slds-clearfix">
+                    <h5 class="boxheading">
+        Rate &amp; Payments
+        <em class="slds-show_large">To borrow <strong>$60,000</strong> over <strong>5</strong> years</em>
+        
+    </h5>
+                    <h1 class="amount slds-m-bottom_large">
+        <em>Amount</em>
+        $1730.33
+    </h1>
+                    <h1 class="rate slds-m-bottom_large">
+        <em>Interest rate</em>
+        6.73%
+    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

@@ -357,9 +357,9 @@
             color: $placeholder-clr;
         }
         /*input[type="text"]:not(:focus)+.optionsList {
-        opacity: 0;
-        max-height:0px;
-        }*/
+opacity: 0;
+max-height:0px;
+}*/
         input[type="text"]:focus+.optionsList {
             opacity: 1;
             max-height: 400px;

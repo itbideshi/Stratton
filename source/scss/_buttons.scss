@@ -121,6 +121,28 @@
             font-size: $fnt32;
         }
     }
+    &.crossButton {
+        min-width: 8px !important;
+        height: 28px;
+        padding: 0px;
+        line-height: 27px;
+        border: none;
+        i {
+            font-size: $fnt16;
+        }
+    }
+    &.tickButton {
+        min-width: 8px !important;
+        height: 28px;
+        padding: 0px;
+        line-height: 27px;
+        color: $verify-clr;
+        border: none;
+        font-weight: bold;
+        i {
+            font-size: $fnt24;
+        }
+    }
     &.doneBtn {
         min-width: 140px!important;
     }
