@@ -104,7 +104,11 @@ $heading3: 32px;
 //font-icons
 @font-face {
     font-family: 'Material';
-    src: url('./Fonts/Material_fonticons.woff2');
+    src: url('./Fonts/MaterialIcons-Regular.woff2');
+    src: url('./Fonts/MaterialIcons-Regular.eot');
+    src: url('./Fonts/MaterialIcons-Regular.ttf');
+    src: url('./Fonts/MaterialIcons-Regular.woff');
+
 }
 
 //-------------- MIXINS & GENERIC --------------

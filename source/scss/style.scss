@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth !important;
 }
 
+
 body {
     font-family: 'Poppins-400', sans-serif;
     padding: 0;
@@ -72,6 +73,7 @@ textarea {
 .material-icons {
     font-family: 'Material';
     font-style: normal;
+    text-rendering: optimizeLegibility;
 }
 
 .nav-icons {
