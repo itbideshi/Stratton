@@ -401,6 +401,29 @@ textarea {
             }
         }
     }
+    .exitCont{
+        padding-left: 34px;
+        padding-right: 34px;
+        min-height: calc(100vh - 100px);
+        position: relative;
+        &:before{
+            content: "";
+            background: $blk-clr url('../images/exit_bg_light.png') no-repeat 80% top;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            transform:scaleX(-1);
+
+        }
+        .slds-col{
+            z-index: 1;
+        }
+    }
+
     .midCont {
         color: $blk-clr;
         h3 {
@@ -491,6 +514,25 @@ font-family: 'Poppins-300';*/
     }
 }
 
+.hardExit {
+    background: $white-clr;
+    padding: 30px;
+
+    border-radius: 10px;
+    line-height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    font-size: $fnt16;
+    line-height: 25px;
+
+    h2 {
+        font-size: $fnt38;
+        line-height: 46px;
+        color: $label-txt-clr;
+        font-family: 'Poppins-700';
+    }
+}
 .slds-modal__content {
     border-radius: 8px;
 }
@@ -909,29 +951,17 @@ font-family: 'Poppins-300';*/
                 padding-right: 30px;
             }
         }
-    }
-
-
-    .hardExit {
-        background: $white-clr;
-        padding: 50px;
-
-        border-radius: 10px;
-        line-height: 60px;
-        margin-top: 50px;
-
-        font-size: $fnt18;
-        h2 {
-            font-size: $fnt62;
-            line-height: 72px;
-            color: $label-txt-clr;
-            font-family: 'Poppins-700';
-        }
-
-        p {
-            line-height: 30px;
+        .exitCont{
+            padding-left: 0px;
+            padding-right: 0px;
+            &:before{
+                background: $blk-clr url('../images/exit_bg_light.png') no-repeat 0 center;
+                background-size: cover;
+                transform:scaleX(1);
+            }
         }
     }
+
 
     .sectionSep {
         border-top: 1px $grey-clr solid;
@@ -1012,5 +1042,16 @@ font-family: 'Poppins-300';*/
     }
     .extendBorder {
         margin: 0 -40px 30px;
+    }
+
+    .hardExit {
+        padding: 50px;
+        margin-top: 115px;
+        font-size: $fnt18;
+        line-height: 28px;
+        h2 {
+            font-size: $fnt62;
+            line-height: 72px;
+        }
     }
 }
