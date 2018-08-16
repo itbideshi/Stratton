@@ -641,18 +641,16 @@ font-family: 'Poppins-300';*/
         font-size: $fnt24;
         padding: 0px 0px 25px 0px;
         font-family: 'Poppins-600';
-
     }
     h3 {
         font-size: $fnt20;
         padding: 0px 0px 10px 0px;
     }
 
-    .reviewLightBoxContent 
-      {
+    .reviewLightBoxContent {
         overflow: auto;
         height: 250px;
-        }
+    }
 }
 
 .quoteInfo {
@@ -783,9 +781,8 @@ font-family: 'Poppins-300';*/
 }
 
 .readMore {
-    a 
-    {
-        color:$disable-clr;
+    a {
+        color: $disable-clr;
     }
 }
 
@@ -808,7 +805,7 @@ font-family: 'Poppins-300';*/
             margin-right: 0px;
         }
     }
-    
+
     .privacyLightBox {
         padding: 10px 30px 0px 30px;
     }
@@ -915,25 +912,23 @@ font-family: 'Poppins-300';*/
     }
 
 
-    .hardExit 
-    {
+    .hardExit {
         background: $white-clr;
-        padding:50px;
-   
+        padding: 50px;
+
         border-radius: 10px;
         line-height: 60px;
         margin-top: 50px;
 
         font-size: $fnt18;
-        h2 
-        {
+        h2 {
             font-size: $fnt62;
+            line-height: 72px;
             color: $label-txt-clr;
-            font-family: 'Poppins-800';
+            font-family: 'Poppins-700';
         }
 
-        p 
-        {
+        p {
             line-height: 30px;
         }
     }
