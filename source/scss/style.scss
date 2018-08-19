@@ -827,7 +827,151 @@ font-family: 'Poppins-300';*/
         color: $disable-clr;
     }
 }
+.loanDashboard{
+    padding-left: 0;
+    padding-right: 0;
+    .lhs_wrapper{
+        .heading3{
+            color: $label-txt-clr;
+            font-size: $fnt24 !important;
+            padding-left: 0;
+        }
+    }
+    .inProgress{
+        .heading3{
+            font-size: $fnt32 !important;
+        }
+        .colHeading{
+            font-size: $fnt24;
+        }
+        .cardStatus{
+            .status{
+                color: $white-clr;
+                background: $verify-clr;
+                border-radius: 20px;
+                display: inline-block; 
+                padding: 2px 15px;
+            }
+        }
+    }
+    .cardStatus{
+        font-family: 'Poppins-500';
+        line-height: 22px;
+        font-size: $fnt12;
+        .status{
+            color: $white-clr;
+            background: $secondary-clr;
+            border-radius: 20px;
+            display: inline-block; 
+            padding: 2px 15px;
+        }
+        .approvedCol{
+            font-size: $fnt12;
+            line-height: 26px;
+            font-family: 'Poppins-500';
+            padding-left: 30px !important;
+            background: url(../images/icons/trophy_green.svg) no-repeat 0 center;
+            background-size: 20px;
+        }
 
+    }
+    .primaryBtn, .btnSecondary{
+        min-width: 150px;
+        height: 40px;
+        line-height: 40px;
+        width: auto;
+    }
+    .btnSecondary{
+        min-width: 110px;
+    }
+    hr{
+        margin-left: -26px;
+        margin-right: -26px;
+    }
+    .lastUpdated{
+        font-size: $fnt12;
+        color: $active-clr;
+    }
+    .colLabel{
+        opacity: 0.5;
+    }
+    .colHeading{
+        font-size: $fnt16;
+        font-family: 'Poppins-700';
+        line-height: 32px;
+        color: $active-clr;
+        em{
+            font-style: normal;
+            font-family: 'Poppins-300';
+            font-size: $fnt14;
+            margin-left: 5px;
+        }
+    }
+    .approvedCol{
+        line-height: 70px;
+        font-size: $fnt16;
+        font-family: 'Poppins-700';
+        color: $active-clr;
+        background: url('../images/icons/trophy.svg') no-repeat 0 center;
+        background-size: 24px;
+        padding-left: 40px !important;
+    }
+    .graphLbl{
+        font-family: 'Poppins-500';
+        font-size: $fnt16;
+        line-height: 28px;
+        color: $active-clr;
+    }
+    .slds-progress-bar{
+        background: $brd-box;
+        width: 100%;
+        height: 36px;
+        border-radius: 4px;
+        overflow: hidden;
+
+        .slds-progress-bar__value{
+            background: $primary-btn-bg;
+        }
+    }
+    .lhs_wrapper{
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .disabled{ 
+        .cardStatus{
+            .status{
+                color: $white-clr;
+                background: $disable-clr;
+                border-radius: 20px;
+                display: inline-block; 
+                padding: 2px 15px;
+            }
+        }
+
+
+    }
+    .amount, .rates{
+        background: url('../images/icons/check-box.svg') no-repeat 15px 85%;
+        background-size: 18px;
+        padding-left: 45px;
+    }
+    .rates{
+        background: url('../images/icons/risingGraph.svg') no-repeat 15px 78%;
+        background-size: 22px;
+    }
+    .nextButton{
+        font-size: 22px;
+        margin-top: 11px;
+        color: $disable-clr;
+        outline: none;
+        box-shadow: none;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
 @media (min-width: 1024px) {
     .cardInfo {
         padding: 20px;
@@ -1052,6 +1196,43 @@ font-family: 'Poppins-300';*/
         h2 {
             font-size: $fnt62;
             line-height: 72px;
+        }
+    }
+    .loanDashboard{
+        hr{
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+        .cardStatus{
+            font-size: $fnt14;
+            .status{
+                text-transform: uppercase;
+                letter-spacing: 2.3px;
+                color: $brd-clr-trd;
+                background: transparent;
+                padding: 0;
+            }
+        }
+        .amount, .rates{
+            background: none;
+        }
+        .slds-progress-bar{
+            border-radius: 20px;
+            height: 6px;
+        }
+        .lhs_wrapper{
+            margin-bottom: 60px;
+        }
+        .disabled{
+            background: $loan-paid-off;
+            border-color: $paid-off-brdr !important;
+            .cardStatus{
+                .status{
+                    background: none;
+                    padding: 0;
+                    color: $grey-scnd-clr;
+                }
+            }
         }
     }
 }

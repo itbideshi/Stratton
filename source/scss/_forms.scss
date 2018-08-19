@@ -327,6 +327,9 @@
             background: transparent;
             font-family: 'Poppins-700';
             transition: padding .3s ease-in-out;
+            &.error{
+                border-bottom-color: $error-clr;
+            }
         }
         input[type="text"]:focus {
             padding-left: 15px;
