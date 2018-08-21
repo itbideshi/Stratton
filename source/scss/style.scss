@@ -576,7 +576,7 @@ font-family: 'Poppins-300';*/
     h2 {
         font-size: $fnt20;
         margin-bottom: 10px;
-        font-weight: 500;
+        font-family: 'Poppins-400';
     }
     .inTxt {
         padding-bottom: 20px;
@@ -587,7 +587,7 @@ font-family: 'Poppins-300';*/
 .midHeading {
     h2 {
         font-size: $fnt24;
-        font-family: 'Poppins-600';
+        font-family: 'Poppins-400';
         margin-bottom: 10px;
     }
 }
@@ -1106,6 +1106,7 @@ font-family: 'Poppins-300';*/
         .bottomInfo {
             margin-top: 0px;
             min-height: 1024px;
+            margin-bottom: 175px;
             .boxInfo {
                 padding-top: 100px;
                 max-width: 980px;
