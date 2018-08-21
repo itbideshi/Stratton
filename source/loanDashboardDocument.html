@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 })
+    <!-- Page Header -->
+    <div class="innerHeader loanDocument ">
+        <div class="container paddT0">
+            <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                    2016 Ford Mustang GT Premium
+               
+                  <div class="tabsCont">
+                      <ul>
+                          <li><a href="#">Your Loan </li>
+                          <li class="activeBg"><a href="#">Your Documents <a/></li>
+                      </ul>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container loanDashboard">
+        
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                <h3 class="heading3 slds-m-bottom_large slds-show_large">Document list</h3>
+                <div class="subheadingSmall slds-m-bottom_x-large ">We'll use this information to provide you a personalised rate and repayment quote.</div>
+                <div class="lhs_wrapper slds-m-bottom_large inProgress">
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-large-size_8-of-12">
+                            <h3 class="heading3">2016 Ford Mustang GT Premium</h3>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-show_large">
+                            <button class="slds-button slds-button_brand primaryBtn verify">Resume</button>
+                        </div>
+                    </div>
+                    <hr class="slds-show_large" />
+                   
+                    <hr class="slds-hide_large" />
+                    <div class="slds-m-top_medium">
+                        <div class="slds-clearfix">
+                            <div class="slds-float_left">
+                                <p class="graphLbl">Complete your application</p>
+                                <p>You’re 75% of the way there</p>
+                            </div>
+                            <div class="slds-float_right slds-hide_large">
+                                <button class="slds-button nextButton">
+                                    <i class="material-icons">
+                                        chevron_right
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- salesforce progressbar -->
+                        <div class="slds-progress-bar slds-m-top_medium" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+                            <span class="slds-progress-bar__value" style="width: 25%;">
+                          </span>
+                        </div>
+                        <!-- salesforce progressbar -->
+                    </div>
+                </div>
+                <div class="lhs_wrapper">
+                    <div class="cardStatus slds-clearfix">
+                        <div class="slds-float_left status">
+                            Active loan
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-large-size_8-of-12">
+                            <h3 class="heading3">2015 Subaru impreza 2.0 G5 Auto AWD MY18</h3>
+                            <p class="slds-m-top_xx-small lastUpdated">Last active 12 October 2018</p>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-show_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                    <hr class="slds-show_large" />
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Balance</label>
+                            <h4 class="colHeading">$3,000</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Repayment</label>
+                            <h4 class="colHeading">$180.16 <em>Weekly</em></h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Next repayment</label>
+                            <h4 class="colHeading">02/07/2018</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Lender</label>
+                            <h4 class="colHeading">Pepper Money</h4>
+                        </div>
+                    </div>
+                    <hr class="slds-hide_large" />
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-large-size_4-of-12 slds-hide_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lhs_wrapper disabled">
+                    <div class="cardStatus slds-clearfix">
+                        <div class="slds-float_left status">
+                            Paid off loan
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-large-size_8-of-12">
+                            <h3 class="heading3">2014 BMW X5 xDrive F15 Auto 4x4</h3>
+                            <p class="slds-m-top_xx-small lastUpdated">Paid off the 12th September 2016</p>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-show_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Balance</label>
+                            <h4 class="colHeading">$0</h4>
+                        </div>
+                    </div>
+                    <hr class="slds-hide_large" />
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-large-size_4-of-12 slds-hide_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lhs_wrapper disabled">
+                    <div class="cardStatus slds-clearfix">
+                        <div class="slds-float_left status">
+                            Paid off loan
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-large-size_8-of-12">
+                            <h3 class="heading3">2014 BMW X5 xDrive F15 Auto 4x4</h3>
+                            <p class="slds-m-top_xx-small lastUpdated">Paid off the 12th September 2016</p>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-show_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Balance</label>
+                            <h4 class="colHeading">$0</h4>
+                        </div>
+                    </div>
+                    <hr class="slds-hide_large" />
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-large-size_4-of-12 slds-hide_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

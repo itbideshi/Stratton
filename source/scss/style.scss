@@ -10,7 +10,6 @@ html {
     scroll-behavior: smooth !important;
 }
 
-
 body {
     font-family: 'Poppins-400', sans-serif;
     padding: 0;
@@ -80,16 +79,12 @@ textarea {
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
@@ -401,12 +396,12 @@ textarea {
             }
         }
     }
-    .exitCont{
+    .exitCont {
         padding-left: 34px;
         padding-right: 34px;
         min-height: calc(100vh - 100px);
         position: relative;
-        &:before{
+        &:before {
             content: "";
             background: $blk-clr url('../images/exit_bg_light.png') no-repeat 80% top;
             background-size: cover;
@@ -416,14 +411,12 @@ textarea {
             right: 0;
             bottom: 0;
             z-index: 0;
-            transform:scaleX(-1);
-
+            transform: scaleX(-1);
         }
-        .slds-col{
+        .slds-col {
             z-index: 1;
         }
     }
-
     .midCont {
         color: $blk-clr;
         h3 {
@@ -517,15 +510,12 @@ font-family: 'Poppins-300';*/
 .hardExit {
     background: $white-clr;
     padding: 30px;
-
     border-radius: 10px;
     line-height: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
-
     font-size: $fnt16;
     line-height: 25px;
-
     h2 {
         font-size: $fnt38;
         line-height: 46px;
@@ -533,6 +523,7 @@ font-family: 'Poppins-300';*/
         font-family: 'Poppins-700';
     }
 }
+
 .slds-modal__content {
     border-radius: 8px;
 }
@@ -688,7 +679,6 @@ font-family: 'Poppins-300';*/
         font-size: $fnt20;
         padding: 0px 0px 10px 0px;
     }
-
     .reviewLightBoxContent {
         overflow: auto;
         height: 250px;
@@ -827,45 +817,46 @@ font-family: 'Poppins-300';*/
         color: $disable-clr;
     }
 }
-.loanDashboard{
+
+.loanDashboard {
     padding-left: 0;
     padding-right: 0;
-    .lhs_wrapper{
-        .heading3{
+    .lhs_wrapper {
+        .heading3 {
             color: $label-txt-clr;
             font-size: $fnt24 !important;
             padding-left: 0;
         }
     }
-    .inProgress{
-        .heading3{
+    .inProgress {
+        .heading3 {
             font-size: $fnt32 !important;
         }
-        .colHeading{
+        .colHeading {
             font-size: $fnt24;
         }
-        .cardStatus{
-            .status{
+        .cardStatus {
+            .status {
                 color: $white-clr;
                 background: $verify-clr;
                 border-radius: 20px;
-                display: inline-block; 
+                display: inline-block;
                 padding: 2px 15px;
             }
         }
     }
-    .cardStatus{
+    .cardStatus {
         font-family: 'Poppins-500';
         line-height: 22px;
         font-size: $fnt12;
-        .status{
+        .status {
             color: $white-clr;
             background: $secondary-clr;
             border-radius: 20px;
-            display: inline-block; 
+            display: inline-block;
             padding: 2px 15px;
         }
-        .approvedCol{
+        .approvedCol {
             font-size: $fnt12;
             line-height: 26px;
             font-family: 'Poppins-500';
@@ -873,41 +864,41 @@ font-family: 'Poppins-300';*/
             background: url(../images/icons/trophy_green.svg) no-repeat 0 center;
             background-size: 20px;
         }
-
     }
-    .primaryBtn, .btnSecondary{
+    .primaryBtn,
+    .btnSecondary {
         min-width: 150px;
         height: 40px;
         line-height: 40px;
         width: auto;
     }
-    .btnSecondary{
+    .btnSecondary {
         min-width: 110px;
     }
-    hr{
+    hr {
         margin-left: -26px;
         margin-right: -26px;
     }
-    .lastUpdated{
+    .lastUpdated {
         font-size: $fnt12;
         color: $active-clr;
     }
-    .colLabel{
+    .colLabel {
         opacity: 0.5;
     }
-    .colHeading{
+    .colHeading {
         font-size: $fnt16;
         font-family: 'Poppins-700';
         line-height: 32px;
         color: $active-clr;
-        em{
+        em {
             font-style: normal;
             font-family: 'Poppins-300';
             font-size: $fnt14;
             margin-left: 5px;
         }
     }
-    .approvedCol{
+    .approvedCol {
         line-height: 70px;
         font-size: $fnt16;
         font-family: 'Poppins-700';
@@ -916,63 +907,110 @@ font-family: 'Poppins-300';*/
         background-size: 24px;
         padding-left: 40px !important;
     }
-    .graphLbl{
+    .graphLbl {
         font-family: 'Poppins-500';
         font-size: $fnt16;
         line-height: 28px;
         color: $active-clr;
     }
-    .slds-progress-bar{
+    .slds-progress-bar {
         background: $brd-box;
         width: 100%;
         height: 36px;
         border-radius: 4px;
         overflow: hidden;
-
-        .slds-progress-bar__value{
+        .slds-progress-bar__value {
             background: $primary-btn-bg;
         }
     }
-    .lhs_wrapper{
+    .lhs_wrapper {
         margin-bottom: 30px;
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .disabled{ 
-        .cardStatus{
-            .status{
+    .disabled {
+        .cardStatus {
+            .status {
                 color: $white-clr;
                 background: $disable-clr;
                 border-radius: 20px;
-                display: inline-block; 
+                display: inline-block;
                 padding: 2px 15px;
             }
         }
-
-
     }
-    .amount, .rates{
+    .amount,
+    .rates {
         background: url('../images/icons/check-box.svg') no-repeat 15px 85%;
         background-size: 18px;
         padding-left: 45px;
     }
-    .rates{
+    .rates {
         background: url('../images/icons/risingGraph.svg') no-repeat 15px 78%;
         background-size: 22px;
     }
-    .nextButton{
+    .nextButton {
         font-size: 22px;
         margin-top: 11px;
         color: $disable-clr;
         outline: none;
         box-shadow: none;
-        &:focus{
+        &:focus {
             outline: none;
             box-shadow: none;
         }
     }
 }
+
+.loanDocument {
+    &.innerHeader {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background: #ccc;
+        font-size: $fnt24;
+        color: $white-clr;
+        height: 180px;
+        background: url('../images/inheadbg.jpg') no-repeat 0 77.5%;
+    }
+    .tabsCont {
+        position: absolute;
+        bottom: 0px;
+        ul {
+            li {
+                background: $white-clr;
+                border-radius: 5px 5px 0px 0px;
+                margin-top: 38px;
+                padding: 10px;
+                text-align: center;
+                min-width: 135px;
+                float: left;
+                a {
+                    font-size: $fnt16;
+                    color: $grey-scnd-clr;
+                }
+                &.activeBg {
+                    background: $grey-clr;
+                    color: $blk-clr;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px) {
+    .loanDocument {
+        &.innerHeader {
+            padding-top: 50px;
+            .tabsCont {
+                ul {
+                    li {
+                        min-width: 210px!important;
+                    }
+                }
+            }
+        }
+    }
     .cardInfo {
         padding: 20px;
     }
@@ -991,7 +1029,6 @@ font-family: 'Poppins-300';*/
             margin-right: 0px;
         }
     }
-
     .privacyLightBox {
         padding: 10px 30px 0px 30px;
     }
@@ -1095,18 +1132,16 @@ font-family: 'Poppins-300';*/
                 padding-right: 30px;
             }
         }
-        .exitCont{
+        .exitCont {
             padding-left: 0px;
             padding-right: 0px;
-            &:before{
+            &:before {
                 background: $blk-clr url('../images/exit_bg_light.png') no-repeat 0 center;
                 background-size: cover;
-                transform:scaleX(1);
+                transform: scaleX(1);
             }
         }
     }
-
-
     .sectionSep {
         border-top: 1px $grey-clr solid;
         margin-left: -40px;
@@ -1187,7 +1222,6 @@ font-family: 'Poppins-300';*/
     .extendBorder {
         margin: 0 -40px 30px;
     }
-
     .hardExit {
         padding: 50px;
         margin-top: 115px;
@@ -1198,14 +1232,14 @@ font-family: 'Poppins-300';*/
             line-height: 72px;
         }
     }
-    .loanDashboard{
-        hr{
+    .loanDashboard {
+        hr {
             margin-left: -40px;
             margin-right: -40px;
         }
-        .cardStatus{
+        .cardStatus {
             font-size: $fnt14;
-            .status{
+            .status {
                 text-transform: uppercase;
                 letter-spacing: 2.3px;
                 color: $brd-clr-trd;
@@ -1213,21 +1247,22 @@ font-family: 'Poppins-300';*/
                 padding: 0;
             }
         }
-        .amount, .rates{
+        .amount,
+        .rates {
             background: none;
         }
-        .slds-progress-bar{
+        .slds-progress-bar {
             border-radius: 20px;
             height: 6px;
         }
-        .lhs_wrapper{
+        .lhs_wrapper {
             margin-bottom: 60px;
         }
-        .disabled{
+        .disabled {
             background: $loan-paid-off;
             border-color: $paid-off-brdr !important;
-            .cardStatus{
-                .status{
+            .cardStatus {
+                .status {
                     background: none;
                     padding: 0;
                     color: $grey-scnd-clr;
