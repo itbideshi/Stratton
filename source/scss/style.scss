@@ -651,6 +651,17 @@ font-family: 'Poppins-300';*/
         border-color: $verify-clr;
         background-size: 60%;
     }
+    input[type="checkbox"]:disabled+em,
+    input[type="checkbox"]:disabled+label{
+        background-image: none;
+        background-color: $white-clr;
+    }
+    input[type="checkbox"]:checked:disabled+em,
+    input[type="checkbox"]:checked:disabled+label{
+        background: $white-clr url('../images/icons/disabled_check.svg') no-repeat center center;
+        border-color: $disable-clr;
+        background-size: 60%;
+    }
 }
 
 .factoryListStyle {
