@@ -559,7 +559,7 @@ font-family: 'Poppins-300';*/
     color: $white-clr;
     background: $secondary-clr;
     border-radius: 8px;
-    padding: 50px 30px;
+    padding: 40px 30px;
     h2 {
         font-size: $fnt24;
     }
@@ -657,6 +657,17 @@ font-family: 'Poppins-300';*/
     input[type="checkbox"]:checked+label {
         background: $white-clr url('../images/icons/green_check.svg') no-repeat center center;
         border-color: $verify-clr;
+        background-size: 60%;
+    }
+    input[type="checkbox"]:disabled+em,
+    input[type="checkbox"]:disabled+label{
+        background-image: none;
+        background-color: $white-clr;
+    }
+    input[type="checkbox"]:checked:disabled+em,
+    input[type="checkbox"]:checked:disabled+label{
+        background: $white-clr url('../images/icons/disabled_check.svg') no-repeat center center;
+        border-color: $disable-clr;
         background-size: 60%;
     }
 }
@@ -1261,6 +1272,7 @@ font-family: 'Poppins-300';*/
             .inHeadCont {
                 right: 40px;
                 padding: 30px;
+                top: 40%;
                 h2 {
                     padding-top: 0px;
                     font-size: $fnt65;
@@ -1325,7 +1337,7 @@ font-family: 'Poppins-300';*/
         margin-left: auto;
         margin-right: auto;
         background: transparent;
-        padding-top: 120px !important;
+        padding-top: 50px !important;
         .lhs_wrapper {
             margin-bottom: 20px;
             border: 1px $brd-box solid;
@@ -1352,7 +1364,7 @@ font-family: 'Poppins-300';*/
     .container {
         width: 100%;
         max-width: 1170px;
-        padding: 3em 0 1em;
+        padding: 1em 0;
         .lhs_wrapper {
             padding: 40px;
         }
