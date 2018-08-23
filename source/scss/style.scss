@@ -27,6 +27,10 @@ body {
     position: relative;
 }
 
+.posStatic {
+    position: static!important;
+}
+
 a,
 a:hover,
 a:focus {
@@ -43,6 +47,10 @@ textarea {
 
 .paddT0 {
     padding-top: 0px!important;
+}
+
+.padd0 {
+    padding: 0px!important;
 }
 
 .mrgnmT15 {
@@ -603,7 +611,7 @@ font-family: 'Poppins-300';*/
 .gridColCont {
     h3 {
         font-size: $fnt24;
-        font-family: 'Poppins-700';
+        font-family: 'Poppins-500';
     }
     h2 {
         font-size: $fnt20;
@@ -996,6 +1004,169 @@ font-family: 'Poppins-300';*/
             }
         }
     }
+}
+
+.headTopNav {
+    ul {
+        margin-top: 27px;
+        li {
+            float: left;
+            padding-right: 60px;
+            a {
+                color: $blk-clr;
+            }
+        }
+    }
+}
+
+.documentTableInfo {
+    .headRowTop {
+        font-size: $fnt20;
+        color: $active-clr;
+        h3 {
+            padding-left: 40px;
+            position: relative;
+        }
+    }
+    .headRowMid {
+        font-size: $fnt14;
+        color: $label-txt-clr;
+        opacity: 0.5;
+        background: #e6eaee;
+        border-top: $brd-clr-light;
+        border-bottom: $brd-clr-light;
+        padding: 20px 25px 20px 25px!important;
+        margin-left: -40px!important;
+        margin-right: -40px!important;
+    }
+    .headRowContent {
+        font-size: $fnt14;
+        h3 {
+            color: $label-txt-clr;
+            opacity: 0.6;
+        }
+    }
+}
+
+.headTopNavRhs {
+    ul {
+        margin-top: 27px;
+        li {
+            float: right;
+            padding-right: 60px;
+            line-height: 18px;
+            a {
+                color: $blk-clr;
+            }
+        }
+    }
+    .noti {
+        font-size: $fnt24;
+        position: relative;
+        top: 5px;
+    }
+    .dArw {
+        position: relative;
+        top: 6px;
+        left: 10px;
+        font-size: $fnt20;
+    }
+    .toolTip {
+        background: $white-clr;
+        border: 1px $brd-clr-trd solid;
+        padding: 30px;
+        position: absolute;
+        top: 36px;
+        z-index: 99999;
+        width: 300px;
+        left: -57px;
+        border-radius: 5px;
+        box-shadow: 0 20px 40px 0 rgba(20, 20, 20, 0.25);
+        .name {
+            font-size: $fnt16;
+            font-family: 'Poppins-600';
+        }
+        .email {
+            font-size: $fnt12;
+            color: $active-clr;
+            opacity: 0.6;
+        }
+        .button {
+            background: $secondary-btn-bg!important;
+            height: 40px!important;
+            line-height: 40px!important;
+        }
+        .signOut {
+            color: $active-clr;
+            opacity: 0.3;
+            font-family: 'Poppins-600';
+        }
+        .sepBar {
+            border-top: 1px $brd-clr-trd solid;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+    }
+}
+
+.resubmit {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    background: url('../images/upload-solid.svg') no-repeat top;
+}
+
+.exclamation {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    background: url('../images/exclamation.svg') no-repeat top;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    background: url('../images/check-solid.svg') no-repeat top;
+}
+
+.resubIcn {
+    width: 20px;
+    height: 28px;
+    display: inline-block;
+    background: url('../images/upload-solid.svg') no-repeat 0 center;
+}
+
+.pendingIcn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    background: url('../images/clock-regular.svg') no-repeat 0 center;
+}
+
+.menuTxt {
+    color: $primary-btn-bg;
+    padding: 20px 15px 15px 15px;
+}
+
+.crossMenu {
+    margin-right: 20px;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 @media (min-width: 1024px) {

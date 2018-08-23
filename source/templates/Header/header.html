@@ -2,14 +2,29 @@
     <div class="slds-grid slds-wrap slds-grid_align-center">
         <div class="slds-col slds-size_11-of-12">
             <nav class="secondary_nav slds-clearfix slds-hide_large">
+             
+            <div>
+                <div class="slds-text-align_right slds-hide_large slds-p-top_medium slds-p-bottom_medium">
+                        
+                        <span class="slds-float_left menu menuTxt">Menu</span>
+
+                        <span class="crossMenu"><a href="#" onclick="stratton.sidebar_toggle()"><img src="images/icons/close.svg" width="15" /></a> </span>
+                        <div class="slds-clearfix"></div>
+                    </div>
+             </div>       
+
+
                 <ul>
-                    <li class="slds-text-align_right slds-hide_large">
-                        <a href="#" onclick="stratton.sidebar_toggle()"><img src="images/icons/close.svg" /></a>
-                    </li>
-                    <li><a href="#">Need help?</a></li>
-                    <li><a href="#">Calculators</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                     <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Your Profile</a></li>
+                            
+                    <hr/>
+                    <li><a href="#">Start New Application</a></li>
+                    <hr/>
+                    <li><a href="#">Contact us</a></li>
+                    <hr/>
+                    <li><a href="#">Log out</a></li>
+                    <hr/>
                 </ul>
             </nav>
             <div class="slds-grid slds-wrap">
@@ -18,7 +33,46 @@
 						<img src="images/stratton-finance-logo.png" alt="" class="logo" />
 					</a>
                 </div>
+
+            @@if(context.headnav) {
+                <div class="slds-col slds-size_5-of-12 slds-show_large headTopNav">
+                   
+
+                    <ul>
+                        <li><a href="#">Dashboard</a> </li>
+                        <li><a href="#">Contact US</a> </li>
+                    </ul>
+                        
+                </div>
+
+            }
+
+
+
+             @@if(context.headnav) {
                 
+                 <div class="slds-col slds-size_4-of-12 slds-show_large headTopNavRhs">
+                    <ul>
+                        <li><a href="#"><i class="material-icons noti">notifications</i></a> </li>
+                        <li class="posRel"><a href="#">James Levis</a>  <i class="material-icons dArw">
+expand_more
+</i> 
+
+<div class="toolTip"style="display: none1;">
+
+<p class="name slds-m-bottom_xx-small">James Lewis</p>
+<p class="email slds-m-bottom_large">James Lewis</p>
+<p><button class="slds-button slds-button_brand primaryBtn verify button">View Profile</button></p>
+<p class="sepBar slds-m-top_large"></p>
+<p class="signOut slds-m-top_large">Sign Out</p>
+ </div>
+
+</li>
+                        
+                    </ul>
+                </div>
+
+                }
 
                 <div class="slds-col slds-size_5-of-12 slds-show_large">
                     @@if(context.stage){
@@ -37,9 +91,9 @@
                 
                 <div class="slds-col slds-size_9-of-12 slds-large-size_4-of-12  slds-text-align_right call">
                     
-                    <!--<a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
-						<img src="images/icons/mobile_menu.svg" />
-					</a>-->
+                    <a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
+						<img src="images/icons/hamburger.png" />
+					</a>
                     @@if(context.exit){
                     <button class="slds-button defaultBtn">Exit</button>
                     }

@@ -105,6 +105,12 @@
             font-size: $fnt24;
         }
     }
+    &.arwButton2 {
+        padding: 3px!important;
+        height: 35px!important;
+        line-height: 27px!important;
+        color: $disable-clr!important;
+    }
     &.backButton {
         min-width: 35px!important;
         height: 35px;
