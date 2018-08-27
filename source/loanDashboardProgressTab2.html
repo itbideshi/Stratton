@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 , "headnav":1})
+    <!-- Page Header -->
+    <div class="innerHeader loanDocument ">
+        <div class="container paddT0">
+            <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                    2016 Ford Mustang GT Premium
+                    <div class="tabsCont">
+                        <ul>
+                            <li><a href="#">Your Loan </a> </li>
+                            <li class="activeBg"><a href="#">Your Documents </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container loanDashboard">
+        <div class="slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="rowCont">
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressInfo">
+                                    <h4 class="posRel">Stage1 <span class="check posStatic"></span> </h4>
+                                    <h5>Apply for your loan</h5>
+                                </div>
+                            </div>
+                            <div class="sepbarInner">
+                                <hr /> </div>
+                        </div>
+                        <div class="rowCont">
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressBarCont">
+                                    <h4>Stage2 </h4>
+                                    <h5>Accept your rate</h5>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressBarCont">
+                                    <div class="slds-progress-bar slds-m-top_medium" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+                                        <span class="slds-progress-bar__value" style="width: 25%;">
+                          </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-m-top_large">
+                                <button class="slds-button slds-button_brand primaryBtn verify">Resume</button>
+                            </div>
+                            <div class="sepbarInner">
+                                <hr /> </div>
+                        </div>
+                        <div class="rowCont">
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressBarCont">
+                                    <h4>Stage3 </h4>
+                                    <h5>Get Approved</h5>
+                                </div>
+                            </div>
+                            <div class="sepbarInner">
+                                <hr /> </div>
+                        </div>
+                        <div class="rowCont">
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressBarCont">
+                                    <h4>Stage4</h4>
+                                    <h5>Confirm loan details</h5>
+                                </div>
+                            </div>
+                            <div class="sepbarInner">
+                                <hr /> </div>
+                        </div>
+                        <div class="rowCont">
+                            <div class="slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6 progressBarCont">
+                                    <h4>Stage5</h4>
+                                    <h5>Sign contract</h5>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_11-of-12 slds-large-size_4-of-12">
+                <div class="calculator_wrapper slds-clearfix brdOuter rateSection">
+                    <h5 class="boxheading">
+        Rate &amp; Payments
+        <em>To borrow <strong>$60,000</strong> over <strong>5</strong> years</em>
+    </h5>
+                    <h1 class="amount slds-m-bottom_large">
+        <em>Amount</em>
+        $730.33
+    </h1>
+                    <h1 class="rate slds-m-bottom_large">
+        <em>Interest rate</em>
+        6.73%
+    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
