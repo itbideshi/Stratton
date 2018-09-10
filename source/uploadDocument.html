@@ -1,0 +1,134 @@
+a<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        @@include('./templates/Header/header.html', { "exit": 1, "stage": 1 })
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        @@include('./templates/Navigation/navigation.html')
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-large">Finalise your loan
+
+                </h1>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters  columnWrapper">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="quoteInfo">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-small">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <h3>Docment Upload</h3>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_x-large">
+                                <div class="slds-col slds-size_1-of-1 field_label">
+                                    Please upload a copy of the following documents.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap  slds-m-bottom_large tabHead">
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_9-of-12">
+                                Name
+                            </div>
+                            <div class="slds-col slds-size_3-of-6 slds-large-size_3-of-12">
+                                Action
+                            </div>
+                        </div>
+                        <div class="uploadInfo slds-m-top_x-large">
+                            <div class="slds-grid slds-wrap  slds-m-bottom_small colF lblLight ">
+                                Income
+                            </div>
+                            <div class="slds-grid slds-wrap  slds-m-bottom_large">
+                                <div class="slds-col slds-gutters slds-size_5-of-6 slds-large-size_10-of-12 colS">
+                                    Rates Notice
+                                </div>
+                                <div class="slds-size_1-of-6 slds-large-size_2-of-12 alignR ">
+                                    upload button
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large"></div>
+                        <div class="uploadInfo slds-m-top_x-large">
+                            <div class="slds-grid slds-wrap  slds-m-bottom_small colF lblLight ">
+                                Income
+                            </div>
+                            <div class="slds-grid slds-wrap  slds-m-bottom_small colS ">
+                                Payslip 1 - Primary Applicant
+                            </div>
+                            <div class="slds-grid slds-wrap  slds-m-bottom_large">
+                                <div class="slds-col slds-gutters slds-size_5-of-6 slds-large-size_10-of-12 lblLight">
+                                    <button class="slds-button slds-button_neutral btnSecondary crossButton">
+                                        <i class="material-icons">
+                                          close
+                                        </i>
+                                    </button> File_name.pdf
+                                </div>
+                                <div class="slds-size_1-of-6 slds-large-size_2-of-12 alignR posRel">
+                                   <span class="check posStatic"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large "></div>
+                        <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn slds-gutters">
+                            <div class="formElem slds-clearfix">
+                                <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                    Back
+                                </button>
+                                <button class="slds-button slds-button_brand btnSave slds-float_right mrgnMrsp">
+                                    Save and continue
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sectionSep slds-m-top_x-large slds-show_large"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 ">
+                <div class="calculator_wrapper slds-clearfix brdOuter rateSection">
+                    <h5 class="boxheading">
+        Rate &amp; Payments
+        <em class="slds-show_large">To borrow <strong>$60,000</strong> over <strong>5</strong> years</em>
+        
+    </h5>
+                    <h1 class="amount slds-m-bottom_large">
+        <em>Amount</em>
+        $1730.33
+    </h1>
+                    <h1 class="rate slds-m-bottom_large">
+        <em>Interest rate</em>
+        6.73%
+    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="liveChatBtn">
+        <button><img src="images/icons/chat.svg" alt=""><span class="slds-show_large">Live Chat</span></button>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

@@ -73,7 +73,7 @@
             display: none;
         }
     }
-    .error {
+    .error, .error:focus, .error:hover {
         input {
             background: url('../images/icons/err_close.svg') no-repeat right center;
             background-size: 12px;
@@ -91,6 +91,16 @@
         }
         .selection {
             border-bottom-color: $error-clr !important;
+        }
+    }
+    .success, .success:focus, .success:hover {
+        input {
+            background: url('../images/icons/check.svg') no-repeat right center;
+            background-size: 12px;
+            border-bottom-color: $verify-clr;
+        }
+        .selection {
+            border-bottom-color: $verify-clr !important;
         }
     }
     .errMsg {

@@ -11,11 +11,8 @@
 <body class="estimate_background">
     <div>
         <!-- Page Header -->
-       @@include('./templates/Header/header.html', {
-        "exit": 0,
-        "stage": 0
-    })
-            <!-- Page Header -->
+        @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 })
+        <!-- Page Header -->
     </div>
     <!-- Page Navigation -->
     <!-- <% include('templates/navigation') %> -->
@@ -23,7 +20,7 @@
     <div class="slds-hide_large">
         <!-- calculator template -->
         @@include('./templates/LoanCalculator/calculator_template.html')
-            <!-- calculator template -->
+        <!-- calculator template -->
     </div>
     <div class="container slds-m-top_xx-large estimatePage">
         <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
@@ -141,10 +138,10 @@
                                         </div>
                                     </div>
                                     <label tabindex="-1" class="tooltip_info">
-                                            <i class="material-icons">
+                                        <i class="material-icons">
                                                 info_outline
                                             </i>
-                                            <span class="tooltip_msg">
+                                        <span class="tooltip_msg">
                                                 <p class="slds-text-align_right">
                                                     <a href="javascript:void(0)" class="material-icons close">
                                                         close
@@ -152,7 +149,7 @@
                                                 </p>
                                                 If you plan on using the car more than 50% of the time for business, select business use.
                                             </span>
-                                        </label>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +161,7 @@
                                     </button>
                                 </div>
                                 <div class="formElem slds-hide_large slds-clearfix">
-                                     <button class="slds-button slds-button_brand primaryBtn slds-float_left">
+                                    <button class="slds-button slds-button_brand primaryBtn slds-float_left">
                                         Update estimate
                                     </button>
                                     <button class="slds-button slds-button_brand applyBtn slds-float_right">
@@ -177,7 +174,7 @@
                     <div class="slds-hide_large">
                         <!-- calculator template -->
                         @@include('./templates/Chatter/chatter_template.html')
-                            <!-- calculator template -->
+                        <!-- calculator template -->
                     </div>
                     <div class="pageContent slds-m-top_x-large">
                         <h2 class="fnt20 slds-m-bottom_small">Assumptions</h2>
@@ -195,10 +192,10 @@
             <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
                 <!-- calculator template -->
                 @@include('./templates/LoanCalculator/calculator_template.html')
-                    <!-- calculator template -->
-                    <!-- calculator template -->
-                    @@include('./templates/Chatter/chatter_template.html')
-                        <!-- calculator template -->
+                <!-- calculator template -->
+                <!-- calculator template -->
+                @@include('./templates/Chatter/chatter_template.html')
+                <!-- calculator template -->
             </div>
         </div>
     </div>

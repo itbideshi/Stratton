@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 , "headnav":1})
+    <!-- Page Header -->
+    
+    <div class="container loanDashboard">
+        <div class="slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 slds-m-top_large">
+                <h1 class="heading3 slds-m-bottom_x-small">Get in contact
+                </h1>
+                <div class="subheadingSmall slds-m-bottom_x-large grey_lbl">Our team is on-hand and ready to help!
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    
+                   <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12 slds-gutters">
+                                <div class="formElem selectField">
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">What do you want to talk about?</label>
+                                        <span class="selection no_padding">I have question about my applicton for Contact</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want">
+                                                        <span> Full Time</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+                    <div class="slds-grid slds-gutters"> 
+                        <div class="slds-col slds-size_1-of-1">
+                                <div class="formElem">
+                                    <div class="input_fields ">
+                                       <textarea name="" id="" cols="30" class="txtHeight"  placeholder="Type your message here"></textarea>
+                                    </div>
+                                </div>
+                         </div>
+                    </div>  
+
+                    <div class="slds-grid slds-gutters"> 
+                        <div class="slds-col slds-size_1-of-1">
+                                <div class="formElem">
+                                    <div class="input_fields ">
+                                       <button class="slds-button slds-button_brand primaryBtn">
+                                        Submit
+                                    </button> 
+                                    </div>
+                                </div>
+                         </div>
+                    </div>  
+
+                      
+
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+                <div class="messageWrapper contactInfo">
+                    <h2 class="msgHeading slds-m-bottom_medium">Want to chat with someone?</h2>
+                    <p class="field_label2">
+                        You can contact us by phone or email anytime.
+                    </p>
+
+                    <ul class="slds-m-top_large ">
+                        <li><a href="#"><span class="contactIcn"></span>info@statton.au</a></li>
+                        <li><span class="phoneIcn"></span>1300 787 288</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

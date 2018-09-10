@@ -5,8 +5,11 @@
     border-radius: 10px;
     line-height: 25px;
     font-size: $fnt16;
+    color:$secondary-clr;
+    font-family:'Poppins-200';
     .msgHeading {
         font-size: $fnt24;
         font-family: 'Poppins-500';
+        color:$active-clr;
     }
 }

@@ -349,6 +349,11 @@ $textClr) {
         .close {
             cursor: pointer;
         }
+
+        a,a:hover 
+        {
+            color:rgba(20,20,0.3);
+        }
     }
     &:focus {
         pointer-events: none;

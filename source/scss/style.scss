@@ -45,6 +45,11 @@ textarea {
     padding: 20px;
 }
 
+.txtHeight 
+{
+    height:135px;
+}
+
 .paddT0 {
     padding-top: 0px!important;
 }
@@ -59,6 +64,11 @@ textarea {
 
 .mrgnLsp {
     margin-left: 28px!important;
+}
+
+.mrgnMrsp 
+{
+    margin-right:-30px!important;
 }
 
 .paddLarge {
@@ -81,6 +91,19 @@ textarea {
 {
     color:$label-txt-clr;
     opacity:0.5;
+}
+
+
+.grey_lbl2 
+{
+    color:$disable-clr!important;
+}
+
+.prosIcn 
+{
+    font-size: $fnt20;
+    position: relative;
+    top: 5px;
 }
 
 .brdOuter 
@@ -722,6 +745,26 @@ font-family: 'Poppins-300';*/
     }
 }
 
+
+.appSaveBox {
+
+   
+    h2 {
+
+        font-size: $fnt32!important;
+        padding: 0px 0px 15px 0px;
+        font-family: 'Poppins-600';
+
+            }
+    .midTxt 
+        {
+            font-size: $fnt32;
+            font-family: 'Poppins-300';
+
+        }
+
+    }
+
 .quoteInfo {
     h3 {
         font-size: $fnt20;
@@ -730,12 +773,14 @@ font-family: 'Poppins-300';*/
     h1 {
         font-size: $fnt62;
         font-family: 'Poppins-700';
+        color:$blk-clr;
         em {
             font-size: $fnt14;
             color: $label-txt-clr;
             opacity: 0.3;
             font-style: normal;
             display: block;
+            font-family: 'Poppins-300';
         }
     }
     h2 {
@@ -747,6 +792,7 @@ font-family: 'Poppins-300';*/
             opacity: 0.3;
             font-style: normal;
             display: block;
+            font-family: 'Poppins-300';
         }
     }
 }
@@ -794,9 +840,14 @@ font-family: 'Poppins-300';*/
     color: $label-txt-clr;
     border-top: 1px $brd-clr-light solid;
     border-bottom: 1px $brd-clr-light solid;
-    margin-left: -40px;
-    margin-right: -40px;
+    margin-left: -25px;
+    margin-right: -25px;
     padding: 15px 10px 15px 25px;
+
+    .paddL
+    {
+        padding-left:70px!important;
+    }
 }
 
 .uploadInfo {
@@ -805,7 +856,7 @@ font-family: 'Poppins-300';*/
         font-size: $fnt14;
     }
     .colS {
-        font-family: 'Poppins-700';
+        font-family: 'Poppins-400';
     }
     .cross {
         font-size: $fnt16;
@@ -865,7 +916,7 @@ font-family: 'Poppins-300';*/
     .lhs_wrapper {
         .heading3 {
             color: $label-txt-clr;
-            font-size: $fnt24 !important;
+            font-size: $fnt32 !important;
             padding-left: 0;
         }
     }
@@ -925,10 +976,10 @@ font-family: 'Poppins-300';*/
         color: $active-clr;
     }
     .colLabel {
-        opacity: 0.5;
+        opacity: 0.4;
     }
     .colHeading {
-        font-size: $fnt16;
+        font-size: $fnt24;
         font-family: 'Poppins-700';
         line-height: 32px;
         color: $active-clr;
@@ -949,19 +1000,18 @@ font-family: 'Poppins-300';*/
         padding-left: 40px !important;
     }
     .graphLbl {
-        font-family: 'Poppins-500';
-        font-size: $fnt16;
+        font-family: 'Poppins-300';
+        font-size: $fnt20;
         line-height: 28px;
         color: $active-clr;
     }
     .slds-progress-bar {
         background: $brd-box;
-        width: 100%;
         height: 6px;
         border-radius: 4px;
         overflow: hidden;
         .slds-progress-bar__value {
-            background: $primary-btn-bg;
+            background: $verify-clr;
         }
     }
     .lhs_wrapper {
@@ -980,16 +1030,7 @@ font-family: 'Poppins-300';*/
             }
         }
     }
-    .amount,
-    .rates {
-        background: url('../images/icons/check-box.svg') no-repeat 15px 85%;
-        background-size: 18px;
-        
-    }
-    .rates {
-        background: url('../images/icons/risingGraph.svg') no-repeat 15px 78%;
-        background-size: 22px;
-    }
+    
     .nextButton {
         font-size: 22px;
         margin-top: 11px;
@@ -1083,7 +1124,7 @@ font-family: 'Poppins-300';*/
 
 .headTopNavRhs {
     ul {
-        margin-top: 27px;
+        margin-top: 17px;
         li {
             float: right;
             padding-right: 60px;
@@ -1191,6 +1232,26 @@ font-family: 'Poppins-300';*/
     background: url('../images/clock-regular.svg') no-repeat 0 center;
 }
 
+.contactIcn {
+    width: 30px;
+    height: 20px;
+    background: url(../images/email.svg) no-repeat 0 center;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.phoneIcn {
+    width: 30px;
+    height: 23px;
+    background: url(../images/phone.svg) no-repeat 0 center;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+
 .menuTxt {
     color: $primary-btn-bg;
     padding: 20px 15px 15px 15px;
@@ -1231,6 +1292,11 @@ font-family: 'Poppins-300';*/
     ul li 
     {
        padding-bottom:10px;
+
+       strong 
+       {
+            font-family: 'Poppins-800';
+       }
     }
 
     .checkActive 
@@ -1265,6 +1331,19 @@ font-family: 'Poppins-300';*/
         left:auto!important;
     }
 }
+
+
+.contactInfo 
+{
+    ul 
+    {
+        li 
+        {
+            margin-bottom:20px;
+        }
+    }
+}
+
 
 .progressBarCont 
 {
@@ -1311,8 +1390,67 @@ font-family: 'Poppins-300';*/
             }
 }
 
+.btnBg 
+{
+    background:$secondary-btn-bg!important;
+    border:1px $secondary-btn-bg solid!important;
+    color:$white-clr!important;
+}
+
+.loanAmount 
+{
+    
+    font-family: 'Poppins-600';
+} 
+
+.field_label 
+{
+    color:$label-txt-clr;
+    opacity:0.5;
+}
+
+.field_label2 
+{
+    color:$secondary-clr;
+    
+}
+
+.field_label3
+{
+    color:$disable-clr!important;
+    
+}
+
+.btnLoan 
+{
+    background:$secondary-btn-bg!important;
+    border:1px $secondary-btn-bg solid!important;
+}
+
+.getInfo 
+{
+    h3 
+    {
+        font-size:$fnt24;
+        color:$active-clr;
+        font-family: 'Poppins-500';
+    }
+
+    p 
+    {
+        font-size:$fnt18;
+        color:$secondary-clr;
+        margin-top:20px;
+    }
+}
+
+
 @media (min-width: 1024px) {
 
+.tabHead {
+    margin-left: -40px;
+    margin-right: -40px;
+}
 
 .brdOuter 
     {
@@ -1371,6 +1509,10 @@ font-family: 'Poppins-300';*/
     }
     .fLbl {
         font-size: $fnt16;
+    }
+
+    .fLblm {
+        font-size: $fnt14;
     }
     .mrgnLsp {
         margin-left: 20px!important;
@@ -1503,8 +1645,21 @@ font-family: 'Poppins-300';*/
     .heading4 {
         font-size: $fnt20;
     }
+
+    .heading6 {
+        font-size: $fnt16;
+    }
+
+    .heading8 {
+        font-size: $fnt12;
+    }
     .colWidthLarge {
         width: 80%;
+    }
+
+    .fntBold 
+    {
+        font-family:'Poppins-600';
     }
     .container {
         width: 100%;
@@ -1563,8 +1718,8 @@ font-family: 'Poppins-300';*/
     }
     .loanDashboard {
         hr {
-            margin-left: -40px;
-            margin-right: -40px;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         .cardStatus {
             font-size: $fnt14;
@@ -1585,7 +1740,7 @@ font-family: 'Poppins-300';*/
             height: 6px;
         }
         .lhs_wrapper {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         .disabled {
             background: $loan-paid-off;
