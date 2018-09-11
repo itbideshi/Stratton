@@ -38,11 +38,15 @@ a:focus {
     color: $secondary-btn-bg;
 }
 
-textarea {
+textarea, textarea.slds-textarea {
     border-radius: 5px;
     border: 1px $border-clr solid;
     width: 100%;
     padding: 20px;
+    min-height: 50px;
+}
+lightning-textarea .slds-form-element__label{
+    display: none;
 }
 
 .txtHeight {
