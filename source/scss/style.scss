@@ -45,9 +45,8 @@ textarea {
     padding: 20px;
 }
 
-.txtHeight 
-{
-    height:135px;
+.txtHeight {
+    height: 135px;
 }
 
 .paddT0 {
@@ -66,9 +65,8 @@ textarea {
     margin-left: 28px!important;
 }
 
-.mrgnMrsp 
-{
-    margin-right:-30px!important;
+.mrgnMrsp {
+    margin-right: -30px!important;
 }
 
 .paddLarge {
@@ -87,28 +85,24 @@ textarea {
     text-align: right;
 }
 
-.grey_lbl 
-{
-    color:$label-txt-clr;
-    opacity:0.5;
+.grey_lbl {
+    color: $label-txt-clr;
+    opacity: 0.5;
 }
 
 
-.grey_lbl2 
-{
-    color:$disable-clr!important;
+.grey_lbl2 {
+    color: $disable-clr!important;
 }
 
-.prosIcn 
-{
+.prosIcn {
     font-size: $fnt20;
     position: relative;
     top: 5px;
 }
 
-.brdOuter 
-{
-    border-radius:15px!important;
+.brdOuter {
+    border-radius: 15px!important;
 }
 
 .material-icons {
@@ -246,16 +240,18 @@ textarea {
     padding: 10px 0px 0px 0px;
     font-family: 'Poppins-800';
     font-size: $fnt14;
+    color: $label-txt-clr;
     h2 {
         font-size: $fnt32;
+        font-family: 'Poppins-600';
         span {
             display: block;
-            font-family: 'Poppins-500';
+            font-family: 'Poppins-200';
         }
     }
     .privacyContent {
         font-size: $fnt14;
-        font-family: 'Poppins-500';
+        font-family: 'Poppins-300';
         overflow: auto;
         height: 150px;
     }
@@ -274,8 +270,8 @@ textarea {
     }
     .modalCrossIcon {
         color: rgba(0, 0, 0, 0.3);
-        margin-right: 20px;
-        margin-top: 20px;
+        margin-right: 5px;
+        margin-top: 30px;
         font-size: $fnt20;
     }
 }
@@ -306,6 +302,10 @@ textarea {
     }
     .pageContent {
         line-height: 25px;
+        p{
+            font-family: 'Poppins-300';
+            color: $secondary-clr;
+        }
     }
     .padding_0 {
         padding: 0;
@@ -327,6 +327,14 @@ textarea {
         .slds-radio {
             width: 33%;
             float: left;
+        }
+        .slds-form-element__label{
+            font-family: 'Poppins-300';
+            font-size: $fnt16;
+            color: $label-txt-clr;
+        }
+        input[type="radio"]:disabled + .slds-radio__label .slds-form-element__label{
+            color: $disable-chk-clr;
         }
     }
     .buttonBotInfo {
@@ -368,10 +376,12 @@ textarea {
 .carDetailLightBox,
 .passwordLightBox {
     clear: both;
-    font-family: 'Poppins-300';
+    font-family: 'Poppins-200';
+    color: $label-txt-clr;
     h2 {
         font-size: $fnt32;
         padding: 20px 0px 20px 0px;
+        font-family: 'Poppins-200';
     }
     .cstm_input {
         font-size: $fnt16;
@@ -441,6 +451,7 @@ textarea {
                 color: $white-clr;
                 font-size: $fnt14;
                 min-width: 105px;
+                margin-left: 1.25rem;
             }
         }
     }
@@ -488,10 +499,10 @@ font-family: 'Poppins-300';*/
             position: relative;
             padding-left: 30px;
             position: relative;
+            font-family: 'Poppins-600';
             strong {
-                font-family: 'Poppins-700';
                 padding-right: 15px;
-                color: $error-clr;
+                color: $primary-btn-bg;
                 position: absolute;
                 left: 0;
             }
@@ -701,12 +712,12 @@ font-family: 'Poppins-300';*/
         background-size: 60%;
     }
     input[type="checkbox"]:disabled+em,
-    input[type="checkbox"]:disabled+label{
+    input[type="checkbox"]:disabled+label {
         background-image: none;
         background-color: $white-clr;
     }
     input[type="checkbox"]:checked:disabled+em,
-    input[type="checkbox"]:checked:disabled+label{
+    input[type="checkbox"]:checked:disabled+label {
         background: $white-clr url('../images/icons/disabled_check.svg') no-repeat center center;
         border-color: $disable-clr;
         background-size: 60%;
@@ -715,7 +726,9 @@ font-family: 'Poppins-300';*/
 
 .factoryListStyle {
     line-height: 28px;
-    font-family: 'Poppins-700';
+    font-family: 'Poppins-600';
+    font-size: $fnt14;
+    color: $label-txt-clr;
 }
 
 .veriCont {
@@ -748,22 +761,18 @@ font-family: 'Poppins-300';*/
 
 .appSaveBox {
 
-   
+
     h2 {
 
         font-size: $fnt32!important;
         padding: 0px 0px 15px 0px;
         font-family: 'Poppins-600';
-
-            }
-    .midTxt 
-        {
-            font-size: $fnt32;
-            font-family: 'Poppins-300';
-
-        }
-
     }
+    .midTxt {
+        font-size: $fnt32;
+        font-family: 'Poppins-300';
+    }
+}
 
 .quoteInfo {
     h3 {
@@ -773,7 +782,7 @@ font-family: 'Poppins-300';*/
     h1 {
         font-size: $fnt62;
         font-family: 'Poppins-700';
-        color:$blk-clr;
+        color: $blk-clr;
         em {
             font-size: $fnt14;
             color: $label-txt-clr;
@@ -844,9 +853,8 @@ font-family: 'Poppins-300';*/
     margin-right: -25px;
     padding: 15px 10px 15px 25px;
 
-    .paddL
-    {
-        padding-left:70px!important;
+    .paddL {
+        padding-left: 70px!important;
     }
 }
 
@@ -875,10 +883,9 @@ font-family: 'Poppins-300';*/
 .warning {
     color: $primary-btn-bg!important;
     font-weight: normal!important;
-    font-size:$fnt20;
-    position:relative;
-    top:4px;
-
+    font-size: $fnt20;
+    position: relative;
+    top: 4px;
 }
 
 .cardInfo {
@@ -1030,7 +1037,7 @@ font-family: 'Poppins-300';*/
             }
         }
     }
-    
+
     .nextButton {
         font-size: 22px;
         margin-top: 11px;
@@ -1263,205 +1270,171 @@ font-family: 'Poppins-300';*/
     display: inline-block;
 }
 
-.errorInfo 
-{
-    background:$errbg-clr;
-    border-radius:5px;
-    padding:10px;
-    color:$error-clr;
-    text-align:center;
+.errorInfo {
+    background: $errbg-clr;
+    border-radius: 5px;
+    padding: 10px;
+    color: $error-clr;
+    text-align: center;
 }
 
-.progressInfo 
-{
+.progressInfo {
 
-    font-size:$fnt16;
-    h4 
-    {
-       color:$disable-clr;
-       font-size:$fnt16;
+    font-size: $fnt16;
+    h4 {
+        color: $disable-clr;
+        font-size: $fnt16;
     }
 
-    h5
-    {
-       color:$active-clr;
-       font-size:$fnt20;
-       margin-bottom:0px;
+    h5 {
+        color: $active-clr;
+        font-size: $fnt20;
+        margin-bottom: 0px;
     }
 
-    ul li 
-    {
-       padding-bottom:10px;
+    ul li {
+        padding-bottom: 10px;
 
-       strong 
-       {
+        strong {
             font-family: 'Poppins-800';
-       }
+        }
     }
 
-    .checkActive 
-    {
-        width:24px;
-        height:18px;
-        display:inline-block;
-        background:url('../images/icons/check-active.svg') no-repeat 0 center;
-        position:relative;
-        top:5px;
+    .checkActive {
+        width: 24px;
+        height: 18px;
+        display: inline-block;
+        background: url('../images/icons/check-active.svg') no-repeat 0 center;
+        position: relative;
+        top: 5px;
     }
 
 
-    .checkDisable 
-    {
-        width:24px;
-        height:18px;
-        display:inline-block;
-        background:url('../images/icons/check-disable.svg') no-repeat 0 center;
-        position:relative;
-        top:5px;
+    .checkDisable {
+        width: 24px;
+        height: 18px;
+        display: inline-block;
+        background: url('../images/icons/check-disable.svg') no-repeat 0 center;
+        position: relative;
+        top: 5px;
     }
 }
 
-.progressInfo, .progressBarCont 
-{
+.progressInfo,
+.progressBarCont {
     .check {
 
-        position:absolute!important;
-        right:0px!important;
-        top:10px;
-        left:auto!important;
+        position: absolute!important;
+        right: 0px!important;
+        top: 10px;
+        left: auto!important;
     }
 }
 
 
-.contactInfo 
-{
-    ul 
-    {
-        li 
-        {
-            margin-bottom:20px;
+.contactInfo {
+    ul {
+        li {
+            margin-bottom: 20px;
         }
     }
 }
 
 
-.progressBarCont 
-{
+.progressBarCont {
 
 
-    .slds-progress-bar__value
-     {
-        background:$verify-clr!important;
-     }
-
-     h4 
-     {
-        color:$disable-clr;
-        opacity:0.5;
-        font-size:$fnt16;
-     }
-
-     h5
-     {
-        color:$disable-clr;
-        opacity:0.5;
-        font-size:$fnt20;
-     }
-
-}
-
-.sepbarInner 
-{
-    margin-left:30px;
-    margin-right:30px;    
-}
-
-.rateSection 
-{
-    h5 
-    {
-        font-size:$fnt32!important;
+    .slds-progress-bar__value {
+        background: $verify-clr!important;
     }
 
-        .boxheading 
-        {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    h4 {
+        color: $disable-clr;
+        opacity: 0.5;
+        font-size: $fnt16;
+    }
 
-            }
+    h5 {
+        color: $disable-clr;
+        opacity: 0.5;
+        font-size: $fnt20;
+    }
 }
 
-.btnBg 
-{
-    background:$secondary-btn-bg!important;
-    border:1px $secondary-btn-bg solid!important;
-    color:$white-clr!important;
+.sepbarInner {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.loanAmount 
-{
-    
+.rateSection {
+    h5 {
+        font-size: $fnt32!important;
+    }
+
+    .boxheading {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+.btnBg {
+    background: $secondary-btn-bg!important;
+    border: 1px $secondary-btn-bg solid!important;
+    color: $white-clr!important;
+}
+
+.loanAmount {
+
     font-family: 'Poppins-600';
-} 
-
-.field_label 
-{
-    color:$label-txt-clr;
-    opacity:0.5;
 }
 
-.field_label2 
-{
-    color:$secondary-clr;
-    
+.field_label {
+    color: $label-txt-clr;
+    opacity: 0.5;
 }
 
-.field_label3
-{
-    color:$disable-clr!important;
-    
+.field_label2 {
+    color: $secondary-clr;
 }
 
-.btnLoan 
-{
-    background:$secondary-btn-bg!important;
-    border:1px $secondary-btn-bg solid!important;
+.field_label3 {
+    color: $disable-clr!important;
 }
 
-.getInfo 
-{
-    h3 
-    {
-        font-size:$fnt24;
-        color:$active-clr;
+.btnLoan {
+    background: $secondary-btn-bg!important;
+    border: 1px $secondary-btn-bg solid!important;
+}
+
+.getInfo {
+    h3 {
+        font-size: $fnt24;
+        color: $active-clr;
         font-family: 'Poppins-500';
     }
 
-    p 
-    {
-        font-size:$fnt18;
-        color:$secondary-clr;
-        margin-top:20px;
+    p {
+        font-size: $fnt18;
+        color: $secondary-clr;
+        margin-top: 20px;
     }
 }
 
 
 @media (min-width: 1024px) {
 
-.tabHead {
-    margin-left: -40px;
-    margin-right: -40px;
-}
-
-.brdOuter 
-    {
-        border-radius:0px;
+    .tabHead {
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
-    .sepbarInner 
-        {
-            margin-left:40px;
-            margin-right:40px;    
-        }
+    .brdOuter {
+        border-radius: 0px;
+    }
+
+    .sepbarInner {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
 
     .loanDocument {
@@ -1600,7 +1573,7 @@ font-family: 'Poppins-300';*/
         }
         .listInfo {
             p {
-                padding-right: 30px;
+                padding-right: 80px;
             }
         }
         .exitCont {
@@ -1657,16 +1630,15 @@ font-family: 'Poppins-300';*/
         width: 80%;
     }
 
-    .fntBold 
-    {
-        font-family:'Poppins-600';
+    .fntBold {
+        font-family: 'Poppins-600';
     }
     .container {
         width: 100%;
         max-width: 1170px;
         padding: 1em 0;
         .lhs_wrapper {
-            padding: 40px;
+            padding: 40px 40px 20px;
         }
         .slds-gutters {
             margin-left: -15px;
