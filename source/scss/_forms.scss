@@ -136,7 +136,6 @@
             cursor: pointer;
             font-size: 16px;
             font-family: 'Poppins-700';
-            text-transform: lowercase;
             transition: background-position .3s ease-in-out, padding-left .3s ease-in-out;
             &:after {
                 content: "";
@@ -156,9 +155,6 @@
             }
             &:focus {
                 outline: none;
-            }
-            &:first-letter{
-                text-transform: capitalize;
             }
         }
         .optionsList {
@@ -196,10 +192,6 @@
                     position: relative;
                     &:hover {
                         background: $options-gry-clr;
-                    }
-                    text-transform: lowercase;
-                    &:first-letter{
-                        text-transform: capitalize;
                     }
                 }
                 li input[type="radio"] {
