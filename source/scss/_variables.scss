@@ -141,7 +141,7 @@ $textClr) {
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
-    box-sizing: content-box;
+    box-sizing: border-box;
     &:hover,
     &:focus {
         outline: none;
@@ -356,8 +356,8 @@ $textClr) {
             cursor: pointer;
         }
 
-        a,a:hover 
-        {
+        a,
+        a:hover {
             color: $tooltip-cross;
         }
     }

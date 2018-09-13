@@ -288,7 +288,7 @@ lightning-textarea .slds-form-element__label{
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px 26px 180px;
+        padding: 15px 26px 80px;
         border-radius: 8px;
         margin-bottom: 0px;
         .messageWrapper {
@@ -306,6 +306,7 @@ lightning-textarea .slds-form-element__label{
     }
     .pageContent {
         line-height: 25px;
+        padding-bottom: 30px;
         p{
             font-family: 'Poppins-300';
             color: $secondary-clr;
@@ -706,6 +707,12 @@ font-family: 'Poppins-300';*/
 
 .checkCont {
     font-size: $fnt16;
+    &.slds-m-top_xx-large{
+        margin-top: 50px !important
+    }
+    &+.slds-m-top_large{
+        margin-top: 40px;
+    }
 }
 
 .customCheckCont {
@@ -1028,7 +1035,7 @@ font-family: 'Poppins-300';*/
     .lhs_wrapper {
         margin-bottom: 30px;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
     .disabled {
         .cardStatus {
@@ -1609,7 +1616,7 @@ font-family: 'Poppins-300';*/
         }
     }
     .lhs_wrapper {
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         margin-bottom: 20px;
     }
     .comm-page-custom-getestimate {
@@ -1663,7 +1670,7 @@ font-family: 'Poppins-300';*/
             border-bottom: 0;
             .lhs_wrapper {
                 border: 1px $brd-box solid;
-                padding: 40px;
+                padding: 40px 40px 20px;
             }
         }
         .heading3 {
