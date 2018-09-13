@@ -748,19 +748,27 @@ font-family: 'Poppins-300';*/
 
 .appSaveBox {
 
+
+    color:$label-txt-clr;
    
     h2 {
 
         font-size: $fnt32!important;
         padding: 0px 0px 15px 0px;
         font-family: 'Poppins-600';
-
+        color:$label-txt-clr;
             }
     .midTxt 
         {
             font-size: $fnt32;
             font-family: 'Poppins-300';
 
+        }
+
+        h3 
+        {
+            font-size:$fnt20;
+            color:$active-clr;
         }
 
     }
@@ -1082,12 +1090,12 @@ font-family: 'Poppins-300';*/
 
 .headTopNav {
     ul {
-        margin-top: 27px;
+        margin-top: 20px;
         li {
             float: left;
             padding-right: 60px;
             a {
-                color: $blk-clr;
+                color: $active-clr;
             }
         }
     }
@@ -1130,7 +1138,7 @@ font-family: 'Poppins-300';*/
             padding-right: 60px;
             line-height: 18px;
             a {
-                color: $blk-clr;
+                color: $active-clr;
             }
         }
     }
