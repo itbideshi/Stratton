@@ -38,14 +38,16 @@ a:focus {
     color: $secondary-btn-bg;
 }
 
-textarea, textarea.slds-textarea {
+textarea,
+textarea.slds-textarea {
     border-radius: 5px;
     border: 1px $border-clr solid;
     width: 100%;
     padding: 20px;
     min-height: 50px;
 }
-lightning-textarea .slds-form-element__label{
+
+lightning-textarea .slds-form-element__label {
     display: none;
 }
 
@@ -307,7 +309,7 @@ lightning-textarea .slds-form-element__label{
     .pageContent {
         line-height: 25px;
         padding-bottom: 30px;
-        p{
+        p {
             font-family: 'Poppins-300';
             color: $secondary-clr;
         }
@@ -333,12 +335,12 @@ lightning-textarea .slds-form-element__label{
             width: 33%;
             float: left;
         }
-        .slds-form-element__label{
+        .slds-form-element__label {
             font-family: 'Poppins-300';
             font-size: $fnt16;
             color: $label-txt-clr;
         }
-        input[type="radio"]:disabled + .slds-radio__label .slds-form-element__label{
+        input[type="radio"]:disabled+.slds-radio__label .slds-form-element__label {
             color: $disable-chk-clr;
         }
     }
@@ -666,9 +668,13 @@ font-family: 'Poppins-300';*/
 }
 
 .gridColCont {
+    font-family: 'Poppins-300';
+    font-size: $fnt14;
+    color: $label-txt-clr;
     h3 {
         font-size: $fnt24;
-        font-family: 'Poppins-500';
+        font-family: 'Poppins-400';
+        color: $active-clr;
     }
     h2 {
         font-size: $fnt20;
@@ -686,12 +692,19 @@ font-family: 'Poppins-300';*/
         font-size: $fnt14;
     }
     .lbl {
-        font-family: 'Poppins-800';
+        font-family: 'Poppins-500';
         font-size: $fnt16;
+        color: $heading-clr;
+        &:last-child{
+            font-family: 'Poppins-600';
+            color: $active-clr;
+        }
     }
     .total {
         font-size: $fnt24;
-        font-family: 'Poppins-800';
+        font-family: 'Poppins-600';
+        color: $active-clr;
+        line-height: 0;
     }
 }
 
@@ -707,10 +720,10 @@ font-family: 'Poppins-300';*/
 
 .checkCont {
     font-size: $fnt16;
-    &.slds-m-top_xx-large{
+    &.slds-m-top_xx-large {
         margin-top: 50px !important
     }
-    &+.slds-m-top_large{
+    &+.slds-m-top_large {
         margin-top: 40px;
     }
 }
