@@ -1,4 +1,4 @@
-@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
+//@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import '_variables';
 html,
 body {
@@ -424,7 +424,7 @@ lightning-textarea .slds-form-element__label {
 }
 
 .estimatePage {
-    margin: 0;
+    //margin: 0;
     background: $white-clr;
     padding-top: 0px;
     .lhs_wrapper {
@@ -1686,7 +1686,7 @@ font-family: 'Poppins-300';*/
             }
         }
         .headCont {
-            // height: 924px;
+             height: 924px;
             .inHeadCont {
                 right: 40px;
                 padding: 30px;
@@ -1802,6 +1802,7 @@ font-family: 'Poppins-300';*/
         width: 100%;
         max-width: 1170px;
         padding: 1em 0;
+        margin-bottom: 50px;
         .lhs_wrapper {
             padding: 40px 40px 20px;
         }
