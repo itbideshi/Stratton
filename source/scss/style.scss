@@ -159,6 +159,20 @@ textarea {
     line-height: 26px;
 }
 
+.heading5
+
+{
+    font-size:$fnt20;
+    color:$active-clr;
+
+}
+.subheading3 {
+
+    font-size:$fnt14;
+    color:$label-txt-clr;
+    opacity:0.6;
+}
+
 .subheadingSmall {
     font-family: 'Poppins-400';
     font-size: $fnt14;
@@ -447,7 +461,7 @@ textarea {
     .exitCont {
         padding-left: 34px;
         padding-right: 34px;
-        min-height: calc(100vh - 100px);
+        min-height: calc(100vh - 80px);
         position: relative;
         &:before {
             content: "";
@@ -1452,6 +1466,56 @@ font-family: 'Poppins-300';*/
     }
 }
 
+.successInfoCont 
+{
+    padding:15px;    
+    color:$success-clr;
+    background:$success-clr-bg;
+    text-align:center;
+    position:relative;
+
+    .crossIcn 
+    {
+        position:absolute;
+        right:10px;
+    }
+}
+
+.errorInfoCont 
+{
+    padding:15px;    
+    color:$error-clr;
+    background:$errbg-clr;
+    text-align:center;
+    position:relative;
+
+    .crossIcn 
+    {
+        position:absolute;
+        right:10px;
+    }
+}
+
+.dashboardNoAppCont 
+{
+    background: $blk-clr url('../images/dashboard_no_application.jpg') no-repeat 0 center!important;
+    background-size: cover!important;
+    color:$white-clr;
+    font-size:$fnt18;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.11);
+        h2 
+        {
+            font-size:$fnt32;
+            font-family: 'Poppins-600';
+        }
+
+     .btnAppLoan 
+     {
+        padding:10px 25px 10px 25px;
+        font-size:$fnt14;
+     }
+}
+
 
 @media (min-width: 1024px) {
 
@@ -1563,7 +1627,7 @@ font-family: 'Poppins-300';*/
             }
         }
         .headCont {
-            height: 924px;
+           // height: 924px;
             .inHeadCont {
                 right: 40px;
                 padding: 30px;
@@ -1716,7 +1780,7 @@ font-family: 'Poppins-300';*/
     }
     .hardExit {
         padding: 50px;
-        margin-top: 115px;
+        margin-top: 100px;
         font-size: $fnt18;
         line-height: 28px;
         h2 {

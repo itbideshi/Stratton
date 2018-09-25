@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 , "headnav":1})
+    <!-- Page Header -->
+    <div class="innerHeader loanDocument ">
+        <div class="container paddT0">
+            <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                    2016 Ford Mustang GT Premium
+                    <div class="tabsCont">
+                        <ul>
+                            <li><a href="#">Your Loan </a> </li>
+                            <li class="activeBg"><a href="#">Your Documents </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container loanDashboard">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                <h3 class="heading3 slds-m-bottom_small slds-show_large slds-m-top_large">Dashboard</h3>
+                <div class="subheadingSmall slds-m-bottom_x-large ">You don't have any active application at that movement.
+                </div>
+                <div class="lhs_wrapper slds-m-bottom_large inProgress dashboardNoAppCont">
+                   <h2>Looking to <br/> finance your <br/> new car?</h2>
+                   <p class="slds-size_5-of-12 slds-m-bottom_medium slds-m-top_large ">Stratton Finance can help you with your online application. Stratton Finance can help you with your online application. </p>
+                   <p><button class="slds-button slds-button_brand btnLoan slds-m-top_large btnAppLoan">
+                                        Apply for a Loan
+                                    </button></p>
+                </div>
+                
+
+               
+            </div>
+        </div>
+        <!-- Page Footer -->
+        <!--<% include('templates/footer') %>-->
+        <!-- Page Footer -->
+        <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 .formElem {
-    @extend .slds-m-bottom_x-large;
+   // @extend .slds-m-bottom_x-large;
+    margin-bottom:2rem;
     position: relative;
     .field_label {
         padding-left: 0;
