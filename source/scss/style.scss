@@ -160,11 +160,12 @@ lightning-textarea .slds-form-element__label {
 }
 
 .subheadingSmall {
-    font-family: 'Poppins-400';
-    font-size: $fnt14;
+    font-family: 'Poppins-200';
+    font-size: $fnt16;
     line-height: 26px;
-    color: $label-txt-clr;
+    color: $secondary-clr;
     padding-left: 30px;
+    opacity:1;
 }
 
 .sectionSep {
@@ -399,13 +400,14 @@ lightning-textarea .slds-form-element__label {
 .passwordLightBox {
     h2 {
         font-size: $fnt32;
-        font-family: 'Poppins-700';
+        font-family: 'Poppins-600';
         padding: 0px 0px 20px 0px;
         line-height: 38px;
     }
     .subheading {
         font-size: $fnt32;
         line-height: 38px;
+        font-family: 'Poppins-200';
     }
 }
 
@@ -668,6 +670,9 @@ font-family: 'Poppins-300';*/
 }
 
 .gridColCont {
+    &.slds-m-top_x-large:first-child{
+        margin-top: 0 !important;
+    }
     font-family: 'Poppins-300';
     font-size: $fnt14;
     color: $label-txt-clr;
@@ -711,7 +716,6 @@ font-family: 'Poppins-300';*/
 .address_not_found {
     a,
     a:hover {
-        color: $grey-clr;
         color: $disable-chk-clr;
         font-family: 'Poppins-300';
         font-size: $fnt12;
@@ -730,7 +734,9 @@ font-family: 'Poppins-300';*/
 
 .customCheckCont {
     input[type="checkbox"]:checked+em,
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked+label,
+    input[type="checkbox"]:checked:disabled+em,
+    input[type="checkbox"]:checked:disabled+label {
         background: $white-clr url('../images/icons/green_check.svg') no-repeat center center;
         border-color: $verify-clr;
         background-size: 60%;
@@ -739,12 +745,6 @@ font-family: 'Poppins-300';*/
     input[type="checkbox"]:disabled+label {
         background-image: none;
         background-color: $white-clr;
-    }
-    input[type="checkbox"]:checked:disabled+em,
-    input[type="checkbox"]:checked:disabled+label {
-        background: $white-clr url('../images/icons/disabled_check.svg') no-repeat center center;
-        border-color: $disable-clr;
-        background-size: 60%;
     }
 }
 
@@ -1440,6 +1440,35 @@ font-family: 'Poppins-300';*/
         font-size: $fnt18;
         color: $secondary-clr;
         margin-top: 20px;
+    }
+}
+
+.itemAmount{
+    border-bottom: 0 !important;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after{
+        content:"";
+        height:1px;
+        background: $brd-clr-snd;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+    }
+}
+.expense_Wrapper{
+    .slds-grid{
+        .slds-col:last-child{
+            input[type="text"]{
+                padding-top: 0;
+                line-height: 0;
+            }
+            .input_fields.amount .material-icons{
+                top: 0;
+            }
+        }
     }
 }
 

@@ -55,7 +55,8 @@ $heading2: 42px;
 $heading3: 32px;
 .fnt20 {
     font-size: $fnt20;
-    font-family: 'Poppins-400';
+    font-family: 'Poppins-300';
+    opacity: 1;
 }
 
 @media (min-width: 1024px) {
@@ -151,17 +152,19 @@ $textClr) {
 
 @mixin tooltipMessageBox() {
     min-width: 320px;
-    padding: 15px;
+    padding: 20px 30px 30px 30px;
     background: $white-clr;
     border-radius: 10px;
-    border: 2px solid $tooltip-border-clr;
+    border: 2px solid $brd-box;
     font-style: normal;
-    box-shadow: 0 0 10px 0px $tooltip-shadow-clr;
+    font-size: $fnt16;
+    color:$secondary-clr;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24);
     &:before {
         content: "";
         width: 15px;
         height: 15px;
-        border: 2px solid $tooltip-border-clr;
+        border: 2px solid $brd-box;
         background: $white-clr;
         border-bottom-color: transparent;
         border-right-color: transparent;
@@ -170,6 +173,9 @@ $textClr) {
         top: -8px;
         right: 20px;
         transform: rotate(45deg);
+    }
+    &>p{
+        margin: 0 -7px;
     }
 }
 
@@ -279,15 +285,12 @@ $textClr) {
         transition: background-color .2s ease-in-out;
     }
     input[type="checkbox"]:checked+em,
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked+label,
+    input[type="checkbox"]:disabled+em,
+    input[type="checkbox"]:disabled+label
+    {
         background: $verify-clr url('../images/icons/white_check.svg') no-repeat center center;
         border-color: $verify-clr;
-        background-size: 60%;
-    }
-    input[type="checkbox"]:disabled+em,
-    input[type="checkbox"]:disabled+label {
-        background: $disable-clr url('../images/icons/disabled_check.svg') no-repeat center center;
-        border-color: $disable-clr;
         background-size: 60%;
     }
     input[type="checkbox"].blocked+em,
@@ -351,7 +354,7 @@ $textClr) {
         opacity 0.3s,
         top 0.3s;
         cursor: default;
-        font-family: 'Poppins-300';
+        font-family: 'Poppins-200';
         .close {
             cursor: pointer;
         }
