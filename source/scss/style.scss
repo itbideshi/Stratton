@@ -38,16 +38,21 @@ a:focus {
     color: $secondary-btn-bg;
 }
 
-textarea {
+textarea,
+textarea.slds-textarea {
     border-radius: 5px;
     border: 1px $border-clr solid;
     width: 100%;
     padding: 20px;
+    min-height: 50px;
 }
 
-.txtHeight 
-{
-    height:135px;
+lightning-textarea .slds-form-element__label {
+    display: none;
+}
+
+.txtHeight {
+    height: 135px;
 }
 
 .paddT0 {
@@ -66,9 +71,8 @@ textarea {
     margin-left: 28px!important;
 }
 
-.mrgnMrsp 
-{
-    margin-right:-30px!important;
+.mrgnMrsp {
+    margin-right: -30px!important;
 }
 
 .paddLarge {
@@ -87,28 +91,24 @@ textarea {
     text-align: right;
 }
 
-.grey_lbl 
-{
-    color:$label-txt-clr;
-    opacity:0.5;
+.grey_lbl {
+    color: $label-txt-clr;
+    opacity: 0.5;
 }
 
 
-.grey_lbl2 
-{
-    color:$disable-clr!important;
+.grey_lbl2 {
+    color: $disable-clr!important;
 }
 
-.prosIcn 
-{
+.prosIcn {
     font-size: $fnt20;
     position: relative;
     top: 5px;
 }
 
-.brdOuter 
-{
-    border-radius:15px!important;
+.brdOuter {
+    border-radius: 15px!important;
 }
 
 .material-icons {
@@ -159,26 +159,25 @@ textarea {
     line-height: 26px;
 }
 
-.heading5
-
-{
-    font-size:$fnt20;
-    color:$active-clr;
-
+.heading5 {
+    font-size: $fnt20;
+    color: $active-clr;
 }
+
 .subheading3 {
 
-    font-size:$fnt14;
-    color:$label-txt-clr;
-    opacity:0.6;
+    font-size: $fnt14;
+    color: $label-txt-clr;
+    opacity: 0.6;
 }
 
 .subheadingSmall {
-    font-family: 'Poppins-400';
-    font-size: $fnt14;
+    font-family: 'Poppins-200';
+    font-size: $fnt16;
     line-height: 26px;
-    color: $label-txt-clr;
+    color: $secondary-clr;
     padding-left: 30px;
+    opacity: 1;
 }
 
 .sectionSep {
@@ -260,16 +259,18 @@ textarea {
     padding: 10px 0px 0px 0px;
     font-family: 'Poppins-800';
     font-size: $fnt14;
+    color: $label-txt-clr;
     h2 {
         font-size: $fnt32;
+        font-family: 'Poppins-600';
         span {
             display: block;
-            font-family: 'Poppins-500';
+            font-family: 'Poppins-200';
         }
     }
     .privacyContent {
         font-size: $fnt14;
-        font-family: 'Poppins-500';
+        font-family: 'Poppins-300';
         overflow: auto;
         height: 150px;
     }
@@ -288,8 +289,8 @@ textarea {
     }
     .modalCrossIcon {
         color: rgba(0, 0, 0, 0.3);
-        margin-right: 20px;
-        margin-top: 20px;
+        margin-right: 5px;
+        margin-top: 30px;
         font-size: $fnt20;
     }
 }
@@ -302,7 +303,7 @@ textarea {
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px 26px 180px;
+        padding: 15px 26px 80px;
         border-radius: 8px;
         margin-bottom: 0px;
         .messageWrapper {
@@ -320,6 +321,11 @@ textarea {
     }
     .pageContent {
         line-height: 25px;
+        padding-bottom: 30px;
+        p {
+            font-family: 'Poppins-300';
+            color: $secondary-clr;
+        }
     }
     .padding_0 {
         padding: 0;
@@ -341,6 +347,14 @@ textarea {
         .slds-radio {
             width: 33%;
             float: left;
+        }
+        .slds-form-element__label {
+            font-family: 'Poppins-300';
+            font-size: $fnt16;
+            color: $label-txt-clr;
+        }
+        input[type="radio"]:disabled+.slds-radio__label .slds-form-element__label {
+            color: $disable-chk-clr;
         }
     }
     .buttonBotInfo {
@@ -382,10 +396,12 @@ textarea {
 .carDetailLightBox,
 .passwordLightBox {
     clear: both;
-    font-family: 'Poppins-300';
+    font-family: 'Poppins-200';
+    color: $label-txt-clr;
     h2 {
         font-size: $fnt32;
         padding: 20px 0px 20px 0px;
+        font-family: 'Poppins-200';
     }
     .cstm_input {
         font-size: $fnt16;
@@ -396,13 +412,14 @@ textarea {
 .passwordLightBox {
     h2 {
         font-size: $fnt32;
-        font-family: 'Poppins-700';
+        font-family: 'Poppins-600';
         padding: 0px 0px 20px 0px;
         line-height: 38px;
     }
     .subheading {
         font-size: $fnt32;
         line-height: 38px;
+        font-family: 'Poppins-200';
     }
 }
 
@@ -455,6 +472,7 @@ textarea {
                 color: $white-clr;
                 font-size: $fnt14;
                 min-width: 105px;
+                margin-left: 1.25rem;
             }
         }
     }
@@ -502,10 +520,10 @@ font-family: 'Poppins-300';*/
             position: relative;
             padding-left: 30px;
             position: relative;
+            font-family: 'Poppins-600';
             strong {
-                font-family: 'Poppins-700';
                 padding-right: 15px;
-                color: $error-clr;
+                color: $primary-btn-bg;
                 position: absolute;
                 left: 0;
             }
@@ -664,9 +682,16 @@ font-family: 'Poppins-300';*/
 }
 
 .gridColCont {
+    &.slds-m-top_x-large:first-child {
+        margin-top: 0 !important;
+    }
+    font-family: 'Poppins-300';
+    font-size: $fnt14;
+    color: $label-txt-clr;
     h3 {
         font-size: $fnt24;
-        font-family: 'Poppins-500';
+        font-family: 'Poppins-400';
+        color: $active-clr;
     }
     h2 {
         font-size: $fnt20;
@@ -684,19 +709,25 @@ font-family: 'Poppins-300';*/
         font-size: $fnt14;
     }
     .lbl {
-        font-family: 'Poppins-800';
+        font-family: 'Poppins-500';
         font-size: $fnt16;
+        color: $heading-clr;
+        &:last-child {
+            font-family: 'Poppins-600';
+            color: $active-clr;
+        }
     }
     .total {
         font-size: $fnt24;
-        font-family: 'Poppins-800';
+        font-family: 'Poppins-600';
+        color: $active-clr;
+        line-height: 0;
     }
 }
 
 .address_not_found {
     a,
     a:hover {
-        color: $grey-clr;
         color: $disable-chk-clr;
         font-family: 'Poppins-300';
         font-size: $fnt12;
@@ -705,31 +736,35 @@ font-family: 'Poppins-300';*/
 
 .checkCont {
     font-size: $fnt16;
+    &.slds-m-top_xx-large {
+        margin-top: 50px !important
+    }
+    &+.slds-m-top_large {
+        margin-top: 40px;
+    }
 }
 
 .customCheckCont {
     input[type="checkbox"]:checked+em,
-    input[type="checkbox"]:checked+label {
+    input[type="checkbox"]:checked+label,
+    input[type="checkbox"]:checked:disabled+em,
+    input[type="checkbox"]:checked:disabled+label {
         background: $white-clr url('../images/icons/green_check.svg') no-repeat center center;
         border-color: $verify-clr;
         background-size: 60%;
     }
     input[type="checkbox"]:disabled+em,
-    input[type="checkbox"]:disabled+label{
+    input[type="checkbox"]:disabled+label {
         background-image: none;
         background-color: $white-clr;
-    }
-    input[type="checkbox"]:checked:disabled+em,
-    input[type="checkbox"]:checked:disabled+label{
-        background: $white-clr url('../images/icons/disabled_check.svg') no-repeat center center;
-        border-color: $disable-clr;
-        background-size: 60%;
     }
 }
 
 .factoryListStyle {
     line-height: 28px;
-    font-family: 'Poppins-700';
+    font-family: 'Poppins-600';
+    font-size: $fnt14;
+    color: $label-txt-clr;
 }
 
 .veriCont {
@@ -762,40 +797,41 @@ font-family: 'Poppins-300';*/
 
 .appSaveBox {
 
-
-    color:$label-txt-clr;
-   
     h2 {
-
         font-size: $fnt32!important;
         padding: 0px 0px 15px 0px;
         font-family: 'Poppins-600';
-        color:$label-txt-clr;
-            }
-    .midTxt 
-        {
-            font-size: $fnt32;
-            font-family: 'Poppins-300';
-
-        }
-
-        h3 
-        {
-            font-size:$fnt20;
-            color:$active-clr;
-        }
-
+        color: $label-txt-clr;
     }
+    .midTxt {
+        font-size: $fnt32;
+        font-family: 'Poppins-300';
+    }
+
+    h3 {
+        font-size: $fnt20;
+        color: $active-clr;
+    }
+}
+
+.midTxt {
+    font-size: $fnt32;
+    font-family: 'Poppins-300';
+}
+
+
+}
 
 .quoteInfo {
     h3 {
         font-size: $fnt20;
         font-family: 'Poppins-400';
     }
+
     h1 {
         font-size: $fnt62;
         font-family: 'Poppins-700';
-        color:$blk-clr;
+        color: $blk-clr;
         em {
             font-size: $fnt14;
             color: $label-txt-clr;
@@ -805,6 +841,7 @@ font-family: 'Poppins-300';*/
             font-family: 'Poppins-300';
         }
     }
+
     h2 {
         font-size: $fnt42!important;
         font-family: 'Poppins-700';
@@ -823,6 +860,7 @@ font-family: 'Poppins-300';*/
     h1 {
         font-size: $heading1!important;
     }
+
     h2 {
         font-size: $heading3!important;
     }
@@ -866,9 +904,8 @@ font-family: 'Poppins-300';*/
     margin-right: -25px;
     padding: 15px 10px 15px 25px;
 
-    .paddL
-    {
-        padding-left:70px!important;
+    .paddL {
+        padding-left: 70px!important;
     }
 }
 
@@ -877,9 +914,11 @@ font-family: 'Poppins-300';*/
     .colF {
         font-size: $fnt14;
     }
+
     .colS {
         font-family: 'Poppins-400';
     }
+
     .cross {
         font-size: $fnt16;
     }
@@ -897,10 +936,9 @@ font-family: 'Poppins-300';*/
 .warning {
     color: $primary-btn-bg!important;
     font-weight: normal!important;
-    font-size:$fnt20;
-    position:relative;
-    top:4px;
-
+    font-size: $fnt20;
+    position: relative;
+    top: 4px;
 }
 
 .cardInfo {
@@ -910,12 +948,14 @@ font-family: 'Poppins-300';*/
             font-size: $fnt32;
         }
     }
+
     a {
         div {
             color: $label-txt-clr;
             opacity: 0.6;
         }
     }
+
     img {
         width: 50px;
     }
@@ -942,6 +982,7 @@ font-family: 'Poppins-300';*/
             padding-left: 0;
         }
     }
+
     .inProgress {
         .heading3 {
             font-size: $fnt32 !important;
@@ -959,6 +1000,7 @@ font-family: 'Poppins-300';*/
             }
         }
     }
+
     .cardStatus {
         font-family: 'Poppins-500';
         line-height: 22px;
@@ -979,6 +1021,7 @@ font-family: 'Poppins-300';*/
             background-size: 20px;
         }
     }
+
     .primaryBtn,
     .btnSecondary {
         min-width: 150px;
@@ -986,20 +1029,25 @@ font-family: 'Poppins-300';*/
         line-height: 40px;
         width: auto;
     }
+
     .btnSecondary {
         min-width: 110px;
     }
+
     hr {
         margin-left: -26px;
         margin-right: -26px;
     }
+
     .lastUpdated {
         font-size: $fnt12;
         color: $active-clr;
     }
+
     .colLabel {
         opacity: 0.4;
     }
+
     .colHeading {
         font-size: $fnt24;
         font-family: 'Poppins-700';
@@ -1012,6 +1060,7 @@ font-family: 'Poppins-300';*/
             margin-left: 5px;
         }
     }
+
     .approvedCol {
         line-height: 70px;
         font-size: $fnt16;
@@ -1021,12 +1070,14 @@ font-family: 'Poppins-300';*/
         background-size: 24px;
         padding-left: 40px !important;
     }
+
     .graphLbl {
         font-family: 'Poppins-300';
         font-size: $fnt20;
         line-height: 28px;
         color: $active-clr;
     }
+
     .slds-progress-bar {
         background: $brd-box;
         height: 6px;
@@ -1036,11 +1087,13 @@ font-family: 'Poppins-300';*/
             background: $verify-clr;
         }
     }
+
     .lhs_wrapper {
         margin-bottom: 30px;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
+
     .disabled {
         .cardStatus {
             .status {
@@ -1052,7 +1105,7 @@ font-family: 'Poppins-300';*/
             }
         }
     }
-    
+
     .nextButton {
         font-size: 22px;
         margin-top: 11px;
@@ -1077,6 +1130,7 @@ font-family: 'Poppins-300';*/
         height: 180px;
         background: url('../images/inheadbg.jpg') no-repeat 0 77.5%;
     }
+
     .tabsCont {
         position: absolute;
         bottom: 0px;
@@ -1124,6 +1178,7 @@ font-family: 'Poppins-300';*/
             position: relative;
         }
     }
+
     .headRowMid {
         font-size: $fnt14;
         color: $label-txt-clr;
@@ -1135,6 +1190,7 @@ font-family: 'Poppins-300';*/
         margin-left: -40px!important;
         margin-right: -40px!important;
     }
+
     .headRowContent {
         font-size: $fnt14;
         h3 {
@@ -1156,17 +1212,20 @@ font-family: 'Poppins-300';*/
             }
         }
     }
+
     .noti {
         font-size: $fnt24;
         position: relative;
         top: 5px;
     }
+
     .dArw {
         position: relative;
         top: 6px;
         left: 10px;
         font-size: $fnt20;
     }
+
     .toolTip {
         background: $white-clr;
         border: 1px $brd-clr-trd solid;
@@ -1285,255 +1344,243 @@ font-family: 'Poppins-300';*/
     display: inline-block;
 }
 
-.errorInfo 
-{
-    background:$errbg-clr;
-    border-radius:5px;
-    padding:10px;
-    color:$error-clr;
-    text-align:center;
+.errorInfo {
+    background: $errbg-clr;
+    border-radius: 5px;
+    padding: 10px;
+    color: $error-clr;
+    text-align: center;
 }
 
-.progressInfo 
-{
+.progressInfo {
 
-    font-size:$fnt16;
-    h4 
-    {
-       color:$disable-clr;
-       font-size:$fnt16;
+    font-size: $fnt16;
+    h4 {
+        color: $disable-clr;
+        font-size: $fnt16;
     }
 
-    h5
-    {
-       color:$active-clr;
-       font-size:$fnt20;
-       margin-bottom:0px;
+    h5 {
+        color: $active-clr;
+        font-size: $fnt20;
+        margin-bottom: 0px;
     }
 
-    ul li 
-    {
-       padding-bottom:10px;
+    ul li {
+        padding-bottom: 10px;
 
-       strong 
-       {
+        strong {
             font-family: 'Poppins-800';
-       }
+        }
     }
 
-    .checkActive 
-    {
-        width:24px;
-        height:18px;
-        display:inline-block;
-        background:url('../images/icons/check-active.svg') no-repeat 0 center;
-        position:relative;
-        top:5px;
+    .checkActive {
+        width: 24px;
+        height: 18px;
+        display: inline-block;
+        background: url('../images/icons/check-active.svg') no-repeat 0 center;
+        position: relative;
+        top: 5px;
     }
 
 
-    .checkDisable 
-    {
-        width:24px;
-        height:18px;
-        display:inline-block;
-        background:url('../images/icons/check-disable.svg') no-repeat 0 center;
-        position:relative;
-        top:5px;
+    .checkDisable {
+        width: 24px;
+        height: 18px;
+        display: inline-block;
+        background: url('../images/icons/check-disable.svg') no-repeat 0 center;
+        position: relative;
+        top: 5px;
     }
 }
 
-.progressInfo, .progressBarCont 
-{
+.progressInfo,
+.progressBarCont {
     .check {
 
-        position:absolute!important;
-        right:0px!important;
-        top:10px;
-        left:auto!important;
+        position: absolute!important;
+        right: 0px!important;
+        top: 10px;
+        left: auto!important;
     }
 }
 
 
-.contactInfo 
-{
-    ul 
-    {
-        li 
-        {
-            margin-bottom:20px;
+.contactInfo {
+    ul {
+        li {
+            margin-bottom: 20px;
         }
     }
 }
 
 
-.progressBarCont 
-{
+.progressBarCont {
 
 
-    .slds-progress-bar__value
-     {
-        background:$verify-clr!important;
-     }
-
-     h4 
-     {
-        color:$disable-clr;
-        opacity:0.5;
-        font-size:$fnt16;
-     }
-
-     h5
-     {
-        color:$disable-clr;
-        opacity:0.5;
-        font-size:$fnt20;
-     }
-
-}
-
-.sepbarInner 
-{
-    margin-left:30px;
-    margin-right:30px;    
-}
-
-.rateSection 
-{
-    h5 
-    {
-        font-size:$fnt32!important;
+    .slds-progress-bar__value {
+        background: $verify-clr!important;
     }
 
-        .boxheading 
-        {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    h4 {
+        color: $disable-clr;
+        opacity: 0.5;
+        font-size: $fnt16;
+    }
 
-            }
+    h5 {
+        color: $disable-clr;
+        opacity: 0.5;
+        font-size: $fnt20;
+    }
 }
 
-.btnBg 
-{
-    background:$secondary-btn-bg!important;
-    border:1px $secondary-btn-bg solid!important;
-    color:$white-clr!important;
+.sepbarInner {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.loanAmount 
-{
-    
+.rateSection {
+    h5 {
+        font-size: $fnt32!important;
+    }
+
+    .boxheading {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}
+
+.btnBg {
+    background: $secondary-btn-bg!important;
+    border: 1px $secondary-btn-bg solid!important;
+    color: $white-clr!important;
+}
+
+.loanAmount {
+
     font-family: 'Poppins-600';
-} 
-
-.field_label 
-{
-    color:$label-txt-clr;
-    opacity:0.5;
 }
 
-.field_label2 
-{
-    color:$secondary-clr;
-    
+.field_label {
+    color: $label-txt-clr;
+    opacity: 0.5;
 }
 
-.field_label3
-{
-    color:$disable-clr!important;
-    
+.field_label2 {
+    color: $secondary-clr;
 }
 
-.btnLoan 
-{
-    background:$secondary-btn-bg!important;
-    border:1px $secondary-btn-bg solid!important;
+.field_label3 {
+    color: $disable-clr!important;
 }
 
-.getInfo 
-{
-    h3 
-    {
-        font-size:$fnt24;
-        color:$active-clr;
+.btnLoan {
+    background: $secondary-btn-bg!important;
+    border: 1px $secondary-btn-bg solid!important;
+}
+
+.getInfo {
+    h3 {
+        font-size: $fnt24;
+        color: $active-clr;
         font-family: 'Poppins-500';
     }
 
-    p 
-    {
-        font-size:$fnt18;
-        color:$secondary-clr;
-        margin-top:20px;
+    p {
+        font-size: $fnt18;
+        color: $secondary-clr;
+        margin-top: 20px;
     }
 }
 
-.successInfoCont 
-{
-    padding:15px;    
-    color:$success-clr;
-    background:$success-clr-bg;
-    text-align:center;
-    position:relative;
-
-    .crossIcn 
-    {
-        position:absolute;
-        right:10px;
+.itemAmount {
+    border-bottom: 0 !important;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after {
+        content: "";
+        height: 1px;
+        background: $brd-clr-snd;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+    }
+}
+.expense_Wrapper {
+    .slds-grid {
+        .slds-col:last-child {
+            input[type="text"] {
+                padding-top: 0;
+                line-height: 0;
+            }
+            .input_fields.amount .material-icons {
+                top: 0;
+            }
+        }
     }
 }
 
-.errorInfoCont 
-{
-    padding:15px;    
-    color:$error-clr;
-    background:$errbg-clr;
-    text-align:center;
-    position:relative;
+.successInfoCont {
+    padding: 15px;
+    color: $success-clr;
+    background: $success-clr-bg;
+    text-align: center;
+    position: relative;
 
-    .crossIcn 
-    {
-        position:absolute;
-        right:10px;
+    .crossIcn {
+        position: absolute;
+        right: 10px;
     }
 }
 
-.dashboardNoAppCont 
-{
+.errorInfoCont {
+    padding: 15px;
+    color: $error-clr;
+    background: $errbg-clr;
+    text-align: center;
+    position: relative;
+
+    .crossIcn {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.dashboardNoAppCont {
     background: $blk-clr url('../images/dashboard_no_application.jpg') no-repeat 0 center!important;
     background-size: cover!important;
-    color:$white-clr;
-    font-size:$fnt18;
+    color: $white-clr;
+    font-size: $fnt18;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.11);
-        h2 
-        {
-            font-size:$fnt32;
-            font-family: 'Poppins-600';
-        }
+    h2 {
+        font-size: $fnt32;
+        font-family: 'Poppins-600';
+    }
 
-     .btnAppLoan 
-     {
-        padding:10px 25px 10px 25px;
-        font-size:$fnt14;
-     }
+    .btnAppLoan {
+        padding: 10px 25px 10px 25px;
+        font-size: $fnt14;
+    }
 }
 
 
 @media (min-width: 1024px) {
 
-.tabHead {
-    margin-left: -40px;
-    margin-right: -40px;
-}
-
-.brdOuter 
-    {
-        border-radius:0px;
+    .tabHead {
+        margin-left: -40px;
+        margin-right: -40px;
     }
 
-    .sepbarInner 
-        {
-            margin-left:40px;
-            margin-right:40px;    
-        }
+    .brdOuter {
+        border-radius: 0px;
+    }
+
+    .sepbarInner {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
 
     .loanDocument {
@@ -1548,9 +1595,11 @@ font-family: 'Poppins-300';*/
             }
         }
     }
+
     .cardInfo {
         padding: 20px;
     }
+
     .liveChatBtn {
         position: fixed;
         bottom: 100px;
@@ -1566,19 +1615,24 @@ font-family: 'Poppins-300';*/
             margin-right: 0px;
         }
     }
+
     .privacyLightBox {
         padding: 10px 30px 0px 30px;
     }
+
     .mrgnDeskMbsp {
         margin-left: 28px!important;
     }
+
     .tooltip_info_heading2 {
         right: 6px!important;
         bottom: 14px!important;
     }
+
     .subheadingSmall {
         padding-left: 0px;
     }
+
     .fLbl {
         font-size: $fnt16;
     }
@@ -1586,33 +1640,41 @@ font-family: 'Poppins-300';*/
     .fLblm {
         font-size: $fnt14;
     }
+
     .mrgnLsp {
         margin-left: 20px!important;
     }
+
     .mrgnDeskMbsp {
         margin-left: 0px!important;
     }
+
     .algnRd {
         text-align: right;
     }
+
     .radioCont {
         .slds-radio {
             width: 33%!important;
             float: left;
         }
     }
+
     .carDetailLightBox {
         h2 {
             font-size: $fnt32;
             padding: 20px 0px 20px 0px;
         }
     }
+
     .widthAuto {
         width: auto!important;
     }
+
     .slds-modal__content {
         padding: 0px 30px;
     }
+
     .startPage {
         .midCont {
             color: $blk-clr;
@@ -1627,7 +1689,7 @@ font-family: 'Poppins-300';*/
             }
         }
         .headCont {
-           // height: 924px;
+            // height: 924px;
             .inHeadCont {
                 right: 40px;
                 padding: 30px;
@@ -1672,7 +1734,7 @@ font-family: 'Poppins-300';*/
         }
         .listInfo {
             p {
-                padding-right: 30px;
+                padding-right: 80px;
             }
         }
         .exitCont {
@@ -1685,6 +1747,7 @@ font-family: 'Poppins-300';*/
             }
         }
     }
+
     .sectionSep {
         border-top: 1px $grey-clr solid;
         margin-left: -40px;
@@ -1692,6 +1755,7 @@ font-family: 'Poppins-300';*/
         padding-left: 35px;
         padding-right: 35px;
     }
+
     .estimatePage {
         margin-left: auto;
         margin-right: auto;
@@ -1703,10 +1767,12 @@ font-family: 'Poppins-300';*/
             border-radius: 8px;
         }
     }
+
     .lhs_wrapper {
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         margin-bottom: 20px;
     }
+
     .comm-page-custom-getestimate {
         background: $blk-clr url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: 100%;
@@ -1714,6 +1780,7 @@ font-family: 'Poppins-300';*/
             position: static;
         }
     }
+
     .heading4 {
         font-size: $fnt20;
     }
@@ -1725,20 +1792,21 @@ font-family: 'Poppins-300';*/
     .heading8 {
         font-size: $fnt12;
     }
+
     .colWidthLarge {
         width: 80%;
     }
 
-    .fntBold 
-    {
-        font-family:'Poppins-600';
+    .fntBold {
+        font-family: 'Poppins-600';
     }
+
     .container {
         width: 100%;
         max-width: 1170px;
         padding: 1em 0;
         .lhs_wrapper {
-            padding: 40px;
+            padding: 40px 40px 20px;
         }
         .slds-gutters {
             margin-left: -15px;
@@ -1759,25 +1827,30 @@ font-family: 'Poppins-300';*/
             border-bottom: 0;
             .lhs_wrapper {
                 border: 1px $brd-box solid;
-                padding: 40px;
+                padding: 40px 40px 20px;
             }
         }
         .heading3 {
             padding-left: 0;
         }
     }
+
     .headerSpace {
         height: 205px;
     }
+
     .headerSpaceSnd {
         height: 95px;
     }
+
     .outlineNone {
         outline: none;
     }
+
     .extendBorder {
         margin: 0 -40px 30px;
     }
+
     .hardExit {
         padding: 50px;
         margin-top: 100px;
@@ -1788,6 +1861,7 @@ font-family: 'Poppins-300';*/
             line-height: 72px;
         }
     }
+
     .loanDashboard {
         hr {
             margin-left: 0px;

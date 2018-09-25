@@ -8,40 +8,42 @@
             border-bottom: 8px $nav-brd-clr solid;
             a,
             a:hover {
-                color: $disable-clr;
+                color: $disable-chk-clr;
                 display: block;
                 text-align: center;
                 height: 90px;
                 padding-top: 55px;
                 position: relative;
                 display: none;
+                font-family: 'Poppins-400'
             }
             &.complete {
                 border-bottom: 8px $primary-btn-bg solid;
                 a,
                 a:hover {
-                    color: $blk-clr;
+                    color: $label-txt-clr;
                 }
                 .nav-icons {
-                    color: $blk-clr;
+                    color: $label-txt-clr;
                 }
             }
             &.unComplete {
                 border-bottom: 8px $nav-brd-clr solid;
                 a,
                 a:hover {
-                    color: $grey-clr;
+                    color: $disable-chk-clr;
                     pointer-events: none;
                 }
                 .nav-icons {
-                    color: $nav-brd-clr;
+                    color: $disable-chk-clr;
                 }
             }
             &.current {
                 border-bottom: 8px $primary-btn-bg solid;
                 a,
                 a:hover {
-                    color: $blk-clr;
+                    color: $label-txt-clr;
+                    font-family: 'Poppins-600';
                 }
                 .nav-icons {
                     color: $primary-btn-bg;

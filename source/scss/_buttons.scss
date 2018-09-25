@@ -1,5 +1,5 @@
 .submitBtn {
-    min-height: 76px;
+    min-height: 60px;
     position: fixed;
     bottom: 0;
     width: calc(100% - 22px);
@@ -7,14 +7,15 @@
     background: $white-clr;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 
 .submitBtn .formElem {
     position: fixed;
     bottom: 0;
     margin-bottom: 0;
-    padding: 20px 0px;
-    width: calc(100% - 58px);
+    padding: 10px 36px;
+    width: 100%;
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
@@ -24,12 +25,12 @@
     z-index: 99;
     &.stepsAction {
         border-top: 1px solid $brd-box;
-        padding-top: 15px;
+        padding-top: 10px;
         margin-left: 0px;
         margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: calc(100% - 52px);
+        padding-left: 36px;
+        padding-right: 36px;
+        width: 100%;
     }
     .slds-button {
         min-width: auto;
@@ -50,10 +51,11 @@
     &:disabled {
         background-color: $disable-chk-clr !important;
         border-color: $disable-chk-clr !important;
-        color:$white-clr!important;
+        color: $white-clr!important;
     }
     &.applyBtn {
         @include buttonWrapper($secondary-btn-bg, $white-clr);
+        box-sizing: border-box;
     }
     &.verify {
         background-color: $verify-clr;
@@ -71,16 +73,20 @@
         @include buttonWrapper($secondary-btn-bg, $white-clr);
         height: 40px;
         line-height: 40px;
+        box-sizing: border-box;
     }
     &.btnSave {
         min-width: 190px!important;
         @include buttonWrapper($secondary-btn-bg, $white-clr);
         height: 40px;
         line-height: 40px;
+        box-sizing: border-box;
     }
     &.btnhead {
-        @include buttonWrapper($heading-clr, $white-clr);
+        @include buttonWrapper($white-clr, $blk-clr);
         border-radius: 30px;
+        border-color: $brd-clr-trd;
+        color: $label-txt-clr;
     }
     &.btnheadSnd {
         min-width: 80px!important;
@@ -90,8 +96,9 @@
     &.btnSecondary {
         @include buttonWrapper($white-clr, $blk-clr);
         border-radius: 30px;
-        border-color: $grey-clr;
+        border-color: $brd-clr-trd;
         min-width: 110px;
+        color: $label-txt-clr;
     }
     &.editBtn {
         min-width: 80px;
@@ -168,9 +175,8 @@
         min-width: 140px!important;
     }
 
-    &.resume 
-    {
-        min-width:105px!important;
+    &.resume {
+        min-width: 105px!important;
     }
 }
 
@@ -185,16 +191,15 @@
         @include buttonWrapper($white-clr, $secondary-btn-bg);
         border-color: $secondary-btn-bg;
         width: 100%;
-        font-family: 'Poppins-500';
         height: 50px;
         line-height: 45px;
         border-width: 2px;
+        box-sizing: border-box;
     }
     &.defaultBtnSnd {
         @include buttonWrapper($white-clr, $secondary-btn-bg);
         border-color: $secondary-btn-bg;
         width: auto;
-        font-family: 'Poppins-500';
         height: 40px;
         line-height: 35px;
         border-width: 2px;
@@ -246,6 +251,7 @@
                 padding-left: 40px;
                 padding-right: 40px;
                 width: auto;
+                padding-top: 20px;
             }
         }
     }

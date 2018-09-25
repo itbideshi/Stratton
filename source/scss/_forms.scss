@@ -7,8 +7,7 @@
         transition: padding-left .3s ease-in-out;
         display: block;
         width: 100%;
-        color: $label-txt-clr;
-        opacity: 0.6;
+        color: $field-label;
         font-size: $fnt14;
     }
     .input_fields {
@@ -30,6 +29,9 @@
             outline: none;
             transition: border-bottom .3s ease-in-out;
         }
+        input{
+            box-shadow:none;
+        }
         input:focus,
         select:focus {
             border-bottom-color: $secondary-btn-bg;
@@ -42,10 +44,11 @@
         &.amount {
             .material-icons {
                 position: absolute;
-                top: 14px;
+                top: 13px;
                 z-index: 9;
                 font-weight: bold;
                 font-size: $fnt18;
+                color: $active-clr;
             }
             input[type="text"],
             input[type="number"] {

@@ -18,7 +18,7 @@ $active-clr: #00000e;
 $nav_num-clr: #FF0049;
 $blk-clr: #000;
 $brd-box: #e2e2e2;
-$disable-chk-clr: #9baaab;
+$disable-chk-clr: #BFC5CA;
 $options-gry-clr: #EBF0F1;
 $errbg-clr: #fff2f2;
 $placeholder-clr: #ccc;
@@ -34,6 +34,8 @@ $grey-scnd-clr: #8c949b;
 $paid-off-brdr: #cad6e2;
 $success-clr:#05bd7f;
 $success-clr-bg:#e5fbf3;
+$tooltip-cross: #BFC5CA;
+$field-label: #888E93;
 $fnt12: 12px;
 $fnt14: 14px;
 $fnt16: 16px;
@@ -42,6 +44,7 @@ $fnt20: 20px;
 $fnt24: 24px;
 $fnt25: 25px;
 $fnt28: 28px;
+$fnt30: 30px;
 $fnt32: 32px;
 $fnt38: 38px;
 $fnt42: 42px;
@@ -54,7 +57,8 @@ $heading2: 42px;
 $heading3: 32px;
 .fnt20 {
     font-size: $fnt20;
-    font-family: 'Poppins-400';
+    font-family: 'Poppins-300';
+    opacity: 1;
 }
 
 @media (min-width: 1024px) {
@@ -128,18 +132,19 @@ $heading3: 32px;
 @mixin buttonWrapper($backgroundClr,
 $textClr) {
     min-width: 200px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     border-radius: 4px;
     background-color: $backgroundClr;
     border-color: $backgroundClr;
     color: $textClr;
     text-align: center;
     font-size: $fnt14;
-    font-family: 'Poppins-500';
+    font-family: 'Poppins-600';
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
+    box-sizing: border-box;
     &:hover,
     &:focus {
         outline: none;
@@ -149,17 +154,19 @@ $textClr) {
 
 @mixin tooltipMessageBox() {
     min-width: 320px;
-    padding: 15px;
+    padding: 20px 30px 30px 30px;
     background: $white-clr;
     border-radius: 10px;
-    border: 2px solid $tooltip-border-clr;
+    border: 2px solid $brd-box;
     font-style: normal;
-    box-shadow: 0 0 10px 0px $tooltip-shadow-clr;
+    font-size: $fnt16;
+    color: $secondary-clr;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.24);
     &:before {
         content: "";
         width: 15px;
         height: 15px;
-        border: 2px solid $tooltip-border-clr;
+        border: 2px solid $brd-box;
         background: $white-clr;
         border-bottom-color: transparent;
         border-right-color: transparent;
@@ -168,6 +175,9 @@ $textClr) {
         top: -8px;
         right: 20px;
         transform: rotate(45deg);
+    }
+    &>p {
+        margin: 0 -7px;
     }
 }
 
@@ -187,9 +197,10 @@ $textClr) {
     z-index: 0;
     cursor: pointer;
     padding-left: 35px;
-    color: $blk-clr;
+    color: $label-txt-clr;
     padding-top: 4px;
     font-family: 'Poppins-300';
+    font-size: $fnt16;
     line-height: 18px;
     font-weight: bold;
     input[type="radio"]+label:before,
@@ -232,8 +243,8 @@ $textClr) {
     }
     input[type="radio"]:disabled+em,
     input[type="radio"]:disabled+label:before {
-        border-color: $disable-clr;
-        background: $disable-clr;
+        border-color: $disable-chk-clr;
+        background: $disable-chk-clr;
     }
     input[type="radio"]:disabled+em:before,
     input[type="radio"]:disabled+label:after {
@@ -276,15 +287,11 @@ $textClr) {
         transition: background-color .2s ease-in-out;
     }
     input[type="checkbox"]:checked+em,
-    input[type="checkbox"]:checked+label {
-        background: $verify-clr url('../images/icons/white_check.svg') no-repeat center center;
-        border-color: $verify-clr;
-        background-size: 60%;
-    }
+    input[type="checkbox"]:checked+label,
     input[type="checkbox"]:disabled+em,
     input[type="checkbox"]:disabled+label {
-        background: $disable-clr url('../images/icons/disabled_check.svg') no-repeat center center;
-        border-color: $disable-clr;
+        background: $verify-clr url('../images/icons/white_check.svg') no-repeat center center;
+        border-color: $verify-clr;
         background-size: 60%;
     }
     input[type="checkbox"].blocked+em,
@@ -348,13 +355,14 @@ $textClr) {
         opacity 0.3s,
         top 0.3s;
         cursor: default;
+        font-family: 'Poppins-200';
         .close {
             cursor: pointer;
         }
 
-        a,a:hover 
-        {
-            color:rgba(20,20,20,0.3);
+        a,
+        a:hover {
+            color: $tooltip-cross;
         }
     }
     &:focus {
@@ -370,7 +378,7 @@ $textClr) {
 }
 
 .tooltip_info_snd {
-    top: 7px;
+    top: 40%;
     right: 0px;
 }
 
