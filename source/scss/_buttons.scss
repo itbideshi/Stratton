@@ -87,11 +87,20 @@
         border-radius: 30px;
         border-color: $brd-clr-trd;
         color: $label-txt-clr;
+        font-family:'Poppins-500';
+
+        &:hover 
+        {
+            background:$active-clr;
+            color:$white-clr;
+        }
     }
     &.btnheadSnd {
         min-width: 80px!important;
         height: 40px!important;
         line-height: 40px!important;
+        
+
     }
     &.btnSecondary {
         @include buttonWrapper($white-clr, $blk-clr);
@@ -99,6 +108,8 @@
         border-color: $brd-clr-trd;
         min-width: 110px;
         color: $label-txt-clr;
+        font-family:'Poppins-500';
+        
     }
     &.editBtn {
         min-width: 80px;
@@ -109,12 +120,12 @@
         min-width: 275px!important;
     }
     &.arwButton {
-        min-width: 8px !important;
-        height: 28px;
+        min-width: 30px !important;
+        height: 30px;
         padding: 0px;
         line-height: 27px;
         color: $placeholder-clr;
-        border: 2px $disable-clr solid;
+        border: 2px $disable-chk-clr solid;
         i {
             font-size: $fnt24;
         }

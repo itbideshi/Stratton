@@ -1,4 +1,4 @@
-//@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
+@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import '_variables';
 html,
 body {
@@ -67,6 +67,22 @@ lightning-textarea .slds-form-element__label {
     margin-top: -15px;
 }
 
+.mrgnB0 
+{
+    margin-bottom:0px!important;
+}
+
+.mrgnHeadSpacing 
+{
+    margin-bottom:45px;
+}
+
+.sectionSepBrd 
+{
+    margin-top:50px;
+    margin-bottom:43px;
+} 
+
 .mrgnLsp {
     margin-left: 28px!important;
 }
@@ -109,6 +125,17 @@ lightning-textarea .slds-form-element__label {
 
 .brdOuter {
     border-radius: 15px!important;
+}
+
+.prefilldCol 
+{
+    color:$disable-chk-clr;
+}
+
+.uiCurrency 
+{
+    color:$grey-scnd-clr!important;
+    font-weight:bold!important;
 }
 
 .material-icons {
@@ -323,7 +350,7 @@ lightning-textarea .slds-form-element__label {
         line-height: 25px;
         padding-bottom: 30px;
         p {
-            font-family: 'Poppins-300';
+            font-family: 'Poppins-200';
             color: $secondary-clr;
         }
     }
@@ -351,7 +378,7 @@ lightning-textarea .slds-form-element__label {
         .slds-form-element__label {
             font-family: 'Poppins-300';
             font-size: $fnt16;
-            color: $label-txt-clr;
+            color:$label-txt-clr;
         }
         input[type="radio"]:disabled+.slds-radio__label .slds-form-element__label {
             color: $disable-chk-clr;
@@ -400,7 +427,7 @@ lightning-textarea .slds-form-element__label {
     color: $label-txt-clr;
     h2 {
         font-size: $fnt32;
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
         font-family: 'Poppins-200';
     }
     .cstm_input {
@@ -436,7 +463,7 @@ lightning-textarea .slds-form-element__label {
 .startPage {
     background-color: $white-clr;
     .headCont {
-        background: $blk-clr url('../images/startHeadImg.png') no-repeat 0 center;
+        background: $blk-clr url('../images/startHeadImg.jpg') no-repeat 0 center;
         background-size: cover;
         width: 100%;
         min-height: 566px;
@@ -483,7 +510,7 @@ lightning-textarea .slds-form-element__label {
         position: relative;
         &:before {
             content: "";
-            background: $blk-clr url('../images/exit_bg_light.png') no-repeat 80% top;
+            background: $blk-clr url('../images/exit_bg_light.jpg') no-repeat 80% top;
             background-size: cover;
             position: absolute;
             top: 0;
@@ -497,6 +524,42 @@ lightning-textarea .slds-form-element__label {
             z-index: 1;
         }
     }
+
+       .noMessage 
+            {
+
+                &:before {
+
+                     background: $blk-clr url('../images/404.jpg') no-repeat 0 center!important;
+                       
+                }
+
+            }
+
+
+    
+    .verificationCont {
+        padding-left: 34px;
+        padding-right: 34px;
+        min-height: calc(100vh - 80px);
+        position: relative;
+        &:before {
+            content: "";
+            background: $blk-clr url('../images/email_verification.jpg') no-repeat 0% top!important;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+        .slds-col {
+            z-index: 1;
+        }
+    }
+
+   
     .midCont {
         color: $blk-clr;
         h3 {
@@ -548,18 +611,20 @@ font-family: 'Poppins-300';*/
     }
     .bottomInfo {
         margin-top: 80px;
-        background: transparent url('../images/bottombg.png') no-repeat 0 center;
+        background: transparent url('../images/bottombg.jpg') no-repeat 0 0;
         background-size: cover;
         width: 100%;
         min-height: 700px;
         padding: 120px 0px 130px 0px;
         font-size: $fnt16;
+        color:$white-clr;
         h2 {
             font-size: $fnt60;
             padding-bottom: 20px;
             text-align: center;
             font-weight: normal;
-            font-family: 'Poppins-300';
+            font-family: 'Poppins-500';
+            padding-top:30px;
         }
         .subHead {
             font-size: $fnt18;
@@ -596,12 +661,18 @@ font-family: 'Poppins-300';*/
     margin-bottom: 50px;
     font-size: $fnt16;
     line-height: 25px;
+    color:$label-txt-clr;
     h2 {
         font-size: $fnt38;
         line-height: 46px;
         color: $label-txt-clr;
         font-family: 'Poppins-700';
     }
+}
+
+.verficationCont 
+{
+    
 }
 
 .slds-modal__content {
@@ -628,6 +699,7 @@ font-family: 'Poppins-300';*/
 
 
 .summarySection {
+    margin-top:40px;
     font-size: $fnt16;
     color: $white-clr;
     background: $secondary-clr;
@@ -681,13 +753,20 @@ font-family: 'Poppins-300';*/
     padding-bottom: 10px;
 }
 
+.assetSubHeading 
+{
+    font-size:$fnt16;
+    font-family: 'Poppins-200';
+    color:$secondary-clr;
+}
+
 .gridColCont {
     &.slds-m-top_x-large:first-child {
         margin-top: 0 !important;
     }
     font-family: 'Poppins-300';
     font-size: $fnt14;
-    color: $label-txt-clr;
+    color: $active-clr;
     h3 {
         font-size: $fnt24;
         font-family: 'Poppins-400';
@@ -729,7 +808,7 @@ font-family: 'Poppins-300';*/
     a,
     a:hover {
         color: $disable-chk-clr;
-        font-family: 'Poppins-300';
+        font-family: 'Poppins-400';
         font-size: $fnt12;
     }
 }
@@ -797,6 +876,8 @@ font-family: 'Poppins-300';*/
 
 .appSaveBox {
 
+    padding:0px 10px 40px 10px;
+
     h2 {
         font-size: $fnt32!important;
         padding: 0px 0px 15px 0px;
@@ -808,10 +889,21 @@ font-family: 'Poppins-300';*/
         font-family: 'Poppins-300';
     }
 
+    .midTxt2 {
+        font-size: $fnt20;
+        color:$active-clr;
+        font-family: 'Poppins-300';
+    }
+
     h3 {
         font-size: $fnt20;
         color: $active-clr;
     }
+}
+
+.appSaveTopCont .modalCrossIcon 
+{
+    margin-right:-5px!important;
 }
 
 .midTxt {
@@ -1125,7 +1217,7 @@ font-family: 'Poppins-300';*/
         font-size: $fnt24;
         color: $white-clr;
         height: 180px;
-        background: url('../images/inheadbg.jpg') no-repeat 0 77.5%;
+        background: url('../images/inheadbg.jpg') no-repeat 0 51.5%;
     }
 
     .tabsCont {
@@ -1460,7 +1552,7 @@ font-family: 'Poppins-300';*/
 
 .field_label {
     color: $label-txt-clr;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .field_label2 {
@@ -1470,6 +1562,13 @@ font-family: 'Poppins-300';*/
 .field_label3 {
     color: $disable-clr!important;
 }
+
+.field_label4 {
+    color: $label-txt-clr!important;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
 
 .btnLoan {
     background: $secondary-btn-bg!important;
@@ -1511,9 +1610,10 @@ font-family: 'Poppins-300';*/
             input[type="text"] {
                 padding-top: 0;
                 line-height: 0;
+                height:42px;
             }
             .input_fields.amount .material-icons {
-                top: 0;
+                top: -1px;
             }
         }
     }
@@ -1564,6 +1664,13 @@ font-family: 'Poppins-300';*/
 
 
 @media (min-width: 1024px) {
+
+
+    .summarySection 
+    {
+        margin-top:0px;
+    }
+
 
     .tabHead {
         margin-left: -40px;
@@ -1654,13 +1761,14 @@ font-family: 'Poppins-300';*/
         .slds-radio {
             width: 33%!important;
             float: left;
+            cursor:default;
         }
     }
 
     .carDetailLightBox {
         h2 {
             font-size: $fnt32;
-            padding: 20px 0px 20px 0px;
+            padding: 0px 0px 20px 0px;
         }
     }
 
@@ -1681,7 +1789,7 @@ font-family: 'Poppins-300';*/
                 padding-top: 120px;
                 font-size: $fnt60;
                 line-height: 68px;
-                font-family: 'Poppins-300';
+                font-family: 'Poppins-500';
                 padding-bottom: 80px;
             }
         }
@@ -1706,10 +1814,10 @@ font-family: 'Poppins-300';*/
         }
         .bottomInfo {
             margin-top: 0px;
-            min-height: 1024px;
-            margin-bottom: 175px;
+            min-height: 774px;
+            margin-bottom: 0px;
             .boxInfo {
-                padding-top: 100px;
+                padding-top: 40px;
                 max-width: 980px;
                 margin: 0 auto;
                 ul {
@@ -1738,11 +1846,24 @@ font-family: 'Poppins-300';*/
             padding-left: 0px;
             padding-right: 0px;
             &:before {
-                background: $blk-clr url('../images/exit_bg_light.png') no-repeat 0 center;
+                background: $blk-clr url('../images/exit_bg_light.jpg') no-repeat 0 center;
                 background-size: cover;
                 transform: scaleX(1);
             }
         }
+
+         .noMessage 
+            {
+
+                &:before {
+
+                     background: $blk-clr url('../images/404.jpg') no-repeat 0 center!important;
+                       
+                }
+
+            }
+
+        
     }
 
     .sectionSep {
@@ -1780,6 +1901,11 @@ font-family: 'Poppins-300';*/
 
     .heading4 {
         font-size: $fnt20;
+        font-family: 'Poppins-300';
+        color:$active-clr;
+        h3 {
+            font-family: 'Poppins-300';
+        }
     }
 
     .heading6 {
@@ -1846,7 +1972,7 @@ font-family: 'Poppins-300';*/
     }
 
     .extendBorder {
-        margin: 0 -40px 30px;
+        margin: 12px -40px 42px;
     }
 
     .hardExit {

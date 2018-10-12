@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 })
+    <!-- Page Header -->
+    <!-- Page Navigation -->
+    <!-- <% include('templates/navigation') %> -->
+    <!-- Page Navigation -->
+    <div class="startPage">
+        <div class="headCont verificationCont slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12 ">
+                <div class="hardExit">
+                    <h2>Your email has been successfully verified</h2>
+                        <button class="slds-button slds-m-top_large slds-button_brand btnSave wfAuto defaultBtn">
+                            Continue your application
+                        </button>
+                    </p>
+                </div>
+            </div>
+            <div class="slds-clearfix"></div>
+        </div>
+    </div>
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
