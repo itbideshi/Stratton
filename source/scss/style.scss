@@ -715,6 +715,18 @@ font-family: 'Poppins-300';*/
         padding-bottom: 20px;
         border-bottom: 1px $border-sclr solid!important;
     }
+
+    .lftSec 
+    {
+        font-size:$fnt14;
+        font-family:'poppins-400'
+    }
+
+    .rhtSec 
+    {
+        font-size:$fnt14;
+        font-family:'poppins-600'
+    }
 }
 
 .boxCont {
