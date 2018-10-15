@@ -1,4 +1,4 @@
-@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
+//@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import '_variables';
 html,
 body {
@@ -1677,7 +1677,24 @@ font-family: 'Poppins-300';*/
             top:35px!important;
         }
     }
+@media (max-width: 1023px){
+    .forceCommunityEmbeddedServiceHelpButton{
+        position: relative !important;
+        display: flex !important;
+        justify-content: flex-end;
+        z-index: 9 !important;
+        top: -100px;
+        right: 36px !important;
+        height: 0;
 
+        .flatButton{
+            height: 70px;
+        }
+    }
+    .container .columnWrapper{
+        padding-bottom: 150px;
+    }
+}    
 
 @media (min-width: 1024px) {
 
