@@ -1713,6 +1713,12 @@ font-family: 'Poppins-300';*/
     .container .columnWrapper{
         padding-bottom: 150px;
     }
+    .slds-modal__container{
+        height: auto;
+    }
+    .slds-fade-in-open{
+        overflow-y: auto;
+    }
 }    
 
 @media (min-width: 1024px) {
