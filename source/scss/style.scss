@@ -463,7 +463,7 @@ lightning-textarea .slds-form-element__label {
 .startPage {
     background-color: $white-clr;
     .headCont {
-        background: $blk-clr url('../images/startHeadImg.jpg') no-repeat 0 center;
+        background: $blk-clr url('../images/startHeadImg.jpg') no-repeat -250px center;
         background-size: cover;
         width: 100%;
         min-height: 566px;
@@ -1662,6 +1662,22 @@ font-family: 'Poppins-300';*/
     }
 }
 
+.embeddedServiceSidebar.modalContainer 
+{
+    z-index:9999!important;
+}
+
+
+
+.comm-page-custom-getestimate {
+      
+        .tooltip_info 
+        {
+            right:10px!important;
+            top:35px!important;
+        }
+    }
+
 
 @media (min-width: 1024px) {
 
@@ -1794,6 +1810,8 @@ font-family: 'Poppins-300';*/
             }
         }
         .headCont {
+              background: $blk-clr url('../images/startHeadImg.jpg') no-repeat 0px center;
+             background-size: cover;
              height: 924px;
             .inHeadCont {
                 right: 40px;
