@@ -1047,6 +1047,8 @@ font-family: 'Poppins-300';*/
     h2 {
         div {
             font-size: $fnt32;
+            font-family:'poppins-600';
+            color:$active-clr;
         }
     }
 
@@ -1059,6 +1061,11 @@ font-family: 'Poppins-300';*/
 
     img {
         width: 50px;
+    }
+
+    header 
+    {
+        border:none!important;
     }
 }
 
