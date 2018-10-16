@@ -1087,6 +1087,7 @@ font-family: 'Poppins-300';*/
     {
         color:$disable-chk-clr!important;
         opacity:1!important;
+        font-family:'Poppins-400';
     }
 
     .heading3 
@@ -1520,6 +1521,7 @@ font-family: 'Poppins-300';*/
         background: url('../images/icons/check-active.svg') no-repeat 0 center;
         position: relative;
         top: 5px;
+        margin-right:8px;
     }
 
 
@@ -2085,12 +2087,12 @@ font-family: 'Poppins-300';*/
 
         .sepbarInner 
         {
-            margin-left:0px;
-            margin-right:0px;
+            margin-left:0px!important;
+            margin-right:0px!important;
 
             hr 
             {
-                border-color:$grey-clr;
+                border-color:$grey-clr!important;
             }
         }
 
