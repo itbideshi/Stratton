@@ -453,7 +453,7 @@ lightning-textarea .slds-form-element__label {
 .estimatePage {
     //margin: 0;
     background: $white-clr;
-    padding-top: 0px;
+    padding-top: 120px;
     .lhs_wrapper {
         border: 0;
         border-radius: 0;
@@ -461,6 +461,7 @@ lightning-textarea .slds-form-element__label {
 }
 
 .startPage {
+    padding-top:80px;
     background-color: $white-clr;
     .headCont {
         background: $blk-clr url('../images/startHeadImg.jpg') no-repeat -250px center;
@@ -1081,6 +1082,19 @@ font-family: 'Poppins-300';*/
 }
 
 .loanDashboard {
+
+    .disableSubStage 
+    {
+        color:$disable-chk-clr!important;
+        opacity:1!important;
+    }
+
+    .heading3 
+    {
+        font-family:'Poppins-600';
+
+    }
+
     padding-left: 0;
     padding-right: 0;
     .lhs_wrapper {
@@ -1228,15 +1242,29 @@ font-family: 'Poppins-300';*/
 }
 
 .loanDocument {
+
+     margin-top:80px;
+     .dashboardHeader{
+        text-transform: lowercase;
+        font-family: 'Poppins-600';
+            }                             
+     .container 
+            {
+                padding-bottom:1em; 
+            }
+
+
     &.innerHeader {
+
         position: relative;
         padding-top: 30px;
         padding-bottom: 50px;
         background: #ccc;
         font-size: $fnt24;
         color: $white-clr;
-        height: 180px;
+        min-height: 180px;
         background: url('../images/inheadbg.jpg') no-repeat 0 51.5%;
+        background-size:cover;
     }
 
     .tabsCont {
@@ -1253,7 +1281,7 @@ font-family: 'Poppins-300';*/
                 float: left;
                 a {
                     font-size: $fnt16;
-                    color: $grey-scnd-clr;
+                    color: $label-txt-clr;
                 }
                 &.activeBg {
                     background: $grey-clr;
@@ -1464,19 +1492,22 @@ font-family: 'Poppins-300';*/
 
     font-size: $fnt16;
     h4 {
-        color: $disable-clr;
+        color: $disable-chk-clr;
         font-size: $fnt16;
+        font-family:'Poppins-400';
     }
 
     h5 {
         color: $active-clr;
         font-size: $fnt20;
         margin-bottom: 0px;
+        font-family:'Poppins-300';
     }
 
     ul li {
-        padding-bottom: 10px;
-
+        padding-bottom: 15px;
+        font-family:'poppins-600';
+        color:$label-txt-clr;
         strong {
             font-family: 'Poppins-800';
         }
@@ -1499,6 +1530,7 @@ font-family: 'Poppins-300';*/
         background: url('../images/icons/check-disable.svg') no-repeat 0 center;
         position: relative;
         top: 5px;
+        margin-right:8px;
     }
 }
 
@@ -1713,12 +1745,6 @@ font-family: 'Poppins-300';*/
     .container .columnWrapper{
         padding-bottom: 150px;
     }
-    .slds-modal__container{
-        height: auto;
-    }
-    .slds-fade-in-open{
-        overflow-y: auto;
-    }
 }    
 
 @media (min-width: 1024px) {
@@ -1746,6 +1772,14 @@ font-family: 'Poppins-300';*/
 
 
     .loanDocument {
+
+
+       .container 
+            {
+                padding:1em 0 0; 
+            }
+
+
         &.innerHeader {
             padding-top: 50px;
             .tabsCont {
@@ -1955,7 +1989,7 @@ font-family: 'Poppins-300';*/
         background: $blk-clr url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: 100%;
         .headerFixCont {
-            position: static;
+           //position: static;
         }
     }
 
@@ -2047,6 +2081,19 @@ font-family: 'Poppins-300';*/
     }
 
     .loanDashboard {
+
+
+        .sepbarInner 
+        {
+            margin-left:0px;
+            margin-right:0px;
+
+            hr 
+            {
+                border-color:$grey-clr;
+            }
+        }
+
         hr {
             margin-left: 0px;
             margin-right: 0px;
