@@ -1,5 +1,6 @@
 //@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import '_variables';
+
 html,
 body {
     background-color: $white-clr;
@@ -20,7 +21,7 @@ body {
 }
 
 .bgNone {
-    background: $white-clr!important;
+    background: $white-clr !important;
 }
 
 .posRel {
@@ -28,7 +29,7 @@ body {
 }
 
 .posStatic {
-    position: static!important;
+    position: static !important;
 }
 
 a,
@@ -56,39 +57,36 @@ lightning-textarea .slds-form-element__label {
 }
 
 .paddT0 {
-    padding-top: 0px!important;
+    padding-top: 0px !important;
 }
 
 .padd0 {
-    padding: 0px!important;
+    padding: 0px !important;
 }
 
 .mrgnmT15 {
     margin-top: -15px;
 }
 
-.mrgnB0 
-{
-    margin-bottom:0px!important;
+.mrgnB0 {
+    margin-bottom: 0px !important;
 }
 
-.mrgnHeadSpacing 
-{
-    margin-bottom:45px;
+.mrgnHeadSpacing {
+    margin-bottom: 45px;
 }
 
-.sectionSepBrd 
-{
-    margin-top:50px;
-    margin-bottom:43px;
-} 
+.sectionSepBrd {
+    margin-top: 50px;
+    margin-bottom: 43px;
+}
 
 .mrgnLsp {
-    margin-left: 28px!important;
+    margin-left: 28px !important;
 }
 
 .mrgnMrsp {
-    margin-right: -30px!important;
+    margin-right: -30px !important;
 }
 
 .paddLarge {
@@ -96,7 +94,7 @@ lightning-textarea .slds-form-element__label {
 }
 
 .paddL0 {
-    padding-left: 0px!important;
+    padding-left: 0px !important;
 }
 
 .alignC {
@@ -114,7 +112,7 @@ lightning-textarea .slds-form-element__label {
 
 
 .grey_lbl2 {
-    color: $disable-clr!important;
+    color: $disable-clr !important;
 }
 
 .prosIcn {
@@ -124,18 +122,16 @@ lightning-textarea .slds-form-element__label {
 }
 
 .brdOuter {
-    border-radius: 15px!important;
+    border-radius: 15px !important;
 }
 
-.prefilldCol 
-{
-    color:$disable-chk-clr;
+.prefilldCol {
+    color: $disable-chk-clr;
 }
 
-.uiCurrency 
-{
-    color:$grey-scnd-clr!important;
-    font-weight:bold!important;
+.uiCurrency {
+    color: $grey-scnd-clr !important;
+    font-weight: bold !important;
 }
 
 .material-icons {
@@ -262,19 +258,19 @@ lightning-textarea .slds-form-element__label {
 }
 
 .wAuto {
-    width: auto!important;
+    width: auto !important;
 }
 
 .wfAuto {
-    width: 100%!important;
+    width: 100% !important;
 }
 
 .minWvs {
-    min-width: 80px!important;
+    min-width: 80px !important;
 }
 
 .minWm {
-    min-width: 120px!important;
+    min-width: 120px !important;
 }
 
 .fLbl {
@@ -282,25 +278,30 @@ lightning-textarea .slds-form-element__label {
 }
 
 @import '../templates/Navigation/_pageNavigation';
+
 .privacyLightBox {
     padding: 10px 0px 0px 0px;
     font-family: 'Poppins-800';
     font-size: $fnt14;
     color: $label-txt-clr;
+
     h2 {
         font-size: $fnt32;
         font-family: 'Poppins-600';
+
         span {
             display: block;
             font-family: 'Poppins-200';
         }
     }
+
     .privacyContent {
         font-size: $fnt14;
         font-family: 'Poppins-300';
         overflow: auto;
         height: 150px;
     }
+
     p {
         margin: 10px 0px;
         word-break: break-word;
@@ -310,10 +311,12 @@ lightning-textarea .slds-form-element__label {
 .slds-modal__content {
     border-radius: 10px;
     padding: 0px 20px;
+
     .modalMidCont {
         overflow-y: auto;
         height: 220px;
     }
+
     .modalCrossIcon {
         color: rgba(0, 0, 0, 0.3);
         margin-right: 5px;
@@ -327,63 +330,78 @@ lightning-textarea .slds-form-element__label {
     margin-left: auto;
     margin-right: auto;
     padding: 30px 10px 0px;
+
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
         padding: 15px 26px 80px;
         border-radius: 8px;
         margin-bottom: 0px;
+
         .messageWrapper {
             margin-top: 0;
             border: 1px $brd-box solid;
         }
     }
+
     .slds-gutters {
         margin-left: -10px;
         margin-right: -10px;
     }
+
     .slds-col {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .pageContent {
         line-height: 25px;
         padding-bottom: 30px;
+
         p {
             font-family: 'Poppins-200';
             color: $secondary-clr;
         }
     }
+
     .padding_0 {
         padding: 0;
     }
+
     .mrgnL20 {
-        margin-left: 20px!important;
+        margin-left: 20px !important;
     }
+
     .radioCont {
         font-size: $fnt14;
         font-family: 'Poppins-600';
+
         li {
             float: left;
             width: 33%;
+
             .cstm_input {
                 min-height: 24px;
                 padding-top: 2px;
             }
         }
+
         .slds-radio {
             width: 33%;
             float: left;
         }
+
         .slds-form-element__label {
             font-family: 'Poppins-300';
             font-size: $fnt16;
-            color:$label-txt-clr;
+            color: $label-txt-clr;
         }
+
         input[type="radio"]:disabled+.slds-radio__label .slds-form-element__label {
             color: $disable-chk-clr;
         }
     }
+
     .buttonBotInfo {
         border-top: 1px $grey-clr solid;
         margin-left: -40px;
@@ -392,14 +410,17 @@ lightning-textarea .slds-form-element__label {
         padding-right: 35px;
         margin-top: 70px;
     }
+
     .heading3 {
-        font-size: $heading3!important;
+        font-size: $heading3 !important;
         line-height: 38px;
         padding-left: 26px;
         font-family: 'Poppins-700';
         color: $label-txt-clr;
     }
+
     @import '../templates/Chatter/_chatter.scss';
+
     .columnWrapper {
         border: 1px solid $brd-box;
         border-radius: 8px 8px 0 0;
@@ -409,6 +430,7 @@ lightning-textarea .slds-form-element__label {
         background: $white-clr;
         margin-bottom: 0;
         border-bottom: 0;
+
         .lhs_wrapper {
             border: 0;
             padding: 0;
@@ -420,16 +442,19 @@ lightning-textarea .slds-form-element__label {
 @import './_forms';
 @import './_buttons';
 @import '../templates/LoanCalculator/_loanCalculator';
+
 .carDetailLightBox,
 .passwordLightBox {
     clear: both;
     font-family: 'Poppins-200';
     color: $label-txt-clr;
+
     h2 {
         font-size: $fnt32;
         padding: 0px 0px 20px 0px;
         font-family: 'Poppins-200';
     }
+
     .cstm_input {
         font-size: $fnt16;
         padding-left: 40px;
@@ -443,6 +468,7 @@ lightning-textarea .slds-form-element__label {
         padding: 0px 0px 20px 0px;
         line-height: 38px;
     }
+
     .subheading {
         font-size: $fnt32;
         line-height: 38px;
@@ -454,6 +480,7 @@ lightning-textarea .slds-form-element__label {
     //margin: 0;
     background: $white-clr;
     padding-top: 120px;
+
     .lhs_wrapper {
         border: 0;
         border-radius: 0;
@@ -461,14 +488,16 @@ lightning-textarea .slds-form-element__label {
 }
 
 .startPage {
-    padding-top:80px;
+    padding-top: 80px;
     background-color: $white-clr;
+
     .headCont {
         background: $blk-clr url('../images/startHeadImg.jpg') no-repeat -250px center;
         background-size: cover;
         width: 100%;
         min-height: 566px;
         position: relative;
+
         .inHeadCont {
             color: $white-clr;
             font-size: $fnt16;
@@ -476,24 +505,29 @@ lightning-textarea .slds-form-element__label {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+
             h2 {
                 font-size: $fnt52;
                 font-family: 'Poppins-500';
                 line-height: 52px;
                 padding-top: 0px;
+
                 span {
                     font-family: 'Poppins-300';
                 }
             }
+
             .textCont {
                 font-family: 'Poppins-300';
                 margin-top: 50px;
                 line-height: 27px;
             }
+
             .btnSave {
                 height: 60px;
                 line-height: 60px;
             }
+
             .learnMore {
                 background: none;
                 border: none;
@@ -504,11 +538,13 @@ lightning-textarea .slds-form-element__label {
             }
         }
     }
+
     .exitCont {
         padding-left: 34px;
         padding-right: 34px;
         min-height: calc(100vh - 80px);
         position: relative;
+
         &:before {
             content: "";
             background: $blk-clr url('../images/exit_bg_light.jpg') no-repeat 80% top;
@@ -521,32 +557,33 @@ lightning-textarea .slds-form-element__label {
             z-index: 0;
             transform: scaleX(-1);
         }
+
         .slds-col {
             z-index: 1;
         }
     }
 
-       .noMessage 
-            {
+    .noMessage {
 
-                &:before {
+        &:before {
 
-                     background: $blk-clr url('../images/404.jpg') no-repeat 0 center!important;
-                       
-                }
+            background: $blk-clr url('../images/404.jpg') no-repeat 0 center !important;
 
-            }
+        }
+
+    }
 
 
-    
+
     .verificationCont {
         padding-left: 34px;
         padding-right: 34px;
         min-height: calc(100vh - 80px);
         position: relative;
+
         &:before {
             content: "";
-            background: $blk-clr url('../images/email_verification.jpg') no-repeat 0% top!important;
+            background: $blk-clr url('../images/email_verification.jpg') no-repeat 0% top !important;
             background-size: cover;
             position: absolute;
             top: 0;
@@ -555,14 +592,16 @@ lightning-textarea .slds-form-element__label {
             bottom: 0;
             z-index: 0;
         }
+
         .slds-col {
             z-index: 1;
         }
     }
 
-   
+
     .midCont {
         color: $blk-clr;
+
         h3 {
             padding: 60px 20px 20px 20px;
             /*font-size: $fnt60;
@@ -570,13 +609,16 @@ line-height: 68px;
 font-family: 'Poppins-300';*/
             font: normal 42px/47px 'Poppins-300';
         }
+
         .slds-button {
             cursor: default;
         }
     }
+
     .rhsImg {
         padding-top: 50px;
     }
+
     .listInfo {
         h4 {
             font-size: $fnt24;
@@ -585,6 +627,7 @@ font-family: 'Poppins-300';*/
             padding-left: 30px;
             position: relative;
             font-family: 'Poppins-600';
+
             strong {
                 padding-right: 15px;
                 color: $primary-btn-bg;
@@ -592,11 +635,13 @@ font-family: 'Poppins-300';*/
                 left: 0;
             }
         }
+
         .material-icons {
             position: absolute;
             left: 0px;
             color: $verify-clr;
         }
+
         p {
             padding-left: 30px;
             font-size: $fnt16;
@@ -604,12 +649,15 @@ font-family: 'Poppins-300';*/
             font-family: 'Poppins-300';
         }
     }
+
     .defaultBtn {
-        max-width: 220px!important;
+        max-width: 220px !important;
     }
+
     .defaultBntSnd {
         background: none;
     }
+
     .bottomInfo {
         margin-top: 80px;
         background: transparent url('../images/bottombg.jpg') no-repeat 0 0;
@@ -618,31 +666,38 @@ font-family: 'Poppins-300';*/
         min-height: 700px;
         padding: 120px 0px 130px 0px;
         font-size: $fnt16;
-        color:$white-clr;
+        color: $white-clr;
+
         h2 {
             font-size: $fnt60;
             padding-bottom: 20px;
             text-align: center;
             font-weight: normal;
             font-family: 'Poppins-500';
-            padding-top:30px;
+            padding-top: 30px;
         }
+
         .subHead {
             font-size: $fnt18;
         }
+
         .boxInfo {
             padding-top: 40px;
             text-align: center;
+
             ul {
                 padding: 0 20px;
+
                 li {
                     margin-bottom: 20px;
                     font-size: $fnt24;
                     font-family: 'Poppins-500';
+
                     .material-icons {
                         font-size: 60px;
                         color: $primary-btn-bg;
                     }
+
                     &:last-child {
                         font-size: $fnt16;
                         font-family: 'Poppins-300';
@@ -662,7 +717,8 @@ font-family: 'Poppins-300';*/
     margin-bottom: 50px;
     font-size: $fnt16;
     line-height: 25px;
-    color:$label-txt-clr;
+    color: $label-txt-clr;
+
     h2 {
         font-size: $fnt38;
         line-height: 46px;
@@ -671,10 +727,7 @@ font-family: 'Poppins-300';*/
     }
 }
 
-.verficationCont 
-{
-    
-}
+.verficationCont {}
 
 .slds-modal__content {
     border-radius: 8px;
@@ -700,33 +753,34 @@ font-family: 'Poppins-300';*/
 
 
 .summarySection {
-    margin-top:40px;
+    margin-top: 40px;
     font-size: $fnt16;
     color: $white-clr;
     background: $secondary-clr;
     border-radius: 8px;
     padding: 40px 30px;
+
     h2 {
         font-size: $fnt24;
     }
+
     .sepSec {
-        border-bottom: 1px $border-sclr solid!important;
+        border-bottom: 1px $border-sclr solid !important;
     }
+
     .inTxt {
         padding-bottom: 20px;
-        border-bottom: 1px $border-sclr solid!important;
+        border-bottom: 1px $border-sclr solid !important;
     }
 
-    .lftSec 
-    {
-        font-size:$fnt14;
-        font-family:'poppins-400'
+    .lftSec {
+        font-size: $fnt14;
+        font-family: 'poppins-400'
     }
 
-    .rhtSec 
-    {
-        font-size:$fnt14;
-        font-family:'poppins-600'
+    .rhtSec {
+        font-size: $fnt14;
+        font-family: 'poppins-600'
     }
 }
 
@@ -744,9 +798,10 @@ font-family: 'Poppins-300';*/
         margin-bottom: 10px;
         font-family: 'Poppins-400';
     }
+
     .inTxt {
         padding-bottom: 20px;
-        border-bottom: 1px $border-sclr solid!important;
+        border-bottom: 1px $border-sclr solid !important;
     }
 }
 
@@ -766,49 +821,57 @@ font-family: 'Poppins-300';*/
     padding-bottom: 10px;
 }
 
-.assetSubHeading 
-{
-    font-size:$fnt16;
+.assetSubHeading {
+    font-size: $fnt16;
     font-family: 'Poppins-200';
-    color:$secondary-clr;
+    color: $secondary-clr;
 }
 
 .gridColCont {
     &.slds-m-top_x-large:first-child {
         margin-top: 0 !important;
     }
+
     font-family: 'Poppins-300';
     font-size: $fnt14;
     color: $active-clr;
+
     h3 {
         font-size: $fnt24;
         font-family: 'Poppins-400';
         color: $active-clr;
     }
+
     h2 {
         font-size: $fnt20;
         font-family: 'Poppins-600';
     }
+
     h4 {
         font-size: $fnt18;
         font-family: 'Poppins-600';
     }
+
     h5 {
         font-size: $fnt16;
         font-family: 'Poppins-600';
     }
+
     .txtSml {
         font-size: $fnt14;
     }
+
     .lbl {
         font-family: 'Poppins-500';
         font-size: $fnt16;
         color: $heading-clr;
+
         &:last-child {
             font-family: 'Poppins-600';
             color: $active-clr;
         }
     }
+
     .total {
         font-size: $fnt24;
         font-family: 'Poppins-600';
@@ -818,6 +881,7 @@ font-family: 'Poppins-300';*/
 }
 
 .address_not_found {
+
     a,
     a:hover {
         color: $disable-chk-clr;
@@ -828,15 +892,18 @@ font-family: 'Poppins-300';*/
 
 .checkCont {
     font-size: $fnt16;
+
     &.slds-m-top_xx-large {
         margin-top: 50px !important
     }
+
     &+.slds-m-top_large {
         margin-top: 40px;
     }
 }
 
 .customCheckCont {
+
     input[type="checkbox"]:checked+em,
     input[type="checkbox"]:checked+label,
     input[type="checkbox"]:checked:disabled+em,
@@ -845,6 +912,7 @@ font-family: 'Poppins-300';*/
         border-color: $verify-clr;
         background-size: 60%;
     }
+
     input[type="checkbox"]:disabled+em,
     input[type="checkbox"]:disabled+label {
         background-image: none;
@@ -861,6 +929,7 @@ font-family: 'Poppins-300';*/
 
 .veriCont {
     line-height: 25px;
+
     a {
         color: $primary-btn-bg;
     }
@@ -876,10 +945,12 @@ font-family: 'Poppins-300';*/
         padding: 0px 0px 25px 0px;
         font-family: 'Poppins-600';
     }
+
     h3 {
         font-size: $fnt20;
         padding: 0px 0px 10px 0px;
     }
+
     .reviewLightBoxContent {
         overflow: auto;
         height: 250px;
@@ -889,14 +960,15 @@ font-family: 'Poppins-300';*/
 
 .appSaveBox {
 
-    padding:0px 10px 40px 10px;
+    padding: 0px 10px 40px 10px;
 
     h2 {
-        font-size: $fnt32!important;
+        font-size: $fnt32 !important;
         padding: 0px 0px 15px 0px;
         font-family: 'Poppins-600';
         color: $label-txt-clr;
     }
+
     .midTxt {
         font-size: $fnt32;
         font-family: 'Poppins-300';
@@ -904,7 +976,7 @@ font-family: 'Poppins-300';*/
 
     .midTxt2 {
         font-size: $fnt20;
-        color:$active-clr;
+        color: $active-clr;
         font-family: 'Poppins-300';
     }
 
@@ -914,9 +986,8 @@ font-family: 'Poppins-300';*/
     }
 }
 
-.appSaveTopCont .modalCrossIcon 
-{
-    margin-right:-5px!important;
+.appSaveTopCont .modalCrossIcon {
+    margin-right: -5px !important;
 }
 
 .midTxt {
@@ -934,6 +1005,7 @@ font-family: 'Poppins-300';*/
         font-size: $fnt62;
         font-family: 'Poppins-700';
         color: $blk-clr;
+
         em {
             font-size: $fnt14;
             color: $label-txt-clr;
@@ -945,8 +1017,9 @@ font-family: 'Poppins-300';*/
     }
 
     h2 {
-        font-size: $fnt42!important;
+        font-size: $fnt42 !important;
         font-family: 'Poppins-700';
+
         em {
             font-size: $fnt14;
             color: $label-txt-clr;
@@ -960,17 +1033,18 @@ font-family: 'Poppins-300';*/
 
 .lendInfo {
     h1 {
-        font-size: $heading1!important;
+        font-size: $heading1 !important;
     }
 
     h2 {
-        font-size: $heading3!important;
+        font-size: $heading3 !important;
     }
 }
 
 .nextCont {
-    padding-left: 85px!important;
+    padding-left: 85px !important;
     position: relative;
+
     span {
         position: absolute;
         left: 10px;
@@ -982,6 +1056,7 @@ font-family: 'Poppins-300';*/
     bottom: 100px;
     right: 0px;
     z-index: 9999;
+
     button {
         background: $primary-clr;
         border: none;
@@ -991,6 +1066,7 @@ font-family: 'Poppins-300';*/
         width: 60px;
         height: 60px;
         margin-right: 30px;
+
         img {
             margin-left: 5px;
         }
@@ -1007,12 +1083,13 @@ font-family: 'Poppins-300';*/
     padding: 15px 10px 15px 25px;
 
     .paddL {
-        padding-left: 70px!important;
+        padding-left: 70px !important;
     }
 }
 
 .uploadInfo {
     font-size: $fnt16;
+
     .colF {
         font-size: $fnt14;
     }
@@ -1027,17 +1104,17 @@ font-family: 'Poppins-300';*/
 }
 
 .greyBg {
-    background: $brd-box!important;
+    background: $brd-box !important;
 }
 
 .greyBox {
-    font-size: $fnt14!important;
-    color: $grey-dark-clr!important;
+    font-size: $fnt14 !important;
+    color: $grey-dark-clr !important;
 }
 
 .warning {
-    color: $primary-btn-bg!important;
-    font-weight: normal!important;
+    color: $primary-btn-bg !important;
+    font-weight: normal !important;
     font-size: $fnt20;
     position: relative;
     top: 4px;
@@ -1045,11 +1122,12 @@ font-family: 'Poppins-300';*/
 
 .cardInfo {
     padding: 0px;
+
     h2 {
         div {
             font-size: $fnt32;
-            font-family:'poppins-600';
-            color:$active-clr;
+            font-family: 'poppins-600';
+            color: $active-clr;
         }
     }
 
@@ -1064,15 +1142,14 @@ font-family: 'Poppins-300';*/
         width: 50px;
     }
 
-    header 
-    {
-        border:none!important;
+    header {
+        border: none !important;
     }
 }
 
 .tooltip_info_heading3 {
-    right: -8px!important;
-    top: 8%!important;
+    right: -8px !important;
+    top: 8% !important;
 }
 
 .readMore {
@@ -1083,21 +1160,20 @@ font-family: 'Poppins-300';*/
 
 .loanDashboard {
 
-    .disableSubStage 
-    {
-        color:$disable-chk-clr!important;
-        opacity:1!important;
-        font-family:'Poppins-400';
+    .disableSubStage {
+        color: $disable-chk-clr !important;
+        opacity: 1 !important;
+        font-family: 'Poppins-400';
     }
 
-    .heading3 
-    {
-        font-family:'Poppins-600';
+    .heading3 {
+        font-family: 'Poppins-600';
 
     }
 
     padding-left: 0;
     padding-right: 0;
+
     .lhs_wrapper {
         .heading3 {
             color: $label-txt-clr;
@@ -1110,9 +1186,11 @@ font-family: 'Poppins-300';*/
         .heading3 {
             font-size: $fnt32 !important;
         }
+
         .colHeading {
             font-size: $fnt24;
         }
+
         .cardStatus {
             .status {
                 color: $white-clr;
@@ -1128,6 +1206,7 @@ font-family: 'Poppins-300';*/
         font-family: 'Poppins-500';
         line-height: 22px;
         font-size: $fnt12;
+
         .status {
             color: $white-clr;
             background: $secondary-clr;
@@ -1135,6 +1214,7 @@ font-family: 'Poppins-300';*/
             display: inline-block;
             padding: 2px 15px;
         }
+
         .approvedCol {
             font-size: $fnt12;
             line-height: 26px;
@@ -1176,6 +1256,7 @@ font-family: 'Poppins-300';*/
         font-family: 'Poppins-700';
         line-height: 32px;
         color: $active-clr;
+
         em {
             font-style: normal;
             font-family: 'Poppins-300';
@@ -1206,6 +1287,7 @@ font-family: 'Poppins-300';*/
         height: 6px;
         border-radius: 4px;
         overflow: hidden;
+
         .slds-progress-bar__value {
             background: $verify-clr;
         }
@@ -1235,6 +1317,7 @@ font-family: 'Poppins-300';*/
         color: $disable-clr;
         outline: none;
         box-shadow: none;
+
         &:focus {
             outline: none;
             box-shadow: none;
@@ -1244,15 +1327,16 @@ font-family: 'Poppins-300';*/
 
 .loanDocument {
 
-     margin-top:80px;
-     .dashboardHeader{
+    margin-top: 80px;
+
+    .dashboardHeader {
         text-transform: lowercase;
         font-family: 'Poppins-600';
-            }                             
-     .container 
-            {
-                padding-bottom:1em; 
-            }
+    }
+
+    .container {
+        padding-bottom: 1em;
+    }
 
 
     &.innerHeader {
@@ -1265,12 +1349,13 @@ font-family: 'Poppins-300';*/
         color: $white-clr;
         min-height: 180px;
         background: url('../images/inheadbg.jpg') no-repeat 0 51.5%;
-        background-size:cover;
+        background-size: cover;
     }
 
     .tabsCont {
         position: absolute;
         bottom: 0px;
+
         ul {
             li {
                 background: $white-clr;
@@ -1280,10 +1365,12 @@ font-family: 'Poppins-300';*/
                 text-align: center;
                 min-width: 135px;
                 float: left;
+
                 a {
                     font-size: $fnt16;
                     color: $label-txt-clr;
                 }
+
                 &.activeBg {
                     background: $grey-clr;
                     color: $blk-clr;
@@ -1296,9 +1383,11 @@ font-family: 'Poppins-300';*/
 .headTopNav {
     ul {
         margin-top: 20px;
+
         li {
             float: left;
             padding-right: 60px;
+
             a {
                 color: $active-clr;
             }
@@ -1310,6 +1399,7 @@ font-family: 'Poppins-300';*/
     .headRowTop {
         font-size: $fnt20;
         color: $active-clr;
+
         h3 {
             padding-left: 40px;
             position: relative;
@@ -1323,13 +1413,14 @@ font-family: 'Poppins-300';*/
         background: #e6eaee;
         border-top: $brd-clr-light;
         border-bottom: $brd-clr-light;
-        padding: 20px 25px 20px 25px!important;
-        margin-left: -40px!important;
-        margin-right: -40px!important;
+        padding: 20px 25px 20px 25px !important;
+        margin-left: -40px !important;
+        margin-right: -40px !important;
     }
 
     .headRowContent {
         font-size: $fnt14;
+
         h3 {
             color: $label-txt-clr;
             opacity: 0.6;
@@ -1340,10 +1431,12 @@ font-family: 'Poppins-300';*/
 .headTopNavRhs {
     ul {
         margin-top: 17px;
+
         li {
             float: right;
             padding-right: 60px;
             line-height: 18px;
+
             a {
                 color: $active-clr;
             }
@@ -1374,25 +1467,30 @@ font-family: 'Poppins-300';*/
         left: -57px;
         border-radius: 5px;
         box-shadow: 0 20px 40px 0 rgba(20, 20, 20, 0.25);
+
         .name {
             font-size: $fnt16;
             font-family: 'Poppins-600';
         }
+
         .email {
             font-size: $fnt12;
             color: $active-clr;
             opacity: 0.6;
         }
+
         .button {
-            background: $secondary-btn-bg!important;
-            height: 40px!important;
-            line-height: 40px!important;
+            background: $secondary-btn-bg !important;
+            height: 40px !important;
+            line-height: 40px !important;
         }
+
         .signOut {
             color: $active-clr;
             opacity: 0.3;
             font-family: 'Poppins-600';
         }
+
         .sepBar {
             border-top: 1px $brd-clr-trd solid;
             margin-left: -5px;
@@ -1424,13 +1522,13 @@ font-family: 'Poppins-300';*/
 }
 
 .check {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
     position: absolute;
     left: 0px;
     top: 4px;
-    background: url('../images/check-solid.svg') no-repeat top;
+    background: url('../images/ok.svg') no-repeat top;
 }
 
 .resubIcn {
@@ -1492,25 +1590,27 @@ font-family: 'Poppins-300';*/
 .progressInfo {
 
     font-size: $fnt16;
+
     h4 {
         color: $disable-chk-clr;
         font-size: $fnt16;
-        font-family:'Poppins-400';
+        font-family: 'Poppins-400';
     }
 
     h5 {
         color: $active-clr;
         font-size: $fnt20;
         margin-bottom: 0px;
-        font-family:'Poppins-300';
+        font-family: 'Poppins-300';
     }
 
     ul li {
         padding-bottom: 15px;
-        font-family:'poppins-600';
-        color:$label-txt-clr;
+        font-family: 'poppins-400';
+        color: $label-txt-clr;
+
         strong {
-            font-family: 'Poppins-800';
+            font-family: 'Poppins-600';
         }
     }
 
@@ -1521,7 +1621,7 @@ font-family: 'Poppins-300';*/
         background: url('../images/icons/check-active.svg') no-repeat 0 center;
         position: relative;
         top: 5px;
-        margin-right:8px;
+        margin-right: 8px;
     }
 
 
@@ -1532,7 +1632,7 @@ font-family: 'Poppins-300';*/
         background: url('../images/icons/check-disable.svg') no-repeat 0 center;
         position: relative;
         top: 5px;
-        margin-right:8px;
+        margin-right: 8px;
     }
 }
 
@@ -1540,10 +1640,10 @@ font-family: 'Poppins-300';*/
 .progressBarCont {
     .check {
 
-        position: absolute!important;
-        right: 0px!important;
+        position: absolute !important;
+        right: 0px !important;
         top: 10px;
-        left: auto!important;
+        left: auto !important;
     }
 }
 
@@ -1561,7 +1661,7 @@ font-family: 'Poppins-300';*/
 
 
     .slds-progress-bar__value {
-        background: $verify-clr!important;
+        background: $verify-clr !important;
     }
 
     h4 {
@@ -1584,7 +1684,7 @@ font-family: 'Poppins-300';*/
 
 .rateSection {
     h5 {
-        font-size: $fnt32!important;
+        font-size: $fnt32 !important;
     }
 
     .boxheading {
@@ -1593,9 +1693,9 @@ font-family: 'Poppins-300';*/
 }
 
 .btnBg {
-    background: $secondary-btn-bg!important;
-    border: 1px $secondary-btn-bg solid!important;
-    color: $white-clr!important;
+    background: $secondary-btn-bg !important;
+    border: 1px $secondary-btn-bg solid !important;
+    color: $white-clr !important;
 }
 
 .loanAmount {
@@ -1613,19 +1713,19 @@ font-family: 'Poppins-300';*/
 }
 
 .field_label3 {
-    color: $disable-clr!important;
+    color: $disable-clr !important;
 }
 
 .field_label4 {
-    color: $label-txt-clr!important;
-    display:inline-block;
-    margin-bottom:15px;
+    color: $label-txt-clr !important;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 
 .btnLoan {
-    background: $secondary-btn-bg!important;
-    border: 1px $secondary-btn-bg solid!important;
+    background: $secondary-btn-bg !important;
+    border: 1px $secondary-btn-bg solid !important;
 }
 
 .getInfo {
@@ -1647,6 +1747,7 @@ font-family: 'Poppins-300';*/
     padding-bottom: 10px;
     margin-bottom: 30px;
     position: relative;
+
     &:after {
         content: "";
         height: 1px;
@@ -1657,14 +1758,16 @@ font-family: 'Poppins-300';*/
         right: 15px;
     }
 }
+
 .expense_Wrapper {
     .slds-grid {
         .slds-col:last-child {
             input[type="text"] {
                 padding-top: 0;
                 line-height: 0;
-                height:42px;
+                height: 42px;
             }
+
             .input_fields.amount .material-icons {
                 top: -1px;
             }
@@ -1699,11 +1802,12 @@ font-family: 'Poppins-300';*/
 }
 
 .dashboardNoAppCont {
-    background: $blk-clr url('../images/dashboard_no_application.jpg') no-repeat 0 center!important;
-    background-size: cover!important;
+    background: $blk-clr url('../images/dashboard_no_application.jpg') no-repeat 0 center !important;
+    background-size: cover !important;
     color: $white-clr;
     font-size: $fnt18;
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.11);
+
     h2 {
         font-size: $fnt32;
         font-family: 'Poppins-600';
@@ -1715,23 +1819,22 @@ font-family: 'Poppins-300';*/
     }
 }
 
-.embeddedServiceSidebar.modalContainer 
-{
-    z-index:9999!important;
+.embeddedServiceSidebar.modalContainer {
+    z-index: 9999 !important;
 }
 
 
 
 .comm-page-custom-getestimate {
-      
-        .tooltip_info 
-        {
-            right:10px!important;
-            top:35px!important;
-        }
+
+    .tooltip_info {
+        right: 10px !important;
+        top: 35px !important;
     }
-@media (max-width: 1023px){
-    .forceCommunityEmbeddedServiceHelpButton{
+}
+
+@media (max-width: 1023px) {
+    .forceCommunityEmbeddedServiceHelpButton {
         position: relative !important;
         display: flex !important;
         justify-content: flex-end;
@@ -1740,21 +1843,21 @@ font-family: 'Poppins-300';*/
         right: 36px !important;
         height: 0;
 
-        .flatButton{
+        .flatButton {
             height: 70px;
         }
     }
-    .container .columnWrapper{
+
+    .container .columnWrapper {
         padding-bottom: 150px;
     }
-}    
+}
 
 @media (min-width: 1024px) {
 
 
-    .summarySection 
-    {
-        margin-top:0px;
+    .summarySection {
+        margin-top: 0px;
     }
 
 
@@ -1776,18 +1879,18 @@ font-family: 'Poppins-300';*/
     .loanDocument {
 
 
-       .container 
-            {
-                padding:1em 0 0; 
-            }
+        .container {
+            padding: 1em 0 0;
+        }
 
 
         &.innerHeader {
             padding-top: 50px;
+
             .tabsCont {
                 ul {
                     li {
-                        min-width: 210px!important;
+                        min-width: 210px !important;
                     }
                 }
             }
@@ -1802,6 +1905,7 @@ font-family: 'Poppins-300';*/
         position: fixed;
         bottom: 100px;
         right: 0px;
+
         button {
             background: $primary-clr;
             border: none;
@@ -1819,12 +1923,12 @@ font-family: 'Poppins-300';*/
     }
 
     .mrgnDeskMbsp {
-        margin-left: 28px!important;
+        margin-left: 28px !important;
     }
 
     .tooltip_info_heading2 {
-        right: 6px!important;
-        bottom: 14px!important;
+        right: 6px !important;
+        bottom: 14px !important;
     }
 
     .subheadingSmall {
@@ -1840,11 +1944,11 @@ font-family: 'Poppins-300';*/
     }
 
     .mrgnLsp {
-        margin-left: 20px!important;
+        margin-left: 20px !important;
     }
 
     .mrgnDeskMbsp {
-        margin-left: 0px!important;
+        margin-left: 0px !important;
     }
 
     .algnRd {
@@ -1853,9 +1957,9 @@ font-family: 'Poppins-300';*/
 
     .radioCont {
         .slds-radio {
-            width: 33%!important;
+            width: 33% !important;
             float: left;
-            cursor:default;
+            cursor: default;
         }
     }
 
@@ -1867,7 +1971,7 @@ font-family: 'Poppins-300';*/
     }
 
     .widthAuto {
-        width: auto!important;
+        width: auto !important;
     }
 
     .slds-modal__content {
@@ -1879,6 +1983,7 @@ font-family: 'Poppins-300';*/
             color: $blk-clr;
             float: right;
             min-height: 1024px;
+
             h3 {
                 padding-top: 120px;
                 font-size: $fnt60;
@@ -1887,60 +1992,73 @@ font-family: 'Poppins-300';*/
                 padding-bottom: 80px;
             }
         }
+
         .headCont {
-              background: $blk-clr url('../images/startHeadImg.jpg') no-repeat 0px center;
-             background-size: cover;
-             height: 924px;
+            background: $blk-clr url('../images/startHeadImg.jpg') no-repeat 0px center;
+            background-size: cover;
+            height: 924px;
+
             .inHeadCont {
                 right: 40px;
                 padding: 30px;
                 top: 40%;
+
                 h2 {
                     padding-top: 0px;
                     font-size: $fnt65;
                     line-height: 68px;
                 }
+
                 .learnMore {
                     min-width: 105px;
                 }
             }
         }
+
         .rhsImg {
             padding-top: 0px;
         }
+
         .bottomInfo {
             margin-top: 0px;
             min-height: 774px;
             margin-bottom: 0px;
+
             .boxInfo {
                 padding-top: 40px;
                 max-width: 980px;
                 margin: 0 auto;
+
                 ul {
                     li {
                         margin-bottom: 20px;
                     }
                 }
             }
+
             .listInfo {
                 .material-icons {
                     position: relative;
                     top: 5px;
                     color: $verify-clr;
                 }
+
                 h4 {
                     padding-left: 0px;
                 }
             }
         }
+
         .listInfo {
             p {
                 padding-right: 80px;
             }
         }
+
         .exitCont {
             padding-left: 0px;
             padding-right: 0px;
+
             &:before {
                 background: $blk-clr url('../images/exit_bg_light.jpg') no-repeat 0 center;
                 background-size: cover;
@@ -1948,18 +2066,17 @@ font-family: 'Poppins-300';*/
             }
         }
 
-         .noMessage 
-            {
+        .noMessage {
 
-                &:before {
+            &:before {
 
-                     background: $blk-clr url('../images/404.jpg') no-repeat 0 center!important;
-                       
-                }
+                background: $blk-clr url('../images/404.jpg') no-repeat 0 center !important;
 
             }
 
-        
+        }
+
+
     }
 
     .sectionSep {
@@ -1975,6 +2092,7 @@ font-family: 'Poppins-300';*/
         margin-right: auto;
         background: transparent;
         padding-top: 50px !important;
+
         .lhs_wrapper {
             margin-bottom: 20px;
             border: 1px $brd-box solid;
@@ -1990,15 +2108,17 @@ font-family: 'Poppins-300';*/
     .comm-page-custom-getestimate {
         background: $blk-clr url('../images/getEstimate_background.jpg') no-repeat 0 0;
         background-size: 100%;
+
         .headerFixCont {
-           //position: static;
+            //position: static;
         }
     }
 
     .heading4 {
         font-size: $fnt20;
         font-family: 'Poppins-300';
-        color:$active-clr;
+        color: $active-clr;
+
         h3 {
             font-family: 'Poppins-300';
         }
@@ -2025,17 +2145,21 @@ font-family: 'Poppins-300';*/
         max-width: 1170px;
         padding: 1em 0;
         margin-bottom: 50px;
+
         .lhs_wrapper {
             padding: 40px 40px 20px;
         }
+
         .slds-gutters {
             margin-left: -15px;
             margin-right: -15px;
         }
+
         .slds-col {
             padding-left: 15px;
             padding-right: 15px;
         }
+
         .columnWrapper {
             border: 0;
             border-radius: 0;
@@ -2045,11 +2169,13 @@ font-family: 'Poppins-300';*/
             background: none;
             margin-bottom: 0;
             border-bottom: 0;
+
             .lhs_wrapper {
                 border: 1px $brd-box solid;
                 padding: 40px 40px 20px;
             }
         }
+
         .heading3 {
             padding-left: 0;
         }
@@ -2076,6 +2202,7 @@ font-family: 'Poppins-300';*/
         margin-top: 100px;
         font-size: $fnt18;
         line-height: 28px;
+
         h2 {
             font-size: $fnt62;
             line-height: 72px;
@@ -2085,14 +2212,12 @@ font-family: 'Poppins-300';*/
     .loanDashboard {
 
 
-        .sepbarInner 
-        {
-            margin-left:0px!important;
-            margin-right:0px!important;
+        .sepbarInner {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
 
-            hr 
-            {
-                border-color:$grey-clr!important;
+            hr {
+                border-color: $grey-clr !important;
             }
         }
 
@@ -2100,8 +2225,10 @@ font-family: 'Poppins-300';*/
             margin-left: 0px;
             margin-right: 0px;
         }
+
         .cardStatus {
             font-size: $fnt14;
+
             .status {
                 text-transform: uppercase;
                 letter-spacing: 2.3px;
@@ -2110,20 +2237,25 @@ font-family: 'Poppins-300';*/
                 padding: 0;
             }
         }
+
         .amount,
         .rates {
             background: none;
         }
+
         .slds-progress-bar {
             border-radius: 20px;
             height: 6px;
         }
+
         .lhs_wrapper {
             margin-bottom: 50px;
         }
+
         .disabled {
             background: $loan-paid-off;
             border-color: $paid-off-brdr !important;
+
             .cardStatus {
                 .status {
                     background: none;
