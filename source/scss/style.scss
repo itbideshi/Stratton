@@ -1,4 +1,4 @@
-//@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
+@import '../../node_modules/@salesforce-ux/design-system/scss/index.scss';
 @import '_variables';
 
 html,
@@ -2130,6 +2130,30 @@ font-family: 'Poppins-300';*/
 
     .heading8 {
         font-size: $fnt12;
+    }
+
+    .heading9 {
+        font-size: $fnt16;
+        font-family: 'Poppins-400';
+        margin:10px 0px;
+    }
+
+    .plistInfo 
+    {
+        li {
+            margin-bottom:5px;
+            }
+    }
+
+    .heading10 {
+        font-size: $fnt14;
+        font-family: 'Poppins-400';
+        margin:10px 0px;
+    }
+
+    .mrgnPara 
+    {
+        margin-bottom:10px;
     }
 
     .colWidthLarge {
