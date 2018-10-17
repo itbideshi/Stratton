@@ -42,10 +42,20 @@ a:focus {
 textarea,
 textarea.slds-textarea {
     border-radius: 5px;
-    border: 1px $border-clr solid;
+    border: 2px $border-clr solid;
     width: 100%;
     padding: 20px;
     min-height: 50px;
+    &:focus{
+        box-shadow: none;
+        border: 2px $border-clr solid;
+    }
+}
+.slds-has-error .slds-textarea{
+    box-shadow: none;
+    &:focus{
+        box-shadow: none;
+    }
 }
 
 lightning-textarea .slds-form-element__label {
@@ -305,6 +315,13 @@ lightning-textarea .slds-form-element__label {
     p {
         margin: 10px 0px;
         word-break: break-word;
+    }
+    .cstm_input{
+        font-size: $fnt14;
+        line-height: 19px;
+        a, a:hover{
+            text-decoration: underline;
+        }
     }
 }
 
@@ -775,12 +792,13 @@ font-family: 'Poppins-300';*/
 
     .lftSec {
         font-size: $fnt14;
-        font-family: 'poppins-400'
+        font-family: 'Poppins-400'
     }
 
     .rhtSec {
         font-size: $fnt14;
-        font-family: 'poppins-600'
+        font-family: 'Poppins-600';
+        text-align: right;
     }
 }
 
@@ -1126,7 +1144,7 @@ font-family: 'Poppins-300';*/
     h2 {
         div {
             font-size: $fnt32;
-            font-family: 'poppins-600';
+            font-family: 'Poppins-600';
             color: $active-clr;
         }
     }
@@ -1606,7 +1624,7 @@ font-family: 'Poppins-300';*/
 
     ul li {
         padding-bottom: 15px;
-        font-family: 'poppins-400';
+        font-family: 'Poppins-400';
         color: $label-txt-clr;
 
         strong {
@@ -1704,7 +1722,7 @@ font-family: 'Poppins-300';*/
 }
 
 .field_label {
-    color: $label-txt-clr;
+    color: $field-label;
     opacity: 1;
 }
 
@@ -1833,6 +1851,16 @@ font-family: 'Poppins-300';*/
     }
 }
 
+.spouseAddress{
+    margin-top: 30px;
+    .field_label{
+        color: $active-clr;
+    }
+}
+.redBackground{
+    border-color: $primary-btn-bg !important;
+}
+
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
         position: relative !important;
@@ -1851,6 +1879,13 @@ font-family: 'Poppins-300';*/
 
     .container .columnWrapper {
         padding-bottom: 150px;
+    }
+
+    .slds-fade-in-open{
+        overflow: auto;
+        .slds-modal__container{
+            height: auto;
+        }
     }
 }
 
