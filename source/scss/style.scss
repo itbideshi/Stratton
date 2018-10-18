@@ -351,7 +351,7 @@ lightning-textarea .slds-form-element__label {
     .lhs_wrapper {
         background: $white-clr;
         border: 1px $brd-box solid;
-        padding: 15px 26px 80px;
+        padding: 15px 26px 120px;
         border-radius: 8px;
         margin-bottom: 0px;
 
@@ -677,7 +677,7 @@ font-family: 'Poppins-300';*/
 
     .bottomInfo {
         margin-top: 80px;
-        background: transparent url('../images/bottombg.jpg') no-repeat 0 0;
+        background: transparent url('../images/bottombg.jpg') no-repeat 80% center;
         background-size: cover;
         width: 100%;
         min-height: 700px;
@@ -1026,11 +1026,10 @@ font-family: 'Poppins-300';*/
 
         em {
             font-size: $fnt14;
-            color: $label-txt-clr;
-            opacity: 0.3;
+            color: $field-label;
             font-style: normal;
             display: block;
-            font-family: 'Poppins-300';
+            font-family: 'Poppins-400';
         }
     }
 
@@ -1040,11 +1039,10 @@ font-family: 'Poppins-300';*/
 
         em {
             font-size: $fnt14;
-            color: $label-txt-clr;
-            opacity: 0.3;
+            color: $field-label;
             font-style: normal;
             display: block;
-            font-family: 'Poppins-300';
+            font-family: 'Poppins-400';
         }
     }
 }
@@ -1600,6 +1598,7 @@ font-family: 'Poppins-300';*/
 .errorInfo {
     background: $errbg-clr;
     border-radius: 5px;
+    margin-top:0px;
     padding: 10px;
     color: $error-clr;
     text-align: center;
@@ -2059,7 +2058,7 @@ font-family: 'Poppins-300';*/
             margin-top: 0px;
             min-height: 774px;
             margin-bottom: 0px;
-
+            background: transparent url('../images/bottombg.jpg') no-repeat 0 0;
             .boxInfo {
                 padding-top: 40px;
                 max-width: 980px;
@@ -2241,7 +2240,7 @@ font-family: 'Poppins-300';*/
     }
 
     .headerSpace {
-        height: 205px;
+        height: 178px;
     }
 
     .headerSpaceSnd {
