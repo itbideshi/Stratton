@@ -441,7 +441,7 @@ lightning-textarea .slds-form-element__label {
     .columnWrapper {
         border: 1px solid $brd-box;
         border-radius: 8px 8px 0 0;
-        padding: 15px 16px 100px;
+        padding: 15px 16px 164px;
         margin-left: 0px;
         margin-right: 0px;
         background: $white-clr;
@@ -507,13 +507,14 @@ lightning-textarea .slds-form-element__label {
 .startPage {
     padding-top: 80px;
     background-color: $white-clr;
-
     .headCont {
         background: $blk-clr url('../images/startHeadImg.jpg') no-repeat -250px center;
         background-size: cover;
         width: 100%;
         min-height: 566px;
         position: relative;
+
+
 
         .inHeadCont {
             color: $white-clr;
@@ -538,6 +539,10 @@ lightning-textarea .slds-form-element__label {
                 font-family: 'Poppins-300';
                 margin-top: 50px;
                 line-height: 27px;
+                a, a:hover{
+                    color: $white-clr;
+                    text-decoration: underline;
+                }
             }
 
             .btnSave {
@@ -622,8 +627,8 @@ lightning-textarea .slds-form-element__label {
         h3 {
             padding: 60px 20px 20px 20px;
             /*font-size: $fnt60;
-line-height: 68px;
-font-family: 'Poppins-300';*/
+            line-height: 68px;
+            font-family: 'Poppins-300';*/
             font: normal 42px/47px 'Poppins-300';
         }
 
@@ -1176,6 +1181,10 @@ font-family: 'Poppins-300';*/
 
 .loanDashboard {
 
+    .field_label.heading6{
+        color: $disable-chk-clr;
+    }
+
     .disableSubStage {
         color: $disable-chk-clr !important;
         opacity: 1 !important;
@@ -1651,6 +1660,10 @@ font-family: 'Poppins-300';*/
         top: 5px;
         margin-right: 8px;
     }
+    .material-icons{
+        position: relative;
+        top: 2px;
+    }
 }
 
 .progressInfo,
@@ -1675,22 +1688,22 @@ font-family: 'Poppins-300';*/
 
 
 .progressBarCont {
-
+    font-family: 'Poppins-400';
 
     .slds-progress-bar__value {
         background: $verify-clr !important;
     }
 
     h4 {
-        color: $disable-clr;
-        opacity: 0.5;
+        color: $disable-chk-clr;
         font-size: $fnt16;
+        font-family: 'Poppins-400';
     }
 
     h5 {
-        color: $disable-clr;
-        opacity: 0.5;
+        color: $disable-chk-clr;
         font-size: $fnt20;
+        font-family: 'Poppins-300';
     }
 }
 
@@ -1860,13 +1873,19 @@ font-family: 'Poppins-300';*/
     border-color: $primary-btn-bg !important;
 }
 
+.secondaryElem{
+    font-family: 'Poppins-300'; 
+    font-size: $fnt16; 
+    color: $active-clr;
+}
+
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
         position: relative !important;
         display: flex !important;
         justify-content: flex-end;
         z-index: 9 !important;
-        top: -100px;
+        top: -112px;
         right: 36px !important;
         height: 0;
 
@@ -1876,15 +1895,14 @@ font-family: 'Poppins-300';*/
         }
     }
 
-    .container .columnWrapper {
-        padding-bottom: 150px;
-    }
-
     .slds-fade-in-open{
         overflow: auto;
         .slds-modal__container{
             height: auto;
         }
+    }
+    .columnWrapper .lhs_wrapper{
+        margin-bottom: 20px;
     }
 }
 
