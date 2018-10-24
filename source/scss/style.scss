@@ -19,6 +19,9 @@ body {
     background: $grey-clr;
     min-height: 100%;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: unset !important;
+}
 
 .bgNone {
     background: $white-clr !important;
@@ -1879,6 +1882,16 @@ lightning-textarea .slds-form-element__label {
     color: $active-clr;
 }
 
+.heading4 {
+    font-size: $fnt20;
+    font-family: 'Poppins-300';
+    color: $active-clr;
+
+    h3 {
+        font-family: 'Poppins-300';
+    }
+}
+    
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
         position: relative !important;
@@ -2163,16 +2176,6 @@ lightning-textarea .slds-form-element__label {
 
         .headerFixCont {
             //position: static;
-        }
-    }
-
-    .heading4 {
-        font-size: $fnt20;
-        font-family: 'Poppins-300';
-        color: $active-clr;
-
-        h3 {
-            font-family: 'Poppins-300';
         }
     }
 
