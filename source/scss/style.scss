@@ -1891,7 +1891,17 @@ lightning-textarea .slds-form-element__label {
         font-family: 'Poppins-300';
     }
 }
-    
+
+.declareTxt{
+    font-size: $fnt14;
+    line-height: 24px;
+    font-family: 'Poppins-300';
+    color: $label-txt-clr;
+}
+.frequencyInput{
+    padding-top: 15px;
+    line-height: 24px;
+}
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
         position: relative !important;
