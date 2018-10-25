@@ -19,9 +19,6 @@ body {
     background: $grey-clr;
     min-height: 100%;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: unset !important;
-}
 
 .bgNone {
     background: $white-clr !important;
@@ -1901,6 +1898,12 @@ lightning-textarea .slds-form-element__label {
 .frequencyInput{
     padding-top: 15px;
     line-height: 24px;
+}
+.optional{
+    color: $disable-clr;
+    font-size: 10px;
+    font-family: 'Poppins-300';
+    letter-spacing: 1.07px;
 }
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
