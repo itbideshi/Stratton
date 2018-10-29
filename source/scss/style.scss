@@ -1894,6 +1894,10 @@ lightning-textarea .slds-form-element__label {
     line-height: 24px;
     font-family: 'Poppins-300';
     color: $label-txt-clr;
+    padding-top: 0!important;
+    .slds-form-element{
+        margin-top: 5px;
+    }
 }
 .frequencyInput{
     padding-top: 15px;
@@ -1904,6 +1908,9 @@ lightning-textarea .slds-form-element__label {
     font-size: 10px;
     font-family: 'Poppins-300';
     letter-spacing: 1.07px;
+}
+.headerSpaceSnd {
+    height: 80px;
 }
 @media (max-width: 1023px) {
     .forceCommunityEmbeddedServiceHelpButton {
@@ -2275,10 +2282,6 @@ lightning-textarea .slds-form-element__label {
 
     .headerSpace {
         height: 178px;
-    }
-
-    .headerSpaceSnd {
-        height: 95px;
     }
 
     .outlineNone {
